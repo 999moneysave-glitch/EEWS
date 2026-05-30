@@ -1,2 +1,627 @@
-# EEWS
-A test quiz. 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY ENGLISH WITH SARFRAZ TEST-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.3/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.3/vfs_fonts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: -4px 7px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 0.5rem;
+            padding: 0 2px;
+            border-radius: 5px;
+            align-items: center;
+        }
+
+        .question {
+            margin: 30px 0;
+        }
+
+        section div:nth-child(1) {
+            flex: 2;
+        }
+
+        section div:nth-child(2) {
+            flex: 1;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px;
+        }
+
+        input {
+            height: 20px;
+            margin-left: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        @media screen and (max-width:600px) {
+
+            label,
+            .timer {
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+
+        div:where(.swal2-container).swal2-center>.swal2-popup {
+            width: 300px;
+        }
+
+        .instruction-accordion {
+            margin: 20px 0;
+        }
+
+        .accordion-btn {
+            width: 100% !important;
+            display: block;
+            background: #ffc107 !important;
+            color: #000 !important;
+            padding: 14px !important;
+            border: none;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+
+        .accordion-btn:hover {
+            background: #e0a800 !important;
+        }
+
+
+        .accordion-content {
+            display: none;
+            background: #fff8db;
+            border: 2px solid #ffc107;
+            border-top: none;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .accordion-content ul {
+            padding-left: 20px;
+        }
+
+        .accordion-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>MNC JOB TEST 1</h1>
+
+        <h3>Please answer all the questions.</h3>
+        <div class="instruction-accordion">
+
+            <button class="accordion-btn" onclick="toggleInstructions()">
+                📌 Exam Instructions ▼
+            </button>
+
+            <div class="accordion-content" id="instructionContent">
+
+                <ul>
+                    <li>Students must write answers only using the keyboard.</li>
+
+                    <li>Copy, paste, cut, right-click, and text selection are strictly prohibited.</li>
+
+                    <li>The test will automatically restart if the student:</li>
+
+                    <ul>
+                        <li>Switches browser tabs</li>
+                        <li>Opens Google or ChatGPT</li>
+                        <li>Minimizes the browser</li>
+                        <li>Changes application/window</li>
+                        <li>Exits fullscreen mode</li>
+                        <li>Uses ALT + TAB</li>
+                    </ul>
+
+                    <li>If cheating activity is detected:</li>
+
+                    <ul>
+                        <li>All answers will be cleared</li>
+                        <li>The timer will reset</li>
+                        <li>The student must start the test again</li>
+                    </ul>
+
+                    <li>Please do not refresh or leave the page during the exam.</li>
+
+                    <li>Camera monitoring may be enabled during the test.</li>
+
+                    <li>Any suspicious activity can lead to automatic submission or restart of the test.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <section>
+            <div>
+                <label for="studentName">Student Name: </label>
+                <input type="text" id="studentName" placeholder="Enter your name" required>
+            </div>
+            <div class="timer" id="timer">Time Left: <span id="time" style="color: red;">00:00</span></div>
+        </section>
+
+        <div id="questionsContainer"></div>
+        <button id="submit">Submit</button>
+    </div>
+
+    <script>
+        const examples = [
+            {
+                question: "Introduce Yourself.",
+                correctAnswer: "Hi, everyone. Thank you very much for giving me this opportunity. I am going to speak about myself. My name is ____________. My father’s name is ____________. My mother’s name is ____________. I live in ____________. I study in 10th class. My father is a doctor and my mother is a housewife. I want to become a doctor in the future. My hobbies are singing songs and listening to music. I practice English daily and I like reading books and watching videos. There are 5 siblings in my family. I have 2 brothers and 3 sisters. Thank you everyone.",
+                keywords: [
+                    "introduce myself",
+                    "my name is",
+                    "father’s name",
+                    "mother’s name",
+                    "I live in",
+                    "study in 10th class",
+                    "doctor",
+                    "housewife",
+                    "future goal",
+                    "hobbies",
+                    "practice English",
+                    "reading books",
+                    "watching videos",
+                    "brothers and sisters",
+                    "thank you everyone"
+                ],
+                userAnswer: ""
+            },
+            {
+                question: "Tell me about your daily life routine as a student.",
+                correctAnswer: "I wake up early in the morning. I brush my teeth and take a bath. I get dressed for school and eat breakfast. I go to school with my friends and study in class. I have lunch and play in the evening. Then I do my homework, eat dinner with my family, and go to bed early. Thank you and have a great day.",
+                keywords: [
+                    "wake up early",
+                    "brush my teeth",
+                    "take a bath",
+                    "get dressed",
+                    "eat breakfast",
+                    "go to school",
+                    "study in class",
+                    "have lunch",
+                    "play in the evening",
+                    "do homework",
+                    "eat dinner",
+                    "go to bed early"
+                ],
+                userAnswer: ""
+            },
+            {
+                question: "Tell me about your daily life routine as an office person.",
+                correctAnswer: "I wake up at seven o’clock and stretch. Then I get ready for the office. I exercise and eat a healthy breakfast. I go outside to enjoy the morning air and meet my friends in the park. I wait for my office cab near my home. When the cab arrives, I get into it and reach the office. After work, I return home and spend happy time with my family. I have a snack, go for an evening walk, and sleep by 11 PM. On weekends, I love to travel. This is my daily life routine.",
+                keywords: [
+                    "wake up at seven",
+                    "get ready for office",
+                    "exercise",
+                    "healthy breakfast",
+                    "morning air",
+                    "friends in park",
+                    "office cab",
+                    "reach office",
+                    "return home",
+                    "family time",
+                    "evening walk",
+                    "sleep by 11 PM",
+                    "travel on weekends"
+                ],
+                userAnswer: ""
+            },
+            {
+                question: "Tell me about your family.",
+                correctAnswer: "I have a wonderful family. There are 5 members in my family. My father is a teacher and he is very kind. My mother is a homemaker and she takes care of all of us. My elder brother is working as a software engineer in Delhi. I have two sisters. My elder sister is married and my younger sister is pursuing her graduation. We love spending time together. We eat together, go for outings, play games, and watch movies. I love my family very much because they support me in everything. Thank you everyone.",
+                keywords: [
+                    "wonderful family",
+                    "5 members",
+                    "father is a teacher",
+                    "mother is a homemaker",
+                    "elder brother",
+                    "software engineer",
+                    "two sisters",
+                    "elder sister married",
+                    "younger sister graduation",
+                    "family time",
+                    "eat together",
+                    "outings",
+                    "play games",
+                    "watch movies",
+                    "family supports me"
+                ],
+                userAnswer: ""
+            },
+            {
+                question: "What is a WH-Question Sentence? Write its structure and five examples for singular and plural subjects.",
+                correctAnswer: "WH-Question sentences begin with words like What, Why, When, Where, and How. Singular Structure: WH Word + Does + Subject + Verb + Object? Plural Structure: WH Word + Do + Subject + Verb + Object? Examples: Why does he play football? When does she play football? What does he play? Why do they play football? Where do they play football?",
+                keywords: [
+                    "wh question",
+                    "what",
+                    "why",
+                    "when",
+                    "where",
+                    "how",
+                    "does",
+                    "do",
+                    "why does he play football",
+                    "why do they play football"
+                ],
+                userAnswer: ""
+            },
+
+
+            {
+                question: "How can you recognize the four types of Present Tense?",
+                correctAnswer: "Present Indefinite Tense is identified by sentences ending with ta, te, ti. Present Continuous Tense is identified by sentences ending with raha, rahi, rahe. Present Perfect Tense is identified by sentences ending with chuka, chuki, chuke. Present Perfect Continuous Tense is identified by sentences ending with raha, rahi, rahe along with a duration of time such as since or for.",
+                keywords: [
+                    "ta te ti",
+
+                    "raha rahi rahe",
+                    "chuka chuki chuke",
+                    "since",
+                    "for",
+                    "duration of time",
+                    "present indefinite",
+                    "present continuous",
+                    "present perfect",
+                    "present perfect continuous"
+                ],
+                userAnswer: ""
+            },
+            {
+                question: "Write the sentence structures of all four Present Tenses.",
+                correctAnswer: "Present Indefinite: Subject + V1(s/es) + Object. Present Continuous: Subject + is/am/are + V1+ing + Object. Present Perfect: Subject + has/have + V3 + Object. Present Perfect Continuous: Subject + has been/have been + V1+ing + Object + Since/For + Time.",
+                keywords: [
+                    "subject",
+                    "v1",
+                    "s es",
+                    "is am are",
+                    "ing",
+                    "has have",
+                    "v3",
+                    "has been",
+                    "have been",
+                    "since",
+                    "for"
+                ],
+                userAnswer: ""
+            },
+
+            {
+                question: "How many types of sentences are there in Present Indefinite Tense?",
+                correctAnswer: "There are six types of sentences in Present Indefinite Tense: Positive Sentence, Negative Sentence, Interrogative Sentence, Question Negative Sentence, Emphatic Sentence, and WH-Question Sentence.",
+                keywords: [
+                    "six types",
+                    "positive",
+                    "negative",
+                    "interrogative",
+                    "question negative",
+                    "emphatic",
+                    "wh question"
+                ],
+                userAnswer: ""
+            },
+            {
+                question: "What is the structure of Positive Sentences in Present Indefinite Tense for singular and plural subjects?",
+                correctAnswer: "Singular Structure: He/She/It/Ram + V1(s/es) + Object. Plural Structure: I/We/You/They + V1 + Object.",
+                keywords: [
+                    "positive sentence",
+                    "singular",
+                    "plural",
+                    "v1",
+                    "s es",
+                    "he she it ram",
+                    "i we you they"
+                ],
+                userAnswer: ""
+            }
+
+
+        ];
+
+        const questionsContainer = document.getElementById('questionsContainer');
+        examples.forEach((example, index) => {
+            const questionBlock = document.createElement('div');
+            questionBlock.classList.add('question');
+            questionBlock.innerHTML = `
+                <p>${index + 1}. ${example.question}</p>
+                <textarea placeholder="Your answer here..." rows="4" class="no-copy-paste" data-index="${index}"></textarea>
+            `;
+            questionsContainer.appendChild(questionBlock);
+        });
+
+        function getSimilarityPercentage(a, b) {
+            let aWords = a.split(" ");
+            let bWords = b.split(" ");
+            let matches = 0;
+            aWords.forEach(word => {
+                if (bWords.includes(word)) matches++;
+            });
+            return Math.round((matches / bWords.length) * 100);
+        }
+
+        function evaluateAnswer(userAnswer, correctAnswer, keywords) {
+            userAnswer = userAnswer.trim();
+            correctAnswer = correctAnswer.trim();
+            const normalizedUser = userAnswer.toLowerCase().replace(/\s+/g, ' ');
+            const normalizedCorrect = correctAnswer.toLowerCase().replace(/\s+/g, ' ');
+
+            if (!userAnswer) return { score: 0 };
+            if (normalizedUser === normalizedCorrect) return { score: 100 };
+
+            const similarityPercentage = getSimilarityPercentage(normalizedUser, normalizedCorrect);
+
+            if (similarityPercentage >= 90) return { score: 90 };
+            if (similarityPercentage >= 80) return { score: 80 };
+            if (similarityPercentage >= 70) return { score: 70 };
+            if (similarityPercentage >= 60) return { score: 60 };
+            if (similarityPercentage >= 50) return { score: 50 };
+            if (similarityPercentage >= 40) return { score: 40 };
+            if (similarityPercentage >= 30) return { score: 30 };
+            if (similarityPercentage >= 20) return { score: 20 };
+            if (similarityPercentage >= 10) return { score: 10 };
+
+            const matchedKeywords = keywords.filter(word =>
+                normalizedUser.includes(word.toLowerCase())
+            );
+            const keywordMatchPercentage = matchedKeywords.length / keywords.length;
+            const keywordScore = Math.round(keywordMatchPercentage * 100);
+
+            return { score: keywordScore > 0 ? keywordScore : 0 };
+        }
+
+        function calculateAverageScore(scores) {
+            const total = scores.reduce((sum, val) => sum + val, 0);
+            return Math.round(total / scores.length);
+        }
+
+        document.getElementById('submit').addEventListener('click', () => {
+            const studentName = document.getElementById('studentName').value.trim();
+            if (!studentName) {
+                Swal.fire('Please enter your name before submitting!');
+                return;
+            }
+
+            Swal.fire({
+                title: 'Submit?',
+                text: "Are you sure you want to submit your answers?",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Submit',
+                cancelButtonText: 'Cancel'
+            }).then(result => {
+                if (result.isConfirmed) {
+                    const textAreas = document.querySelectorAll('.no-copy-paste');
+                    let scores = [];
+                    let answersFormatted = [];
+
+                    textAreas.forEach((textarea, index) => {
+                        const userText = textarea.value.trim();
+                        const result = evaluateAnswer(userText, examples[index].correctAnswer, examples[index].keywords);
+                        scores.push(result.score);
+
+                        answersFormatted.push(
+                            { text: `Q${index + 1}: ${examples[index].question}\n`, fontSize: 13, bold: true },
+                            { text: `Your Answer (Score: ${result.score}%):\n`, fontSize: 12 },
+                            { text: userText + '\n', fontSize: 12, color: 'red' },
+                            { text: `Correct Answer:\n`, fontSize: 12, bold: true },
+                            { text: examples[index].correctAnswer + '\n\n', fontSize: 12, color: 'green' }
+                        );
+                    });
+
+                    const avgScore = calculateAverageScore(scores);
+                    const docDefinition = {
+                        content: [
+                            { text: `Name Of The Candidate: ${studentName}\n\n`, fontSize: 14, bold: true },
+                            {
+                                columns: [
+                                    {
+                                        text: avgScore >= 40 ? 'Final Result: PASS' : 'Final Result: FAIL',
+                                        bold: true,
+                                        fontSize: 14,
+                                        color: avgScore >= 40 ? 'green' : 'red'
+                                    },
+                                    {
+                                        text: `Average Score: ${avgScore}%`,
+                                        fontSize: 14,
+                                        color: 'blue',
+                                        alignment: 'right'
+                                    }
+                                ],
+                                margin: [0, 0, 0, 20]
+                            },
+                            ...answersFormatted
+                        ]
+                    };
+
+                    pdfMake.createPdf(docDefinition).download(`${studentName}_AnswerSheet.pdf`);
+                    Swal.fire('Submitted!', 'Your answers and result have been saved.', 'success');
+                }
+            });
+        });
+
+        // Timer
+        let timeLeft = 3000;
+        const timerElement = document.getElementById('time');
+        function startTimer() {
+            const timer = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    alert("Time's up!");
+                    document.getElementById('submit').click();
+                } else {
+                    const mins = Math.floor(timeLeft / 60);
+                    const secs = timeLeft % 60;
+                    timerElement.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+                    timeLeft--;
+                }
+            }, 1000);
+        }
+        window.onload = startTimer;
+    </script>
+    <script>
+
+        // =========================
+        // RESTART TEST FUNCTION
+        // =========================
+
+        function restartTest(reason) {
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Cheating Detected',
+                text: reason + " Test will restart.",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                confirmButtonText: 'Restart Test'
+            }).then(() => {
+
+                // Clear all answers
+                document.querySelectorAll("textarea").forEach(textarea => {
+                    textarea.value = "";
+                });
+
+                // Reset name
+                document.getElementById("studentName").value = "";
+
+                // Reset timer
+                timeLeft = 3000;
+
+                // Reload page
+                location.reload();
+
+            });
+
+        }
+
+        // =========================
+        // TAB SWITCH DETECTION
+        // =========================
+
+        document.addEventListener("visibilitychange", () => {
+
+            if (document.hidden) {
+
+                restartTest("Tab switching detected.");
+
+            }
+
+        });
+
+        // =========================
+        // WINDOW BLUR DETECTION
+        // =========================
+
+        window.addEventListener("blur", () => {
+
+            restartTest("You moved away from the exam window.");
+
+        });
+
+        // =========================
+        // EXIT FULLSCREEN DETECTION
+        // =========================
+
+        document.addEventListener("fullscreenchange", () => {
+
+            if (!document.fullscreenElement) {
+
+                restartTest("Fullscreen mode exited.");
+
+            }
+
+        });
+
+        // =========================
+        // BLOCK ALT + TAB
+        // =========================
+
+        document.addEventListener("keydown", function (e) {
+
+            if (e.altKey && e.key === "Tab") {
+
+                e.preventDefault();
+
+                restartTest("ALT + TAB detected.");
+
+            }
+
+        });
+
+    </script>
+    <script>
+
+        function toggleInstructions() {
+
+            const content = document.getElementById("instructionContent");
+
+            if (content.style.display === "block") {
+
+                content.style.display = "none";
+
+            } else {
+
+                content.style.display = "block";
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
