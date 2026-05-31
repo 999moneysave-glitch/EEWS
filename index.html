@@ -156,8 +156,7 @@
                     <li>Students must write answers only using the keyboard.</li>
 
                     <li>Copy, paste, cut, right-click, and text selection are strictly prohibited.</li>
-
-                    <li>The test will automatically restart if the student:</li>
+                    <li>1st violation: Warning | 2nd: Final Warning | 3rd: Clear current answer only.</li>
 
                     <ul>
                         <li>Switches browser tabs</li>
@@ -222,7 +221,7 @@
                     "brothers and sisters",
                     "thank you everyone"
                 ],
-                userAnswer: ""
+                userAnswer: "Hi, everyone. Thank you very much for giving me this opportunity. I am going to speak about myself. My name is ____________. My father’s name is ____________. My mother’s name is ____________. I live in ____________. I study in 10th class. My father is a doctor and my mother is a housewife. I want to become a doctor in the future. My hobbies are singing songs and listening to music. I practice English daily and I like reading books and watching videos. There are 5 siblings in my family. I have 2 brothers and 3 sisters. Thank you everyone."
             },
             {
                 question: "Tell me about your daily life routine as a student.",
@@ -516,92 +515,76 @@
     <script>
 
         // =========================
-        // RESTART TEST FUNCTION
+        // UPDATED VIOLATION TRACKING
         // =========================
+        let violationCount = 0;
 
-        function restartTest(reason) {
+        function handleViolation(reason) {
+            violationCount++;
 
-            Swal.fire({
-                icon: 'error',
-                title: 'Cheating Detected',
-                text: reason + " Test will restart.",
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-                confirmButtonText: 'Restart Test'
-            }).then(() => {
+            if (violationCount === 1) {
+                Swal.fire('Warning', 'Violation: ' + reason + '. 1st Warning.', 'warning');
+            } else if (violationCount === 2) {
+                Swal.fire('Final Warning', 'Violation: ' + reason + '. Agli baar sirf current answer delete hoga.', 'error');
+            } else {
+                // 3rd violation logic: Sirf active textarea delete hoga
+                const activeElement = document.activeElement;
 
-                // Clear all answers
-                document.querySelectorAll("textarea").forEach(textarea => {
-                    textarea.value = "";
-                });
+                if (activeElement && activeElement.tagName === "TEXTAREA") {
+                    activeElement.value = ""; // Sirf isi question ka answer delete hoga
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Violation!',
+                        text: '3rd Violation: Current question answer cleared.',
+                        confirmButtonText: 'OK'
+                    });
+                } else {
+                    // Agar cursor kahin aur hai, to koi bhi random ya sabhi delete na ho
+                    Swal.fire('Violation', 'Violation detected, but no active answer box found.', 'info');
+                }
 
-                // Reset name
-                document.getElementById("studentName").value = "";
-
-                // Reset timer
-                timeLeft = 3000;
-
-                // Reload page
-                location.reload();
-
-            });
-
+                // Count reset takaki student aage ka test de sake
+                violationCount = 0;
+            }
         }
-
         // =========================
-        // TAB SWITCH DETECTION
+        // DETECTION LISTENERS
         // =========================
 
+        // 1. Tab Switch
         document.addEventListener("visibilitychange", () => {
-
-            if (document.hidden) {
-
-                restartTest("Tab switching detected.");
-
-            }
-
+            if (document.hidden) handleViolation("Tab switching detected.");
         });
 
-        // =========================
-        // WINDOW BLUR DETECTION
-        // =========================
-
+        // 2. Window Blur
         window.addEventListener("blur", () => {
-
-            restartTest("You moved away from the exam window.");
-
+            handleViolation("You moved away from the exam window.");
         });
 
-        // =========================
-        // EXIT FULLSCREEN DETECTION
-        // =========================
-
+        // 3. Fullscreen Exit
         document.addEventListener("fullscreenchange", () => {
-
-            if (!document.fullscreenElement) {
-
-                restartTest("Fullscreen mode exited.");
-
-            }
-
+            if (!document.fullscreenElement) handleViolation("Fullscreen mode exited.");
         });
 
-        // =========================
-        // BLOCK ALT + TAB
-        // =========================
-
+        // 4. Keyboard Shortcuts (Ctrl+C, V, X, A, etc.)
         document.addEventListener("keydown", function (e) {
-
+            // Block Alt+Tab
             if (e.altKey && e.key === "Tab") {
-
                 e.preventDefault();
-
-                restartTest("ALT + TAB detected.");
-
+                handleViolation("ALT + TAB detected.");
             }
-
+            // Block Copy/Paste/Cut/SelectAll
+            if ((e.ctrlKey || e.metaKey) && ['c', 'v', 'x', 'a', 's'].includes(e.key.toLowerCase())) {
+                e.preventDefault();
+                handleViolation("Clipboard command (" + e.key.toUpperCase() + ") detected.");
+            }
         });
 
+        // 5. Block Right-Click
+        document.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            handleViolation("Right-click blocked.");
+        });
     </script>
     <script>
 
