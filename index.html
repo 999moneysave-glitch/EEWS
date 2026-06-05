@@ -268,9 +268,12 @@ div:where(.swal2-container).swal2-center>.swal2-popup {
 <body>
 
     <div class="container">
-        <h1>MNC JOB TEST-2 </h1>
+        <h1>MNC JOB TEST 2</h1>
 
         <h3>Please answer all the questions.</h3>
+        <h3><a href="AudioTest.html">
+            Click for Audio Test.
+        </a></h3>
         <div class="instruction-accordion">
 
             <button class="accordion-btn" onclick="toggleInstructions()">
@@ -494,10 +497,75 @@ div:where(.swal2-container).swal2-center>.swal2-popup {
                     "i we you they"
                 ],
                 userAnswer: ""
-            }
+            },
 
 
-        ];
+    {
+        question: "What is the rule for adding 's' or 'es' to verbs in Present Indefinite Tense with He/She/It?",
+        correctAnswer: "Add 'es' to verbs ending in s, sh, ch, x, z, or o (go → goes, watch → watches, mix → mixes). For most other verbs, add only 's'.",
+        keywords: [
+            "s es rule",
+            "he she it",
+            "goes",
+            "watches",
+            "mixes",
+            "present indefinite",
+            "s sh ch x z o"
+        ],
+        userAnswer: ""
+    },
+
+    {
+        question: "What are the structures of all Present, Past, and Future Tense forms shown in the tense chart?",
+        correctAnswer: "Present Simple: Subject + V1 + Object. Present Continuous: Subject + am/is/are + V-ing + Object. Present Perfect: Subject + has/have + V3 + Object. Present Perfect Continuous: Subject + has/have been + V-ing + Object. Past Simple: Subject + V2 + Object. Past Continuous: Subject + was/were + V-ing + Object. Past Perfect: Subject + had + V3 + Object. Past Perfect Continuous: Subject + had been + V-ing + Object. Future Simple: Subject + will + V1 + Object. Future Continuous: Subject + will be + V-ing + Object. Future Perfect: Subject + will have + V3 + Object. Future Perfect Continuous: Subject + will have been + V-ing + Object.",
+        keywords: [
+            "present simple",
+            "present continuous",
+            "present perfect",
+            "present perfect continuous",
+            "past simple",
+            "past continuous",
+            "past perfect",
+            "past perfect continuous",
+            "future simple",
+            "future continuous",
+            "future perfect",
+            "future perfect continuous",
+            "v1",
+            "v2",
+            "v3",
+            "will",
+            "been"
+        ],
+        userAnswer: ""
+    },
+
+    {
+        question: "What is the difference between Imperative Sentences and Exclamatory Sentences, and how are Exclamatory Sentences formed with What and How?",
+        correctAnswer: "Imperative Sentences give commands, requests, advice, or orders and usually follow the structure V1 + Object. Exclamatory Sentences express strong feelings. Use What + a/an + Adjective + Noun + ! when a noun is present, and use How + Adjective + Subject + Verb + ! when emphasizing only an adjective.",
+        keywords: [
+            "imperative",
+            "command",
+            "request",
+            "advice",
+            "order",
+            "v1 object",
+            "exclamatory",
+            "what",
+            "how",
+            "adjective",
+            "noun",
+            "strong feeling",
+            "what a beautiful flower",
+            "how beautiful you are"
+        ],
+        userAnswer: ""
+    }
+]
+
+
+
+
 
         const questionsContainer = document.getElementById('questionsContainer');
         examples.forEach((example, index) => {
