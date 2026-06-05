@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Easy English With Sarfraz</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        body {
+
+            background:
+                linear-gradient(135deg,
+                    #0f172a,
+                    #1e293b);
+
+            min-height: 100vh;
+
+            font-family: Arial, sans-serif;
+
+            color: white;
+        }
+
+        .main-card {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            background: rgba(255, 255, 255, 0.08);
+
+            backdrop-filter: blur(12px);
+
+            border-radius: 25px;
+
+            padding: 30px;
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            box-shadow:
+                0 0 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo-title {
+
+            font-size: 38px;
+
+            font-weight: bold;
+
+            background: linear-gradient(to right,
+                    #38bdf8,
+                    #22c55e);
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+        }
+
+        .timer-box {
+
+            background: #dc2626;
+
+            padding: 10px 18px;
+
+            border-radius: 12px;
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+        }
+
+        .question-box {
+
+            background: rgba(255, 255, 255, 0.08);
+
+            border-radius: 20px;
+
+            padding: 25px;
+
+            border-left: 6px solid #38bdf8;
+        }
+
+        .btn-custom {
+
+            border-radius: 50px;
+
+            padding: 14px 35px;
+
+            font-size: 20px;
+
+            font-weight: bold;
+        }
+
+        .recording {
+
+            animation: pulse 1s infinite;
+
+            background: red !important;
+
+            border-color: red !important;
+        }
+
+        @keyframes pulse {
+
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.08);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .feedback-box {
+
+            min-height: 60px;
+
+            font-size: 24px;
+
+            font-weight: bold;
+        }
+
+        .glass {
+
+            background: rgba(255, 255, 255, 0.07);
+
+            border-radius: 15px;
+
+            padding: 12px;
+        }
+
+        .hidden {
+
+            display: none;
+        }
+
+        /* =========================
+   GLASS BOX
+========================= */
+
+        .glass {
+
+            background: rgba(255, 255, 255, 0.08);
+
+            backdrop-filter: blur(14px);
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            border-radius: 25px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        /* =========================
+   INSTRUCTION CONTAINER
+========================= */
+
+        .instruction-box {
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            animation: fadeUp 1s ease;
+        }
+
+        /* =========================
+   TITLE
+========================= */
+
+        .instruction-title {
+
+            font-size: 32px;
+
+            font-weight: bold;
+
+            margin-bottom: 25px;
+
+            color: #38bdf8;
+
+            letter-spacing: 1px;
+
+            animation: glow 2s infinite alternate;
+        }
+
+        /* =========================
+   KEEP ALL ITEMS IN ONE ROW
+========================= */
+
+        .instruction-items {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: stretch;
+
+            gap: 18px;
+
+            flex-wrap: nowrap;
+
+            width: 100%;
+
+            overflow-x: auto;
+
+            padding-bottom: 10px;
+        }
+
+        /* =========================
+   CARD
+========================= */
+
+        .instruction-card {
+
+            max-width: 100px;
+
+            background: rgba(255, 255, 255, 0.07);
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+
+            border-radius: 20px;
+
+            padding: 20px 15px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 8px;
+
+            font-size: 18px;
+
+            font-weight: 600;
+
+            color: white;
+
+            transition: 0.4s;
+
+            cursor: pointer;
+
+            position: relative;
+
+            overflow: hidden;
+
+            flex-shrink: 0;
+        }
+
+        /* LIGHT ANIMATION EFFECT */
+
+        .instruction-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 120%;
+
+            height: 120%;
+
+            background:
+                linear-gradient(45deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.08),
+                    transparent);
+
+            top: -100%;
+
+            left: -100%;
+
+            transition: 0.6s;
+        }
+
+        .instruction-card:hover::before {
+
+            top: 100%;
+
+            left: 100%;
+        }
+
+        /* HOVER EFFECT */
+
+        .instruction-card:hover {
+
+            transform: translateY(-10px) scale(1.03);
+
+            background: rgba(56, 189, 248, 0.12);
+
+            box-shadow:
+                0 10px 25px rgba(56, 189, 248, 0.25);
+        }
+
+        /* =========================
+   ICON
+========================= */
+
+        .instruction-icon {
+
+            font-size: 42px;
+
+            animation: floatIcon 2s infinite ease-in-out;
+        }
+
+        /* =========================
+   SCROLLBAR
+========================= */
+
+        .instruction-items::-webkit-scrollbar {
+
+            height: 8px;
+        }
+
+        .instruction-items::-webkit-scrollbar-thumb {
+
+            background: #38bdf8;
+
+            border-radius: 20px;
+        }
+
+        /* =========================
+   ANIMATIONS
+========================= */
+
+        @keyframes fadeUp {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(40px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+
+            from {
+
+                text-shadow:
+                    0 0 10px #38bdf8;
+            }
+
+            to {
+
+                text-shadow:
+                    0 0 25px #38bdf8,
+                    0 0 45px #38bdf8;
+            }
+        }
+
+        @keyframes floatIcon {
+
+            0% {
+
+                transform: translateY(0);
+            }
+
+            50% {
+
+                transform: translateY(-8px);
+            }
+
+            100% {
+
+                transform: translateY(0);
+            }
+        }
+
+        @media screen and (max-width:450px) {
+
+            .instruction-box {
+
+                display: flex;
+
+                justify-content: center;
+
+                align-items: center;
+
+                text-align: center;
+            }
+
+            .instruction-items {
+
+                display: flex;
+
+                justify-content: center;
+
+                align-items: center;
+
+                gap: 6px;
+
+                width: 100%;
+
+                overflow-x: auto;
+
+                padding-bottom: 4px;
+            }
+
+            .instruction-card {
+
+                min-width: 60px;
+
+                max-width: 60px;
+
+                height: 75px;
+
+                border-radius: 10px;
+
+                padding: 6px 4px;
+
+                gap: 4px;
+
+                font-size: 8px;
+
+                line-height: 1.2;
+
+                font-weight: 600;
+
+                text-align: center;
+
+                display: flex;
+
+                justify-content: center;
+
+                align-items: center;
+            }
+
+            .instruction-icon {
+
+                font-size: 18px;
+            }
+
+            .instruction-title {
+
+                font-size: 18px;
+
+                margin-bottom: 12px;
+            }
+
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+
+        .main-card {
+            max-width: 500px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Dropdown & Elements */
+        .form-select,
+        .form-control {
+            font-size: 14px;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .btn-custom {
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        /* Instructions Section */
+        .instruction-items {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+
+        .instruction-card {
+            min-width: 60px;
+            font-size: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 8px;
+        }
+
+        .instruction-icon {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Button Row */
+        .btn-row {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .btn-row button {
+            flex: 1;
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        /* Timer & Text */
+        #timer {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .text-small {
+            font-size: 14px;
+        }
+
+        @media (max-width: 450px) {
+            .logo-title {
+                font-size: 20px;
+            }
+
+            .instruction-card {
+                min-width: 50px;
+                font-size: 9px;
+            }
+
+            .btn-custom {
+                font-size: 12px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <!-- START SCREEN -->
+        <div id="setupScreen" class="main-card text-center">
+
+            <h1 class="logo-title">
+                🎤 Easy English With Sarfraz
+            </h1>
+
+            <p class="mt-3 fs-5 text-light">
+
+                Pronunciation Assessment Test
+
+            </p>
+            <div class="glass instruction-box mt-4">
+
+                <div class="instruction-title">
+                    📌 Instructions
+                </div>
+
+                <div class="instruction-items">
+
+                    <div class="instruction-card">
+                        <span class="instruction-icon">🔊</span>
+                        <span>Listen Carefully</span>
+                    </div>
+
+                    <div class="instruction-card">
+                        <span class="instruction-icon">🎙️</span>
+                        <span>Speak Clearly</span>
+                    </div>
+
+                    <div class="instruction-card">
+                        <span class="instruction-icon">⏳</span>
+                        <span>On Time</span>
+                    </div>
+
+                    <div class="instruction-card">
+                        <span class="instruction-icon">✅</span>
+                        <span> >70% = PASS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="text" id="studentName" class="form-control form-control-lg mt-4"
+                placeholder="Enter Student Name" />
+
+            <button class="btn btn-warning btn-lg btn-custom mt-3" onclick="toggleQuestionBox()" style="display: none;">
+
+                ➕ Add Questions
+
+            </button>
+
+            <div id="questionBoxArea" class="hidden mt-4">
+
+                <textarea id="questionInput" class="form-control" rows="8" placeholder="Hindi | Roman | English
+
+Example:
+
+आप कैसे हैं?|Aap kaise hain?|How are you
+तुम कहाँ रहते हो?|Tum kahan rehte ho?|Where do you live">
+
+</textarea>
+
+                <button class="btn btn-info mt-3" onclick="generateQuestions()">
+
+                    ⚡ Generate Questions
+
+                </button>
+
+            </div>
+
+            <div class="mt-4">
+                <select id="sectionSelect" class="form-select form-select-lg">
+                    <option value="" disabled selected>Select a Section to Practice</option>
+                </select>
+            </div>
+
+            <button class="btn btn-success btn-lg btn-custom mt-4" onclick="startTest()">
+
+                🚀 Start Test
+
+            </button>
+
+        </div>
+
+        <!-- TEST SCREEN -->
+        <div id="testScreen" class="main-card hidden">
+
+            <!-- TOP -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+                <div>
+
+                    <h3>
+                        👨‍🎓
+                        <span id="studentRender"></span>
+                    </h3>
+
+                    <h5>
+                        Question
+                        <span id="questionNumber"></span>
+                        /
+                        <span id="totalQuestions"></span>
+                    </h5>
+
+                </div>
+
+                <div class="timer-box">
+
+                    ⏳
+                    <span id="timer">
+                        40:00
+                    </span>
+
+                </div>
+
+            </div>
+
+            <hr class="text-light" />
+
+            <!-- QUESTION -->
+            <div class="question-box mt-4">
+
+                <h5 class="text-info">
+                    Hindi Sentence
+                </h5>
+
+                <h2 id="questionHindi"></h2>
+
+                <hr />
+
+                <h5 class="text-warning">
+                    Pronunciation Hint
+                </h5>
+
+                <h4 id="questionHint"></h4>
+
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="text-center mt-5">
+                <button class="btn btn-dark btn-lg btn-custom" id="listenBtn">
+                    🔊 Listen Sentence
+                </button>
+                <button class="btn btn-success btn-lg btn-custom" id="recordBtn">
+                    🎙️ Record Answer
+                </button>
+
+                <div class="feedback-box mt-3" id="feedbackBox"></div>
+
+                <div class="mt-3 d-flex justify-content-center align-items-center gap-3">
+                    <span class="badge bg-primary fs-5" id="chanceBox">
+                        Chances Left: 2
+                    </span>
+
+                    <button class="btn btn-outline-warning btn-sm" onclick="skipQuestion()">
+                        ⏭️ Skip
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESULT -->
+        <div id="resultScreen" class="main-card hidden text-center">
+
+            <h1>
+                🎉 Test Completed
+            </h1>
+
+            <h2 class="mt-3" id="resultStudent"></h2>
+
+            <h1 class="display-1 mt-3" id="resultScore"></h1>
+
+            <h2 class="mt-3" id="resultPercent"></h2>
+
+            <h2 class="mt-3" id="resultStatus"></h2>
+
+            <button class="btn btn-primary btn-lg btn-custom mt-4" onclick="downloadPDF()">
+
+                📄 Download PDF
+
+            </button>
+
+            <button class="btn btn-secondary btn-lg btn-custom mt-3" onclick="location.reload()">
+
+                🔄 Restart
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        // ==========================
+        // WELCOME VOICE
+        // ==========================
+
+        window.onload = () => {
+
+            setTimeout(() => {
+
+                let speech =
+                    new SpeechSynthesisUtterance(
+
+                        "Welcome to Easy English With Sarfraz. Here your pronunciation will be tested."
+
+                    );
+
+                speech.lang = "en-US";
+
+                speech.rate = 0.9;
+
+                window.speechSynthesis.speak(speech);
+
+            }, 1000);
+
+        };
+
+        // ==========================
+        // QUESTIONS
+        // ==========================
+
+        const questionSections = {
+            "section1": {
+                title: "Daily Life Routine",
+                items: [
+                    { hi: "मैं सुबह जल्दी उठता/उठती हूँ।", translit: "Main subah jaldi uthta/uthti hoon.", en: "I wake up early in the morning." },
+                    { hi: "मैं अपने दाँत साफ़ करता/करती हूँ।", translit: "Main apne daant saaf karta/karti hoon.", en: "I brush my teeth." },
+                    { hi: "मैं नहाता/नहाती हूँ।", translit: "Main nahata/nahati hoon.", en: "I take a bath." },
+                    { hi: "मैं स्कूल के लिए तैयार होता/होती हूँ।", translit: "Main school ke liye taiyar hota/hoti hoon.", en: "I get dressed for school." },
+                    { hi: "मैं नाश्ता करता/करती हूँ।", translit: "Main nashta karta/karti hoon.", en: "I eat breakfast." },
+                    { hi: "मैं अपने दोस्तों के साथ स्कूल जाता/जाती हूँ।", translit: "Main apne doston ke saath school jata/jati hoon.", en: "I go to school with my friends." },
+                    { hi: "मैं कक्षा में पढ़ाई करता/करती हूँ।", translit: "Main kaksha mein padhai karta/karti hoon.", en: "I study in class." },
+                    { hi: "मैं दोपहर का भोजन करता/करती हूँ।", translit: "Main dopahar ka bhojan karta/karti hoon.", en: "I have lunch." },
+                    { hi: "मैं शाम को खेलता/खेलती हूँ।", translit: "Main shaam ko khelta/khelti hoon.", en: "I play in the evening." },
+                    { hi: "मैं अपना गृहकार्य करता/करती हूँ।", translit: "Main apna grihkarya karta/karti hoon.", en: "I do my homework." },
+                    { hi: "मैं अपने परिवार के साथ रात का खाना खाता/खाती हूँ।", translit: "Main apne parivar ke saath raat ka khana khata/khati hoon.", en: "I eat dinner with my family." },
+                    { hi: "मैं जल्दी सो जाता/जाती हूँ।", translit: "Main jaldi so jata/jati hoon.", en: "I go to bed early." },
+                ]
+            },
+            "section2": {
+                title: "Tell me about your family",
+                items: [
+                    { hi: "मेरे पास एक प्यारा परिवार है।", translit: "Mere paas ek pyara parivar hai.", en: "I have a wonderful family." },
+                    { hi: "मेरे परिवार में 5 सदस्य हैं।", translit: "Mere parivar mein 5 sadasya hain.", en: "There are 5 members in my family." },
+                    { hi: "मेरे पिता एक शिक्षक हैं।", translit: "Mere pita ek shikshak hain.", en: "My father is a teacher." },
+                    { hi: "मेरी माता गृहिणी हैं।", translit: "Meri mata grihini hain.", en: "My mother is a homemaker." },
+                    { hi: "मेरा बड़ा भाई दिल्ली में सॉफ्टवेयर इंजीनियर है।", translit: "Mera bada bhai Delhi mein software engineer hai.", en: "My elder brother is a software engineer in Delhi." },
+                    { hi: "मेरी दो बहनें हैं।", translit: "Meri do behnein hain.", en: "I have two sisters." },
+                    { hi: "मेरी बड़ी बहन की शादी हो गई है।", translit: "Meri badi bahan ki shaadi ho gayi hai.", en: "My elder sister is married." },
+                    { hi: "मेरी छोटी बहन स्नातक की पढ़ाई कर रही है।", translit: "Meri chhoti bahan snatak ki padhai kar rahi hai.", en: "My younger sister is pursuing her graduation." },
+                    { hi: "हम साथ में समय बिताना पसंद करते हैं।", translit: "Hum saath mein samay bitana pasand karte hain.", en: "We love spending time together." },
+                    { hi: "मैं अपने परिवार से बहुत प्यार करता हूँ।", translit: "Main apne parivar se bahut pyaar karta hoon.", en: "I love my family very much." },
+                ]
+            },
+            "section3": {
+                title: "Self Introduction",
+                items: [
+                    { hi: "नमस्ते सभी को।", translit: "Namaste sabhi ko.", en: "Hi, everyone." },
+                    { hi: "मैं अपने बारे में बताने जा रहा/रही हूँ।", translit: "Main apne baare mein batane ja raha/rahi hoon.", en: "I am going to speak about myself." },
+                    { hi: "मेरे परिवार में 5 भाई-बहन हैं।", translit: "Mere parivar mein 5 bhai-behen hain.", en: "There are 5 siblings in my family." },
+                    { hi: "मैं 10वीं कक्षा में पढ़ता/पढ़ती हूँ।", translit: "Main 10vi kaksha mein padhta/padhti hoon.", en: "I study in 10th class." },
+                    { hi: "मेरे पिता एक डॉक्टर हैं।", translit: "Mere pita ek doctor hain.", en: "My father is a doctor." },
+                    { hi: "मैं भविष्य में डॉक्टर बनना चाहता/चाहती हूँ।", translit: "Main bhavishya mein doctor banna chahta/chahti hoon.", en: "I want to become a doctor in the future." },
+                    { hi: "मेरे शौक गाना गाना और संगीत सुनना हैं।", translit: "Mere shauk gaana gaana aur sangeet sunna hain.", en: "My hobbies are singing songs and listening to music." },
+                    { hi: "मैं रोज़ अंग्रेज़ी का अभ्यास करता/करती हूँ।", translit: "Main roz angrezi ka abhyaas karta/karti hoon.", en: "I practice English daily." },
+                ]
+            },
+            "section4": {
+                title: "More about hobbies",
+                items: [
+                    { hi: "What are your hobbies?", translit: "I like reading books, playing badminton, and listening to music.", en: "I like reading books, playing badminton, and listening to music." },
+                    { hi: "Why is it your hobby?", translit: "Yeh mera man shaant karta hai aur mujhe focused aur positive rehne mein madad karta hai.", en: "It relaxes my mind and helps me stay focused and positive." },
+                    { hi: "How did you develop this hobby?", translit: "Maine ise niyamit abhyas aur ruchi lekar dheere-dheere viksit kiya.", en: "I developed it over time by practicing regularly and taking interest in it." },
+                    { hi: "How much time do you spend on your hobby?", translit: "Main aam taur par rozana 1 se 2 ghante ya weekend par adhik samay bitata/bitati hoon.", en: "I usually spend 1 to 2 hours daily or more on weekends." },
+                    { hi: "What hobbies do you have besides work/study?", translit: "Kaam ke alawa mujhe painting karna aur guitar bajana pasand hai.", en: "Besides work, I like painting and playing guitar." },
+                    { hi: "What do you like most about your hobby?", translit: "Mujhe isse milne wali santushti, khushi aur dincharya se break milna pasand hai.", en: "I like the satisfaction and happiness it gives me and the break from routine." },
+                    { hi: "How does your hobby help you?", translit: "Yeh tanav kam karta hai, mere kaushal ko behtar banata hai aur mujhe mentally fresh rakhta hai.", en: "It reduces stress, improves my skills and keeps me mentally fresh." },
+                    { hi: "Have you won any awards or achieved something through your hobby?", translit: "Haan, maine school star par painting pratiyogitaon mein puraskar jeete hain.", en: "Yes, I have won prizes in painting competitions at school level." },
+                    { hi: "Do you prefer indoor or outdoor hobbies? Why?", translit: "Mujhe outdoor shauk pasand hain jaise trekking kyunki mujhe prakriti ke kareeb rehna pasand hai.", en: "I prefer outdoor hobbies like trekking because I love being close to nature." },
+                    { hi: "How has your hobby influenced your life?", translit: "Isne mujhe adhik anushasit, atmavishvasi aur rachnatmak banaya hai.", en: "It has made me more disciplined, confident and creative." },
+                    { hi: "Do you prefer hobbies that you do alone or with others?", translit: "Mujhe dono pasand hain. Main akela padhai/likhai karta hoon, lekin khel doston ke saath khelta/khelti hoon.", en: "I enjoy both. I read and write alone, but I play sports with friends." },
+                    { hi: "What new hobby would you like to try in the future?", translit: "Main photography aazmana chahunga/chahungi kyunki mujhe khoobsurat pal kaid karna pasand hai.", en: "I would like to try photography because I love capturing beautiful moments." }
+                ]
+            },
+            "section5": {
+                title: "More about hobbies Volume-2",
+                items: [
+                    {
+                        hi: "What are your hobbies?",
+                        translit: "Mujhe kitaabein padhna, badminton khelna aur sangeet sunna pasand hai.",
+                        en: "I like reading books, playing badminton, and listening to music."
+                    },
+                    {
+                        hi: "Why is it your hobby?",
+                        translit: "Yeh mera man shaant karta hai aur mujhe focused aur positive rehne mein madad karta hai.",
+                        en: "It relaxes my mind and helps me stay focused and positive."
+                    },
+                    {
+                        hi: "How did you develop this hobby?",
+                        translit: "Maine ise niyamit abhyas aur ruchi lekar dheere-dheere viksit kiya.",
+                        en: "I developed it over time by practicing regularly and taking interest in it."
+                    },
+                    {
+                        hi: "How much time do you spend on your hobby?",
+                        translit: "Main aam taur par rozana 1 se 2 ghante ya weekend par adhik samay bitata/bitati hoon.",
+                        en: "I usually spend 1 to 2 hours daily or more on weekends."
+                    },
+                    {
+                        hi: "What hobbies do you have besides work/study?",
+                        translit: "Kaam ke alawa mujhe painting karna aur guitar bajana pasand hai.",
+                        en: "Besides work, I like painting and playing guitar."
+                    },
+                    {
+                        hi: "What do you like most about your hobby?",
+                        translit: "Mujhe isse milne wali santushti, khushi aur dincharya se break milna pasand hai.",
+                        en: "I like the satisfaction and happiness it gives me and the break from routine."
+                    },
+                    {
+                        hi: "How does your hobby help you?",
+                        translit: "Yeh tanav kam karta hai, mere kaushal ko behtar banata hai aur mujhe mentally fresh rakhta hai.",
+                        en: "It reduces stress, improves my skills and keeps me mentally fresh."
+                    },
+                    {
+                        hi: "Have you won any awards or achieved something through your hobby?",
+                        translit: "Haan, maine school star par painting pratiyogitaon mein puraskar jeete hain.",
+                        en: "Yes, I have won prizes in painting competitions at school level."
+                    },
+                    {
+                        hi: "Do you prefer indoor or outdoor hobbies? Why?",
+                        translit: "Mujhe outdoor shauk pasand hain jaise trekking kyunki mujhe prakriti ke kareeb rehna pasand hai.",
+                        en: "I prefer outdoor hobbies like trekking because I love being close to nature."
+                    },
+                    {
+                        hi: "How has your hobby influenced your life?",
+                        translit: "Isne mujhe adhik anushasit, atmavishvasi aur rachnatmak banaya hai.",
+                        en: "It has made me more disciplined, confident and creative."
+                    },
+                    {
+                        hi: "Do you prefer hobbies that you do alone or with others?",
+                        translit: "Mujhe dono pasand hain. Main akela padhai/likhai karta hoon, lekin khel doston ke saath khelta/khelti hoon.",
+                        en: "I enjoy both. I read and write alone, but I play sports with friends."
+                    },
+                    {
+                        hi: "What new hobby would you like to try in the future?",
+                        translit: "Main photography aazmana chahunga/chahungi kyunki mujhe khoobsurat pal kaid karna pasand hai.",
+                        en: "I would like to try photography because I love capturing beautiful moments."
+                    }
+                ]
+            },
+        };
+        // Global variable to hold the active set of questions
+        let questions = [];
+
+
+
+        function toggleQuestionBox() {
+
+            document
+                .getElementById("questionBoxArea")
+                .classList.toggle("hidden");
+
+        }
+
+
+
+        function generateQuestions() {
+
+            let input = document
+                .getElementById("questionInput")
+                .value
+                .trim();
+
+            if (!input) {
+
+                Swal.fire({
+
+                    icon: "warning",
+                    title: "No Questions Added",
+                    text: "Please enter questions"
+
+                });
+
+                return;
+
+            }
+
+
+            let lines = input.split("\n");
+
+            questions = [];
+
+
+            lines.forEach(line => {
+
+                let parts = line.split("|");
+
+                if (parts.length === 3) {
+
+                    questions.push({
+
+                        hi: parts[0].trim(),
+
+                        translit: parts[1].trim(),
+
+                        en: parts[2].trim()
+
+                    });
+
+                }
+
+            });
+
+
+            if (questions.length === 0) {
+
+                Swal.fire({
+
+                    icon: "error",
+                    title: "Format Error",
+                    text: "Use: Hindi | Roman | English"
+
+                });
+
+                return;
+
+            }
+
+
+            Swal.fire({
+
+                icon: "success",
+                title: "Questions Generated",
+                text: `${questions.length} questions added`
+
+            });
+
+            document
+                .getElementById("totalQuestions")
+                .innerText =
+                questions.length;
+
+        }
+        // ==========================
+        // VARIABLES
+        // ==========================
+
+        let currentQuestion = 0;
+
+        let score = 0;
+
+        let chances = 2;
+
+        let studentName = "";
+
+        let totalSeconds = 40 * 60;
+
+        let timer;
+
+        let reportData = [];
+
+        // ==========================
+        // SPEECH RECOGNITION
+        // ==========================
+
+        const SpeechRecognition =
+            window.SpeechRecognition ||
+            window.webkitSpeechRecognition;
+
+        const recognition =
+            new SpeechRecognition();
+
+        recognition.lang = "en-US";
+
+        recognition.interimResults = false;
+
+        recognition.maxAlternatives = 1;
+
+        // ==========================
+        // START TEST
+        // ==========================
+        function startTest() {
+            const sectionKey = document.getElementById("sectionSelect").value;
+            const studentName = document.getElementById("studentName").value.trim();
+
+            if (!studentName || !sectionKey) {
+                Swal.fire({
+                    icon: "warning",
+                    title: "Required Fields",
+                    text: "Please enter name and select a section."
+                });
+                return;
+            }
+
+            // Load selected section questions
+            questions = questionSections[sectionKey].items;
+
+            document.getElementById("setupScreen").classList.add("hidden");
+            document.getElementById("testScreen").classList.remove("hidden");
+
+            document.getElementById("studentRender").innerText = `${studentName} - ${questionSections[sectionKey].title}`;
+            document.getElementById("totalQuestions").innerText = questions.length;
+
+            // Reset game state
+            currentQuestion = 0;
+            score = 0;
+            reportData = [];
+
+            startTimer();
+            loadQuestion();
+        }
+        // ==========================
+        // TIMER
+        // ==========================
+
+        function startTimer() {
+
+            timer = setInterval(() => {
+
+                totalSeconds--;
+
+                let min =
+                    Math.floor(totalSeconds / 60);
+
+                let sec =
+                    totalSeconds % 60;
+
+                document.getElementById("timer")
+                    .innerText =
+                    `${String(min).padStart(2, "0")}: ${String(sec).padStart(2, "0")}`;
+
+                if (totalSeconds <= 0) {
+
+                    finishTest();
+                }
+
+            }, 1000);
+        }
+
+        // ==========================
+        // LOAD QUESTION
+        // ==========================
+
+        function loadQuestion() {
+
+            chances = 2;
+
+            document.getElementById("chanceBox")
+                .innerText =
+                `Chances Left: ${chances}`;
+
+            document.getElementById("feedbackBox")
+                .innerHTML = "";
+
+            const q =
+                questions[currentQuestion];
+
+            document.getElementById("questionNumber")
+                .innerText =
+                currentQuestion + 1;
+
+            document.getElementById("questionHindi")
+                .innerText =
+                q.hi;
+
+            document.getElementById("questionHint")
+                .innerText =
+                q.translit;
+
+            document.getElementById("listenBtn")
+                .onclick =
+                () => speakSentence(q.en);
+
+            document.getElementById("recordBtn")
+                .onclick =
+                () => checkSpeech(q.en);
+        }
+
+        // ==========================
+        // SPEAK
+        // ==========================
+
+        function speakSentence(text) {
+
+            let speech =
+                new SpeechSynthesisUtterance(text);
+
+            speech.lang = "en-US";
+
+            speech.rate = 0.85;
+
+            window.speechSynthesis.speak(speech);
+        }
+
+        // ==========================
+        // CHECK SPEECH
+        // ==========================
+        function checkSpeech(targetText) {
+
+            const btn = document.getElementById("recordBtn");
+
+            btn.classList.add("recording");
+
+            let speechDetected = false;
+
+            recognition.start();
+
+            setTimeout(() => {
+
+                if (!speechDetected) {
+
+                    recognition.stop();
+
+                    btn.classList.remove("recording");
+
+                    Swal.fire({
+                        icon: "error",
+                        title: "Voice Not Captured",
+                        text: "Please speak clearly and try again",
+                        confirmButtonColor: "#d33"
+                    });
+
+                }
+
+            }, 5000);
+
+
+            recognition.onresult = (event) => {
+
+                speechDetected = true;
+
+                let spoken = event.results[0][0].transcript
+                    .toLowerCase()
+                    .replace(/[^\w\s]/g, "")
+                    .trim();
+
+                let target = targetText
+                    .toLowerCase()
+                    .replace(/[^\w\s]/g, "")
+                    .trim();
+
+
+                if (spoken === target) {
+
+                    score++;
+
+                    document.getElementById("feedbackBox").innerHTML =
+                        "✅ Correct Pronunciation";
+
+                    Swal.fire({
+                        icon: "success",
+                        title: "Excellent!",
+                        text: "Correct pronunciation",
+                        timer: 1500,
+                        showConfirmButton: false
+                    });
+
+                    reportData.push({
+
+                        question: targetText,
+                        answer: spoken,
+                        result: "Correct"
+
+                    });
+
+                    setTimeout(nextQuestion, 1500);
+
+                } else {
+
+                    chances--;
+
+                    document.getElementById("chanceBox").innerText =
+                        `Chances Left: ${chances}`;
+
+
+                    if (chances > 0) {
+
+                        Swal.fire({
+                            icon: "warning",
+                            title: "Incorrect",
+                            text: "Try Again",
+                            timer: 1500,
+                            showConfirmButton: false
+                        });
+
+                        document.getElementById("feedbackBox").innerHTML =
+                            "❌ Incorrect. Try Again";
+
+                    } else {
+
+                        Swal.fire({
+                            icon: "error",
+                            title: "Failed",
+                            text: "Moving to next question",
+                            timer: 1500,
+                            showConfirmButton: false
+                        });
+
+                        reportData.push({
+
+                            question: targetText,
+                            answer: spoken,
+                            result: "Wrong"
+
+                        });
+
+                        setTimeout(nextQuestion, 1500);
+
+                    }
+
+                }
+
+                btn.classList.remove("recording");
+
+            };
+
+
+        }
+        // ==========================
+        // NEXT QUESTION
+        // ==========================
+
+        function nextQuestion() {
+
+            currentQuestion++;
+
+            if (currentQuestion < questions.length) {
+
+                loadQuestion();
+
+            } else {
+
+                finishTest();
+            }
+        }
+
+        // ==========================
+        // FINISH TEST
+        // ==========================
+
+        function finishTest() {
+
+            clearInterval(timer);
+
+            document.getElementById("testScreen")
+                .classList.add("hidden");
+
+            document.getElementById("resultScreen")
+                .classList.remove("hidden");
+
+            let percentage =
+                ((score / questions.length) * 100)
+                    .toFixed(0);
+
+            let status =
+                percentage >= 70
+                    ? "✅ PASS"
+                    : "❌ FAIL - NEED TO REATTEMPT";
+
+            document.getElementById("resultStudent")
+                .innerText =
+                studentName;
+
+            document.getElementById("resultScore")
+                .innerText =
+                `${score} / ${questions.length}`;
+
+            document.getElementById("resultPercent")
+                .innerText =
+                `Percentage: ${percentage} % `;
+
+            document.getElementById("resultStatus")
+                .innerText =
+                status;
+        }
+
+        // ==========================
+        // PDF DOWNLOAD
+        // ==========================
+        function downloadPDF() {
+
+            const { jsPDF } = window.jspdf;
+
+            const doc = new jsPDF();
+
+            let percentage = ((score / questions.length) * 100).toFixed(0);
+
+            let status = percentage >= 70 ? "PASS" : "FAIL";
+
+
+            // ===== SMALL HEADER =====
+
+            doc.setFillColor(15, 23, 42);
+
+            doc.rect(0, 0, 210, 18, "F");
+
+            doc.setTextColor(255, 255, 255);
+
+            doc.setFont(undefined, "bold");
+
+            doc.setFontSize(15);
+
+            doc.text(
+                "Easy English With Sarfraz",
+                105,
+                8,
+                { align: "center" }
+            );
+
+            doc.setFontSize(9);
+
+            doc.text(
+                "Pronunciation Assessment Result",
+                105,
+                14,
+                { align: "center" }
+            );
+
+
+            // ===== STUDENT DETAILS =====
+
+            doc.setFillColor(240, 245, 255);
+
+            doc.roundedRect(
+                8,
+                22,
+                194,
+                18,
+                2,
+                2,
+                "F"
+            );
+
+            doc.setTextColor(0);
+
+            doc.setFont(undefined, "normal");
+
+            doc.setFontSize(9);
+
+            doc.text(
+                `Student: ${studentName}`,
+                12,
+                29
+            );
+
+            doc.text(
+                `Score: ${score} / ${questions.length}`,
+                70,
+                29
+            );
+
+            doc.text(
+                `Percentage: ${percentage} % `,
+                120,
+                29
+            );
+
+
+            if (status === "PASS") {
+
+                doc.setTextColor(0, 140, 0);
+
+            } else {
+
+                doc.setTextColor(220, 0, 0);
+
+            }
+
+            doc.setFont(undefined, "bold");
+
+            doc.text(
+                status,
+                170,
+                29
+            );
+
+
+            // ===== ANSWERS SECTION =====
+
+            let y = 48;
+
+            reportData.forEach((item, index) => {
+
+
+                if (y > 275) {
+
+                    doc.addPage();
+
+                    y = 10;
+
+                }
+
+
+                if (item.result === "Correct") {
+
+                    doc.setFillColor(
+                        225,
+                        240,
+                        255
+                    );
+
+                    doc.setTextColor(
+                        0,
+                        90,
+                        255
+                    );
+
+                } else {
+
+                    doc.setFillColor(
+                        255,
+                        230,
+                        230
+                    );
+
+                    doc.setTextColor(
+                        220,
+                        0,
+                        0
+                    );
+
+                }
+
+
+                doc.roundedRect(
+                    8,
+                    y,
+                    194,
+                    8,
+                    2,
+                    2,
+                    "F"
+                );
+
+                doc.setFontSize(8);
+
+                doc.setFont(undefined, "normal");
+
+                let text = `Q${index + 1}(${item.result}) → Student Said: ${item.answer}`;
+
+                doc.text(
+                    text,
+                    12,
+                    y + 5
+                );
+
+                y += 10;
+
+            });
+
+
+            // ===== FOOTER =====
+
+            doc.setTextColor(120);
+
+            doc.setFontSize(7);
+
+            doc.line(
+                8,
+                285,
+                200,
+                285
+            );
+
+            doc.text(
+                "Generated by Easy English With Sarfraz",
+                105,
+                290,
+                { align: "center" }
+            );
+
+
+            doc.save(
+                `${studentName} -Result.pdf`
+            );
+
+        }
+
+
+        // ==========================
+        // SKIP QUESTION
+        // ==========================
+        function skipQuestion() {
+            // Optional: Log the skip in reportData if needed
+            reportData.push({
+                question: questions[currentQuestion].en,
+                answer: "Skipped",
+                result: "Skipped"
+            });
+
+            // Move to the next question
+            nextQuestion();
+        }
+
+
+        // Function to populate the dropdown
+        function populateSections() {
+            const select = document.getElementById("sectionSelect");
+
+            Object.keys(questionSections).forEach(key => {
+                const option = document.createElement("option");
+                option.value = key;
+                option.text = questionSections[key].title;
+                select.appendChild(option);
+            });
+        }
+
+        // Update your window.onload to include this
+        window.onload = () => {
+            populateSections(); // New: Populate dropdown dynamically
+
+            setTimeout(() => {
+                let speech = new SpeechSynthesisUtterance(
+                    "Welcome to Easy English With Sarfraz. Here your pronunciation will be tested."
+                );
+                speech.lang = "en-US";
+                speech.rate = 0.9;
+                window.speechSynthesis.speak(speech);
+            }, 1000);
+        };
+
+        // Use this globally for your alerts
+        const showCustomAlert = (icon, title, text) => {
+            Swal.fire({
+                icon: icon,
+                title: title,
+                text: text,
+                width: '90%',        // Fixes the overflow on 450px screens
+                padding: '1em',
+                confirmButtonColor: '#38bdf8',
+                customClass: {
+                    popup: 'small-alert' // Optional: hook for more CSS
+                }
+            });
+        };
+
+        // Example Usage:
+        // showCustomAlert('warning', 'Required', 'Please enter name');
+
+    </script>
+
+</body>
+
+</html>
