@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email Writing Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container my-5">
+        <!--<h2 class="mb-4">Email Writing</h2>-->
+
+        <!-- Instructions -->
+        <!--<div class="alert alert-info">-->
+        <!--    <strong>Instructions:</strong>-->
+        <!--    <ul>-->
+        <!--        <li>Use professional tone, clarity, and correct grammar.</li>-->
+        <!--        <li>Structure your email with a proper greeting, body, and closing.</li>-->
+        <!--        <li>Length should be 100–200 words unless stated otherwise.</li>-->
+        <!--        <li>Complete all questions in your own words.</li>-->
+        <!--    </ul>-->
+        <!--</div>-->
+
+        <!-- Scenario -->
+        <!--<div class="card mb-4">-->
+        <!--    <div class="card-header bg-primary text-white">-->
+        <!--        Scenario: Communication with Client-->
+        <!--    </div>-->
+        <!--    <div class="card-body">-->
+        <!--        <p>You are working as a Sales Associate at a tech firm. A customer, Mr. Raj Malhotra, has written to you-->
+        <!--            expressing dissatisfaction with a delayed product delivery and lack of updates.</p>-->
+        <!--        <p>Your task is to respond professionally, apologize for the delay, explain the situation, and reassure-->
+        <!--            the customer about the updated delivery schedule.</p>-->
+        <!--    </div>-->
+        <!--</div>-->
+        
+          <!-- Search Input -->
+        <div class="mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for a question...">
+        </div>
+
+        <!-- Questions Accordion -->
+        <div class="accordion" id="emailTestAccordion">
+
+            <!-- Question 1 -->
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="emailHeading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#emailCollapse1" aria-expanded="true" aria-controls="emailCollapse1">
+                        0. Write an Apology Email to the Customer
+                    </button>
+                </h2>
+                <div id="emailCollapse1" class="accordion-collapse collapse show" aria-labelledby="emailHeading1"
+                    data-bs-parent="#emailTestAccordion">
+                    <div class="accordion-body">
+
+                        <p><strong>Subject:</strong> Apology for Delay in Product Delivery</p>
+<p>Dear Sir/Madam/Mr. Malhotra/Mrs. Malhotra,</p>
+                        <p>I hope this message finds you well.</p>
+                        <p>I sincerely apologize for the delay in the delivery of your product and the inconvenience
+                            caused due to the lack of timely updates. We understand how important timely service is, and
+                            we deeply regret the oversight.</p>
+                        <p>The delay occurred due to an unexpected logistics issue at our warehouse. However, I’m happy
+                            to inform you that the issue has been resolved and your order has been prioritized for
+                            dispatch. You can expect the delivery within the next <strong>3 business days</strong>.</p>
+                        <p>We appreciate your patience and understanding. Please feel free to reach out if you have any
+                            further questions or need assistance.</p>
+                        <p>Warm regards,<br>
+                            Rahul Sharma<br>
+                            Sales Associate<br>
+                            [Your Company Name]</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+    <h2 class="accordion-header" id="emailHeadingRefund">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#emailCollapseRefund" aria-expanded="false" aria-controls="emailCollapseRefund">
+            1. Refund Delay Issue
+        </button>
+    </h2>
+    <div id="emailCollapseRefund" class="accordion-collapse collapse" aria-labelledby="emailHeadingRefund"
+        data-bs-parent="#emailTestAccordion">
+        <div class="accordion-body">
+
+            <p><strong>Subject:</strong> Update on Your Refund Request</p>
+            <p>Dear [Customer Name],</p>
+            <p>Dear Sir/Madam/Mr. Malhotra/Mrs. Malhotra,</p>
+            <p>Thank you for contacting us regarding your refund. I sincerely apologize for the delay and completely
+                understand how frustrating it can be to wait longer than expected.</p>
+            <p>I have checked your order, and I can confirm that the refund request has been successfully processed
+                from our side on [date]. The delay is due to your bank�s standard processing time. Please allow an
+                additional 3�5 business days for the amount to reflect in your account.</p>
+            <p>We truly appreciate your patience, and I assure you that your refund is on the way. If it does not
+                reflect after 5 business days, please get back to us and we will follow up immediately.</p>
+            <p>Thank you for choosing H&M.</p>
+            <p>Warm regards,<br>
+                [Your Full Name]<br>
+                Customer Service Team</p>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="emailHeadingOrder">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#emailCollapseOrder" aria-expanded="false" aria-controls="emailCollapseOrder">
+            2. Order Not Delivered on Time
+        </button>
+    </h2>
+    <div id="emailCollapseOrder" class="accordion-collapse collapse" aria-labelledby="emailHeadingOrder"
+        data-bs-parent="#emailTestAccordion">
+        <div class="accordion-body">
+
+            <p><strong>Subject:</strong> Update on Your Delivery Status</p>
+            <p>Dear [Customer Name],</p>
+            <p>Dear Sir/Madam/Mr. Malhotra/Mrs. Malhotra,</p>
+            <p>I�m sorry to hear that your order has not arrived by the promised date, and I completely understand your
+                concern.</p>
+            <p>I have reviewed your order details, and due to an unexpected logistics delay, the delivery has been
+                rescheduled. Your package is now expected to be delivered by [new date].</p>
+            <p>We truly regret this inconvenience. As a small token of apology, I�ve added a 10% discount voucher to
+                your account, which you may use on your next purchase.</p>
+            <p>Thank you for your patience and for giving us the chance to serve you better.</p>
+            <p>Sincerely,<br>
+                [Your Full Name]<br>
+                Customer Care Executive</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="emailHeadingPlan">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#emailCollapsePlan" aria-expanded="false" aria-controls="emailCollapsePlan">
+            3. Plan Upgrade Request (Telecom)
+        </button>
+    </h2>
+    <div id="emailCollapsePlan" class="accordion-collapse collapse" aria-labelledby="emailHeadingPlan"
+        data-bs-parent="#emailTestAccordion">
+        <div class="accordion-body">
+            <p><strong>Subject:</strong> Your Plan Upgrade Confirmation</p>
+            <p>Dear [Customer Name],</p>
+            <p>Dear Sir/Madam/Mr. Malhotra/Mrs. Malhotra,</p>
+            <p>Thank you for reaching out to us regarding your plan upgrade request.</p>
+            <p>I am pleased to inform you that your plan has been successfully upgraded to <strong>Unlimited Plus
+                    Plan</strong> effective from [date]. This plan offers unlimited calls, SMS, and [XX GB] high-speed
+                data each month. The monthly cost will be $XX.XX, which will be reflected in your next billing cycle.</p>
+            <p>We�re confident this plan will better meet your usage needs. Should you need further assistance or want
+                to explore additional add-ons, please let us know.</p>
+            <p>Thank you for choosing Verizon.</p>
+            <p>Warm regards,<br>
+                [Your Full Name]<br>
+                Customer Support Associate<br>
+                Verizon Wireless</p>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="emailHeadingService">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#emailCollapseService" aria-expanded="false" aria-controls="emailCollapseService">
+            4. Apology for Service Interruption
+        </button>
+    </h2>
+    <div id="emailCollapseService" class="accordion-collapse collapse" aria-labelledby="emailHeadingService"
+        data-bs-parent="#emailTestAccordion">
+        <div class="accordion-body">
+
+            <p><strong>Subject:</strong> Apology for Service Interruption</p>
+            <p>Dear [Customer Name],</p>
+            <p>Dear Sir/Madam/Mr. Malhotra/Mrs. Malhotra,</p>
+            <p>I truly apologize for the inconvenience you experienced with your internet connection.</p>
+            <p>The issue was due to an unexpected technical outage in your area, which affected several customers. Our
+                technical team has already resolved the issue, and your service should now be working fine.</p>
+            <p>Please restart your modem/router once, and if you still face any issues, feel free to contact us
+                immediately. As a token of apology, we�ve added a $10 credit to your account, which will reflect in
+                your next bill.</p>
+            <p>We sincerely appreciate your patience and thank you for being a valued Verizon customer.</p>
+            <p>Best regards,<br>
+                [Your Full Name]<br>
+                Customer Care Associate</p>
+        </div>
+    </div>
+</div>
+<!-- Question 1: Order Status Inquiry (Simple) -->
+<div class="accordion-item">
+    <h2 class="accordion-header" id="emailHeadingOrderSimple">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#emailCollapseOrderSimple" aria-expanded="false" aria-controls="emailCollapseOrderSimple">
+            5. Order Status Inquiry (Simple)
+        </button>
+    </h2>
+    <div id="emailCollapseOrderSimple" class="accordion-collapse collapse" aria-labelledby="emailHeadingOrderSimple"
+        data-bs-parent="#emailTestAccordion">
+        <div class="accordion-body">
+
+            <p><strong>Subject:</strong> Update on Your Order</p>
+            <p>Dear [Customer Name],</p>
+            <p>Thank you for reaching out. Your order [Order ID] is currently being processed and is expected to be
+                shipped by [Date]. You will receive a confirmation email once it is dispatched.</p>
+            <p>Best regards,<br>
+                [Your Name]<br>
+                Customer Service Team</p>
+        </div>
+    </div>
+</div>
+
+<!-- Question 2: Refund Status Inquiry (Simple) -->
+<div class="accordion-item">
+    <h2 class="accordion-header" id="emailHeadingRefundSimple">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#emailCollapseRefundSimple" aria-expanded="false" aria-controls="emailCollapseRefundSimple">
+            6. Refund Status Inquiry (Simple)
+        </button>
+    </h2>
+    <div id="emailCollapseRefundSimple" class="accordion-collapse collapse" aria-labelledby="emailHeadingRefundSimple"
+        data-bs-parent="#emailTestAccordion">
+        <div class="accordion-body">
+          
+            <hr>
+
+            <p><strong>Subject:</strong> Refund Status Update</p>
+            <p>Dear [Customer Name],</p>
+            <p>Thank you for contacting us. Your refund for [Order ID] has been processed and should reflect in your
+                account within 3�5 business days. We appreciate your patience.</p>
+            <p>Warm regards,<br>
+                [Your Name]<br>
+                Customer Support</p>
+        </div>
+    </div>
+</div>
+
+
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="emailHeading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#emailCollapse2" aria-expanded="false" aria-controls="emailCollapse2">
+                        7. Compose a Follow-up Email After No Response
+                    </button>
+                </h2>
+                <div id="emailCollapse2" class="accordion-collapse collapse" aria-labelledby="emailHeading2"
+                    data-bs-parent="#emailTestAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Task:</strong> Assume Mr. Malhotra hasn't responded to your previous email. Write a
+                            polite follow-up email to check in and confirm satisfaction.</p>
+                        <hr>
+                        <p><strong>Answer:</strong></p>
+                        <p><strong>Subject:</strong> Follow-up on Previous Communication – Delivery Update</p>
+                        <p>Dear Mr. Malhotra,</p>
+                        <p>I hope you're doing well.</p>
+                        <p>I’m writing to follow up on my previous email regarding the delayed delivery of your product.
+                            We wanted to ensure that the issue has been resolved to your satisfaction and that your
+                            order has reached you as expected.</p>
+                        <p>If there is anything further we can assist you with, please do not hesitate to let us know.
+                            We’re here to help and ensure a smooth experience.</p>
+                        <p>Looking forward to hearing from you.</p>
+                        <p>Best regards,<br>
+                            Rahul Sharma<br>
+                            Sales Associate<br>
+                            [Your Company Name]</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="emailHeading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#emailCollapse3" aria-expanded="false" aria-controls="emailCollapse3">
+                        8. Internal Update Email to Manager
+                    </button>
+                </h2>
+                <div id="emailCollapse3" class="accordion-collapse collapse" aria-labelledby="emailHeading3"
+                    data-bs-parent="#emailTestAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Task:</strong> Write an internal email to your manager summarizing the issue with Mr.
+                            Malhotra, the delay, and how you handled it.</p>
+                        <hr>
+                        <p><strong>Answer:</strong></p>
+                        <p><strong>Subject:</strong> Customer Complaint Update – Raj Malhotra</p>
+                        <p>Dear [Manager's Name],</p>
+                        <p>I wanted to update you regarding a customer issue we encountered with Mr. Raj Malhotra.</p>
+                        <p>He reported a delayed product delivery and a lack of communication. After investigating, I
+                            discovered a logistics bottleneck at our warehouse that affected his order. I promptly
+                            apologized to the customer via email, explained the situation, and assured him of delivery
+                            within 3 days.</p>
+                        <p>I’ve also followed up to ensure customer satisfaction. Please let me know if any further
+                            action is required from my end.</p>
+                        <p>Kind regards,<br>
+                            Rahul Sharma<br>
+                            Sales Associate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="emailHeading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#emailCollapse4" aria-expanded="false" aria-controls="emailCollapse4">
+                        9. Thank You Email to Satisfied Customer
+                    </button>
+                </h2>
+                <div id="emailCollapse4" class="accordion-collapse collapse" aria-labelledby="emailHeading4"
+                    data-bs-parent="#emailTestAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Task:</strong> Mr. Malhotra replied and expressed satisfaction with your support.
+                            Write a thank-you email appreciating his patience and encouraging future engagement.</p>
+                        <hr>
+                        <p><strong>Answer:</strong></p>
+                        <p><strong>Subject:</strong> Thank You for Your Patience and Feedback</p>
+                        <p>Dear Mr. Malhotra,</p>
+                        <p>Thank you for your kind response. I’m truly glad to know that you are satisfied with the
+                            resolution and delivery of your order.</p>
+                        <p>We appreciate your patience and understanding during the delay. Your feedback motivates us to
+                            keep improving our service and ensure a smooth experience for all our customers.</p>
+                        <p>Should you need any support in the future, please don’t hesitate to reach out. We look
+                            forward to serving you again.</p>
+                        <p>Warm regards,<br>
+                            Rahul Sharma<br>
+                            Sales Associate<br>
+                            [Your Company Name]</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <!-- Question 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="emailHeading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#emailCollapse5" aria-expanded="false" aria-controls="emailCollapse5">
+                        10. Respond to an Irate Customer Who Misbehaved and Disconnected the Call
+                    </button>
+                </h2>
+                <div id="emailCollapse5" class="accordion-collapse collapse" aria-labelledby="emailHeading5"
+                    data-bs-parent="#emailTestAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Task:</strong> Draft a respectful and professional email to a customer who became
+                            irate, misbehaved on the call, and disconnected without allowing resolution. Offer a
+                            discount coupon as a goodwill gesture.</p>
+                        <hr>
+                        <p><strong>Answer:</strong></p>
+                        <p><strong>Subject:</strong> Follow-up Regarding Your Recent Support Interaction</p>
+                        <p>Dear Mr. Malhotra,</p>
+                        <p>I hope this message finds you well. I’m reaching out to sincerely apologize for the
+                            frustration caused during your recent interaction with our support team.</p>
+                        <p>We truly regret that your concern hasn’t been resolved yet, and I understand how
+                            disappointing that must feel. Our goal is to provide you with a smooth and respectful
+                            experience, and I apologize if you felt otherwise.</p>
+                        <p>To help make up for the inconvenience, we’d like to offer you a <strong>₹500 discount
+                                coupon</strong> for your next purchase. Please use the code <code>RAJ500</code> during
+                            checkout — valid for the next 30 days.</p>
+                        <p>I am personally committed to resolving your issue and would appreciate the opportunity to
+                            speak with you at your convenience.</p>
+                        <p>Thank you for your patience, and I look forward to hearing from you.</p>
+                        <p>Warm regards,<br>
+                            Rahul Sharma<br>
+                            Sales Associate<br>
+                            [Your Company Name]</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    
+       <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Search Filter JS -->
+<script>
+const searchInput = document.getElementById('searchInput');
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-button');
+        const body = item.querySelector('.accordion-body');
+
+        // Reset previous highlights in header
+        header.innerHTML = header.innerText;
+
+        const headerText = header.innerText.toLowerCase();
+        const bodyText = body.innerText.toLowerCase();
+
+        if (headerText.includes(query) || bodyText.includes(query)) {
+            item.style.display = '';
+
+            if (query) {
+                // Highlight only the header
+                const headerRegex = new RegExp(`(${query})`, 'gi');
+                header.innerHTML = header.innerText.replace(headerRegex, '<mark>$1</mark>');
+            }
+
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
+</script>
+
+
+
+</body>
+
+</html>

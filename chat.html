@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M Chat Accordion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* Main Accordion (Topic) */
+        .main-accordion {
+            background-color: #0072ce;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .main-accordion-content {
+            display: none;
+            padding: 10px;
+            background-color: #f5dada;
+            border: 1px solid #ccc;
+            border-radius: 0 0 5px 5px;
+        }
+
+        /* Sub Accordion (Agent/Customer) */
+        .sub-accordion {
+            background-color: #ffff;
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: justify;
+
+        }
+
+        .sub-accordion-content {
+            display: none;
+            padding: 10px;
+            margin: 5px 0 10px 10px;
+            background-color: #f0f8ff;
+            border-left: 3px solid #0072ce;
+            text-align: justify;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .Subject_line {
+            background-color: #ccc;
+        }
+
+        .Greeting {
+            background-color: #daefca;
+
+        }
+
+        .Acknowledgement {
+            background-color: #c4d8ef;
+
+        }
+
+        .Resolution {
+            background-color: #efc4ed;
+
+        }
+
+        .Offer_help {
+
+            background-color: #f3ddd7;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>H&M Customer Support Chat - Accordion Example</h2>
+
+    <!-- Main Accordion 1 -->
+    <div class="main-accordion">Refund Status</div>
+    <div class="main-accordion-content">
+
+        <!-- Sub Accordion 1 -->
+        <div class="sub-accordion">Agent: Hello, thank you for contacting H&M Support. How can I assist you today?</div>
+        <div class="sub-accordion-content">
+            Customer: Hi, I returned my order 10 days ago, but I still haven�t received my refund.
+        </div>
+
+        <!-- Sub Accordion 2 -->
+        <div class="sub-accordion">Agent: I sincerely apologize for the inconvenience caused. As I understand, you
+            returned the product but haven�t received the refund yet. Am I correct?</div>
+        <div class="sub-accordion-content">
+            Customer: Yes.
+        </div>
+
+        <!-- Sub Accordion 3 -->
+        <div class="sub-accordion">Agent: Thank you very much for confirming, Mr. Sharma. I truly apologize once again
+            for the delay and assure you that I�ll do my best to resolve this concern for you. Before we proceed, could
+            you please confirm your H&M order number and the payment method used so I can check the status of your
+            refund?</div>
+        <div class="sub-accordion-content">
+            Customer: Yes, my order number is #HM56789.
+        </div>
+
+        <!-- Sub Accordion 4 -->
+        <div class="sub-accordion">Agent: Thank you. May I place you on hold for a minute/ a moment or for 2 minutes
+            while I check the details for you? <br>
+            Thank you for your patience. I apologize, but it is taking longer than expected to verify the details in our
+            system. May I place you on hold for a few more minutes while I complete this?
+        </div>
+        <div class="sub-accordion-content">
+            Customer: Yes. <br>
+
+        </div>
+
+        <!-- Sub Accordion 5 -->
+        <div class="sub-accordion">Agent: Thank you for your patience. I�ve checked the details, and according to our
+            system, your refund was initiated on August 25th to your card ending with 12345. Usually, it takes 3�5
+            business days for the amount to reflect in your account. I kindly request you to wait until August 30th for
+            it to appear.</div>
+        <div class="sub-accordion-content">
+            Customer: Okay.
+        </div>
+
+        <!-- Sub Accordion 6 -->
+        <div class="sub-accordion">Agent: Is there anything else I can assist you with today?</div>
+        <div class="sub-accordion-content">
+            Customer: No.
+        </div>
+
+
+        <!-- Sub Accordion 7 - New part added -->
+        <div class="sub-accordion">Agent: Thank you for your patience and understanding. Has this solution resolved your
+            refund issue?</div>
+        <div class="sub-accordion-content">
+            Customer: No / Yes
+        </div>
+
+        <!-- Sub Accordion 8 -->
+        <div class="sub-accordion">Agent: Thank you for chatting with H&M Customer Support today. We truly value you as
+            our customer. Have a wonderful day ahead!</div>
+        <div class="sub-accordion-content">
+            Customer: (Optional response if needed)
+        </div>
+
+        <div class="sub-accordion">Agent: I completely understand your concern, Mr. Sharma. As per our records, your
+            refund has already been successfully processed. However, sometimes banks may take a little longer to update
+            the transaction on their end. To support you further, I�ve also raised a priority request and escalated this
+            to our concerned team. Here is your request number: [XXXXXX]. Please keep this for reference.</div>
+
+
+        <div class="sub-accordion-content">
+            Customer: I don�t want to wait anymore. I want to speak to your manager.
+        </div>
+
+
+        <div class="sub-accordion">Agent:
+            I understand your frustration, but as I mentioned, the manager will also confirm that the refund has already
+            been processed. There won�t be any additional update they can provide at this stage.</div>
+
+
+        <div class="sub-accordion-content">
+
+            Customer: Still, I insist on talking to the manager.
+        </div>
+
+
+        <div class="sub-accordion">Agent: Alright, since you insist, I�ll be happy to connect you with my manager for
+            further assistance. Please hold for a moment while I transfer the chat. <br>
+            As a token of our apology, we�ve added a $10 credit to your account. This will be reflected on your next
+            bill.</div>
+        <div class="sub-accordion-content">
+            Customer: Thank you.
+        </div>
+
+    </div>
+    <div class="main-accordion">BT Billing Inquiry – AutoPay Awareness & Retention</div>
+    <div class="main-accordion-content">
+
+        <div class="sub-accordion">Agent: Thank you for calling BT Support. My name is Sarah. How may I assist you
+            today?</div>
+        <div class="sub-accordion-content">
+            Customer (James): Hi Sarah. I just checked my bank account and saw a BT charge for $89.99. I thought my
+            contract was ending, so why am I still being billed? I want this canceled immediately.
+        </div>
+
+        <div class="sub-accordion">Agent: I understand your concern, James, and I'd be happy to look into this for you.
+            Before we proceed, may I verify your account details?</div>
+        <div class="sub-accordion-content">
+            Customer (James): Sure, it's james.williams@email.com.
+        </div>
+
+        <div class="sub-accordion">Agent: Thank you. Please allow me a moment to review your account.</div>
+        <div class="sub-accordion-content">
+            Customer (James): Okay.
+        </div>
+
+        <div class="sub-accordion">Agent: Thank you for your patience, James. I've reviewed the account and can see that
+            your service renewed automatically through the AutoPay agreement attached to your account. The renewal
+            occurred when your previous billing term ended.</div>
+        <div class="sub-accordion-content">
+            Customer (James): Wait, what? I didn't realize it was set to renew automatically.
+        </div>
+
+        <div class="sub-accordion">Agent: I completely understand. Many customers don't realize AutoPay not only
+            processes payments automatically but can also renew eligible subscriptions when the current term expires.
+            According to the account notes, the AutoPay agreement has been active since you enrolled in paperless
+            billing a few years ago.</div>
+        <div class="sub-accordion-content">
+            Customer (James): I honestly don't remember signing up for that.
+        </div>
+
+        <div class="sub-accordion">Agent: That's understandable. It was likely accepted during an online account update
+            or service renewal. I can certainly explain the details and help you review your options today.</div>
+        <div class="sub-accordion-content">
+            Customer (James): Well, I don't really need the service anymore. I was surprised when I saw the money leave
+            my account.
+        </div>
+
+        <div class="sub-accordion">Agent: I completely understand. Let me summarize your concern to make sure we're on
+            the same page. You were expecting the service to end, but because the AutoPay agreement remained active, the
+            subscription renewed automatically and generated a new charge. Is that correct?</div>
+        <div class="sub-accordion-content">
+            Customer (James): Yes, exactly.
+        </div>
+
+        <div class="sub-accordion">Agent: Thank you for confirming. Since the renewal was processed under the active
+            AutoPay authorization, the charge is considered valid. However, I definitely want to help find the best
+            solution for you.</div>
+        <div class="sub-accordion-content">
+            Customer (James): What can you do?
+        </div>
+
+        <div class="sub-accordion">Agent: First, I can remove AutoPay immediately so no future renewals occur without
+            your knowledge. Second, because you've been a loyal BT customer for several years, I may be able to offer a
+            retention package that could significantly reduce your monthly cost if you'd like to continue using the
+            service.</div>
+        <div class="sub-accordion-content">
+            Customer (James): I'm not sure. What kind of offer?
+        </div>
+
+        <div class="sub-accordion">Agent: We recently launched a BT Value Plus package that includes the same core
+            services you're currently using, but at a discounted promotional rate for existing customers. I can also add
+            a three-month loyalty credit to help offset today's concern.</div>
+        <div class="sub-accordion-content">
+            Customer (James): So AutoPay would be removed?
+        </div>
+
+        <div class="sub-accordion">Agent: Absolutely. Once removed, no future payments would be taken automatically from
+            your bank account. You would be responsible for manually approving future payments.</div>
+        <div class="sub-accordion-content">
+            Customer (James): That definitely makes me feel better.
+        </div>
+
+        <div class="sub-accordion">Agent: Wonderful. With AutoPay removed and the loyalty discount applied, your monthly
+            cost would be significantly lower while maintaining uninterrupted service. Would you be interested in
+            keeping the account active under those new terms?</div>
+        <div class="sub-accordion-content">
+            Customer (James): You know what? That sounds reasonable. I don't mind keeping the service if I stay in
+            control of the payments.
+        </div>
+
+        <div class="sub-accordion">Agent: Excellent choice, James. I've successfully removed AutoPay, applied the
+            loyalty promotion, and updated your account to Manual Payment Only status. You'll receive an email
+            confirmation shortly.</div>
+        <div class="sub-accordion-content">
+            Customer (James): Perfect. That's exactly what I wanted.
+        </div>
+
+        <div class="sub-accordion">Agent: I'm glad we could find a solution that works for you. Is there anything else I
+            can help you with today?</div>
+        <div class="sub-accordion-content">
+            Customer (James): No, that's all. Thanks for explaining everything.
+        </div>
+
+        <div class="sub-accordion">Agent: You're very welcome, James. Thank you for being a valued BT customer. Have a
+            wonderful day!</div>
+        <div class="sub-accordion-content">
+            Customer (James): (End of conversation)
+        </div>
+
+    </div>
+    <div class="main-accordion">BT Billing & AutoPay Dispute – Realistic US Customer (James)</div>
+    <div class="main-accordion-content">
+
+        <div class="sub-accordion">Agent: Thank you for contacting BT Support. My name is Sarfraz. How may I help you
+            today?</div>
+        <div class="sub-accordion-content">
+            Customer (James): Honestly, I'm pretty upset right now. I've been a BT customer for years, and I just
+            noticed another charge hit my bank account this morning. I canceled this service months ago, but BT keeps
+            taking money through AutoPay. I want this stopped immediately, and I want my money back.
+        </div>
+
+        <div class="sub-accordion">Agent: James, I completely understand why you're frustrated, and I sincerely
+            apologize for the inconvenience. If I were in your position and kept seeing charges after canceling, I'd be
+            upset too. Let me take ownership of this and get it sorted out for you today. May I have your account number
+            or the email address associated with the account?</div>
+        <div class="sub-accordion-content">
+            Customer (James): Sure, it's james.williams@email.com. But honestly, I've already called about this before.
+            I don't want another promise—I want a real solution.
+        </div>
+
+        <div class="sub-accordion">Agent: I completely understand. Please give me a couple of minutes while I review
+            your account history and billing records.</div>
+        <div class="sub-accordion-content">
+            Customer (James): Fine.
+        </div>
+
+        <div class="sub-accordion">Agent: Thank you for waiting, James. I've completed a full review of your account. I
+            can see that you submitted a cancellation request about three months ago. Unfortunately, the cancellation
+            did not fully process in our billing system, and the AutoPay agreement remained active. As a result, your
+            account continued to renew automatically.</div>
+        <div class="sub-accordion-content">
+            Customer (James): So basically BT made a mistake and I've been paying for something I wasn't even using?
+        </div>
+
+        <div class="sub-accordion">Agent: Yes, James. After reviewing everything, I can confirm the charges should not
+            have continued. I sincerely apologize for the error on our side.</div>
+        <div class="sub-accordion-content">
+            Customer (James): That's exactly what I've been saying. So what happens now?
+        </div>
+
+        <div class="sub-accordion">Agent: I've already taken action. First, I've permanently removed the AutoPay
+            authorization linked to your bank account. Second, I've submitted a refund request for the unauthorized
+            charges. The refund amount is $147.96, and it should appear in your bank account within 3–5 business days.
+        </div>
+        <div class="sub-accordion-content">
+            Customer (James): Okay, that's good news. But honestly, I'm still thinking about leaving BT altogether.
+        </div>
+
+        <div class="sub-accordion">Agent: I completely respect that decision, James. Before you make a final choice,
+            would you allow me to explain a few additional steps I've taken to ensure this never happens again?</div>
+        <div class="sub-accordion-content">
+            Customer (James): Go ahead.
+        </div>
+
+        <div class="sub-accordion">Agent: Your account has now been switched to Manual Payment Only status. That means
+            BT can no longer automatically charge your bank account. Any future payment would require your direct
+            approval. I've also documented the billing error and escalated it to our billing management team.</div>
+        <div class="sub-accordion-content">
+            Customer (James): That's what should've happened in the first place.
+        </div>
+
+        <div class="sub-accordion">Agent: You're absolutely right, and I apologize that it didn't. Because you've been a
+            loyal BT customer for several years, I'd like to offer something to make up for the experience.</div>
+        <div class="sub-accordion-content">
+            Customer (James): What kind of offer?
+        </div>
+
+        <div class="sub-accordion">Agent: We recently launched our new BT Premium package, which includes enhanced
+            broadband support, faster issue resolution, and additional streaming benefits. I'd like to offer you six
+            months completely free, with no AutoPay and no obligation to continue afterward.</div>
+        <div class="sub-accordion-content">
+            Customer (James): So you're saying it's completely free and you won't automatically bill me again?
+        </div>
+
+        <div class="sub-accordion">Agent: Correct. I've already disabled AutoPay permanently. The complimentary service
+            comes with no automatic renewal, and you'll receive written confirmation by email.</div>
+        <div class="sub-accordion-content">
+            Customer (James): Honestly, the refund was my main concern. If AutoPay is really gone, I might be willing to
+            give BT another chance.
+        </div>
+
+        <div class="sub-accordion">Agent: I appreciate that, James. I've just activated the six-month complimentary
+            package and sent confirmation to your email. You'll also receive a separate email confirming the refund
+            request and AutoPay removal.</div>
+        <div class="sub-accordion-content">
+            Customer (James): Alright. I'll keep an eye on my bank account, but this sounds much better than where we
+            started.
+        </div>
+
+        <div class="sub-accordion">Agent: That's completely understandable. I would do the same. Is there anything else
+            I can help you with today regarding your BT account, billing, or services?</div>
+        <div class="sub-accordion-content">
+            Customer (James): No, that covers everything. Just make sure that refund goes through.
+        </div>
+
+        <div class="sub-accordion">Agent: Absolutely. I've personally escalated the case to ensure it's prioritized.
+            Thank you for giving us the opportunity to make this right, James. We truly value your loyalty and
+            appreciate your patience today.</div>
+        <div class="sub-accordion-content">
+            Customer (James): Thanks for your help.
+        </div>
+
+        <div class="sub-accordion">Agent: You're very welcome, James. Thank you for choosing BT. Have a wonderful day
+            and stay safe.</div>
+        <div class="sub-accordion-content">
+            Customer (James): (End of conversation)
+        </div>
+
+    </div>
+    <!-- Main Accordion -->
+    <div class="main-accordion">Email Writing</div>
+    <div class="main-accordion-content">
+
+        <!-- Sub Accordion 1 -->
+        <div class="sub-accordion Subject_line">Subject: Apology for (Delay in Product Delivery)/Service Interruption,
+            Update on Your
+            Refund Request/Delivery Status/Order/Plan Upgrade Confirmation</div>
+        <div class="sub-accordion-content">
+            There will be nothing here.
+        </div>
+
+        <!-- Sub Accordion 2 -->
+        <div class="sub-accordion Greeting">Dear Sir/Madam/Mr. Malhotra/Mrs. Malhotra,</div>
+
+
+        <!-- Sub Accordion 3 -->
+        <div class="sub-accordion">I hope this message finds you well.</div>
+
+
+        <!-- Sub Accordion 4 -->
+        <div class="sub-accordion Acknowledgement">Thank you very much for writing to us regarding the update on your
+            refund status.
+        </div>
+        <div class="sub-accordion Acknowledgement">I sincerely apologize for the delay in the delivery of your product
+            and the
+            inconvenience caused due to the lack of timely updates. We understand how important timely service is, and
+            we deeply regret the oversight.</div>
+
+        <!-- Sub Accordion 5 -->
+        <div class="sub-accordion Resolution">We would like to inform you that the refund of Rs. 459/- for the black
+            shoes was
+            processed from our side on 23/08/2025. It will reflect in your bank account ending with 2345 on or before
+            28/08/2025, as it usually takes up to 5 working days for the amount to be credited. The slight delay is due
+            to your bank�s standard processing time.</div>
+
+
+        <!-- Sub Accordion 6 -->
+        <div class="sub-accordion Resolution">We would like to inform you that your order of Rs. 459/- for the black
+            shoes was
+            shipped from our side on 23/08/2025. You will receive a confirmation email once it is dispatched by our
+            delivery partner. You can expect to receive it on or before 28/08/2025, as delivery usually takes up to 5
+            working days. The slight delay is due to our delivery partner�s internal issues.</div>
+        <div class="sub-accordion Resolution">I am pleased to inform you that your plan has been successfully upgraded
+            to Unlimited
+            Plus Plan effective from [date]. This plan offers unlimited calls, SMS, and [XX GB] high-speed data each
+            month. The monthly cost will be $XX.XX, which will be reflected in your next billing cycle. <br>
+            We�re confident that this plan will better meet your usage needs.
+        </div>
+
+        <div class="sub-accordion Resolution">The delay occurred due to an unexpected logistics issue at our warehouse.
+            However,
+            I�m happy to inform you that the issue has been resolved and your order has been prioritized for dispatch.
+            You can expect the delivery within the next 3 business days.</div>
+        <div class="sub-accordion Resolution">The issue was due to an unexpected technical outage in your area, which
+            affected
+            several customers. Our technical team has already resolved the issue, and your service should now be working
+            fine. Please restart your modem/router once.</div>
+
+        <!-- Sub Accordion 7 -->
+        <div class="sub-accordion">I kindly request you to wait until then.</div>
+
+
+        <!-- Sub Accordion 8 -->
+        <div class="sub-accordion">In case the amount is not reflected in your account by 28/08/2025, kindly write back
+            to us, and we will follow up on this immediately. However, such delays are very rare. <br> <span
+                style="color: red;">OR</span> <br>
+            In case the internet
+            is not working, please write back to us, and we will follow up on this immediately. However, such issues are
+            very rare.</div>
+
+        <!-- Sub Accordion 14 -->
+        <div class="sub-accordion Offer_help">We appreciate your patience and understanding. Please feel free to reach
+            out if you
+            have any further questions or need any assistance. <br> <span style="color: red;">OR</span> <br> We
+            appreciate your patience and understanding. Please
+            feel free to reach out if you have any further questions, need assistance, or wish to explore additional
+            add-ons.</div>
+        <div class="sub-accordion-content">
+            There will be nothing here.
+        </div>
+
+        <!-- Sub Accordion 15 -->
+        <div class="sub-accordion">We truly appreciate you choosing Verizon.
+            <br> <span style="color: red;">OR</span> <br> Thank you for being a valued Verizon
+            customer.
+        </div>
+        <div class="sub-accordion-content">
+            There will be nothing here.
+        </div>
+
+        <!-- Sub Accordion 16 -->
+        <div class="sub-accordion">Warm regards, Rahul Sharma Sr. Customer Support Executive H&M</div>
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        /* Main Accordion - Only one open at a time */
+        const mainAcc = document.querySelectorAll('.main-accordion');
+        mainAcc.forEach(acc => {
+            acc.addEventListener('click', () => {
+                mainAcc.forEach(a => {
+                    if (a !== acc) {
+                        a.nextElementSibling.style.display = 'none';
+                    }
+                });
+                const content = acc.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        /* Sub Accordion - Only one open at a time within the same main accordion */
+        const subAcc = document.querySelectorAll('.sub-accordion');
+        subAcc.forEach(acc => {
+            acc.addEventListener('click', () => {
+                const parentContent = acc.closest('.main-accordion-content');
+                const siblingAccs = parentContent.querySelectorAll('.sub-accordion');
+                siblingAccs.forEach(a => {
+                    if (a !== acc) {
+                        a.nextElementSibling.style.display = 'none';
+                    }
+                });
+                const content = acc.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

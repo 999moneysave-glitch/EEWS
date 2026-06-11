@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interview Jobs Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+            #searchBox {
+      float: right;
+      margin: 10px;
+      padding: 8px;
+      font-size: 16px;
+      width: 250px;
+    }
+    .question {
+      color: red;
+      font-weight: bold;
+    }
+    .answer {
+      color: green;
+    }
+    button {
+      margin: 10px 5px;
+      padding: 6px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="mb-3">
+            <input type="text" id="accordionSearch" class="form-control" placeholder="Type to search..."
+                oninput="liveSearchAccordion()" />
+        </div>
+
+        <h2 class="text-center mb-4">Interview Preparation Guide</h2>
+
+        <div class="accordion" id="mainAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="mainHeading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainCollapse1" aria-expanded="true" aria-controls="mainCollapse1">
+                        Interview Topics & Sample Answers
+                    </button>
+                </h2>
+                <div id="mainCollapse1" class="accordion-collapse collapse show" aria-labelledby="mainHeading1"
+                    data-bs-parent="#mainAccordion">
+                    <div class="accordion-body">
+                        <div class="accordion" id="interviewAccordion">
+                            <!-- JS Will Inject Questions Here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "1. Tell me about yourself and your experience or introduce yourself.",
+                answer: `Hello, my name is Sarfraz Alam, and I live in Dhanbad, Jharkhand.
+        I completed my B.Sc in Mathematics from St. Columba’s College in 2020.
+        My hobbies are watching movies and listening to music. <br>
+        I have 4 years of experience in customer support and collections.<br>
+        I started my career at Genpact as a Process Associate, and I worked there from January 2021 to December 2022.<br>
+        At Genpact, my job was to call Lowes credit card customers in the USA who had not paid their bill for 30 days. The calls were made automatically by the system. I used to speak to the customers, ask them the reason for non-payment, and help them make the payment on the call.<br>
+
+
+
+        <br>
+        If the customer was facing financial problems, I used to offer hardship plans — such as giving a 10% discount, and letting them pay the remaining amount in 6 small installments. We also scheduled post-dated payments as needed. Before starting every call, we used to follow a legal statement required by U.S. law, known as Mini Miranda, and I always handled customers politely and professionally.<br>
+
+                Later, I was promoted from 1st Party to 3rd Party Collections.<br>
+In this US-based Third-Party Collections process, my role was to handle delinquent accounts of American customers who had overdue payments. I worked under FDCPA (Fair Debt Collection Practices Act) compliance, ensuring that all conversations were professional and legally correct. I used strong negotiation skills to understand the customer’s financial situation, offer settlement options, set up repayment plans, and recover pending balances. My focus was always on maintaining empathy while achieving recovery targets.<br>
+<hr>
+        After Genpact, I joined Concentrix as a Senior Advisor, and worked there from January 2023 to July 2025 in the H&M process.<br>
+
+        My job was to talk to H&M customers over phone and chat, and help them with their problems like order status, returns, refunds, payments, or product-related issues. I always tried to resolve their queries quickly and made sure they were satisfied with the service.<br>
+
+        I always focused on keeping customers happy, solving their issues fast, and making sure they felt satisfied. I also worked on targets or key performance metrics like CSAT (customer satisfaction), DSAT (dissatisfaction), and AHT (average handling time). This helped me improve my speed and quality together.
+<br>
+Overall, I learned how to multitask, stay calm under pressure, and give customers a good experience with the brand.”
+        In my family, we are six members. My father runs a construction business, my mother is a homemaker, my elder brother is a software engineer in Saudi Arabia, and both my sisters are married. I am the youngest in the family.`
+            },
+            {
+  "question": "1. Tell me about yourself and your experience or introduce yourself.",
+  "answer": `
+    Hello, my name is Sarfraz Alam, and I am from Dhanbad, Jharkhand.<br><br>
+
+    I completed my B.Sc. in Mathematics from St. Columba’s College in 2020.
+    My hobbies include watching movies and listening to music.<br><br>
+
+    I have 4 years of experience in Customer Support and Collections.
+    I started my career at <b>Genpact</b> as a Process Associate, where I worked from January 2021 to December 2022.<br><br>
+
+    At Genpact, I handled <b>1st Party Collections</b> for Lowe’s credit card customers in the USA.
+    The system auto-dialed customers who were 30 days past due. My responsibilities included verifying the customer, understanding the reason for non-payment, and helping them make the payment on the call.<br><br>
+
+    If a customer faced financial difficulties, I offered hardship options such as a 10% discount, installment plans, and post-dated payments.
+    I always followed compliance guidelines and read the Mini Miranda statement before starting each call. Throughout the process, I maintained a polite, professional, and empathetic tone.<br><br>
+
+    Later, I was moved to the <b>3rd Party Collections</b> process, where I handled more delinquent accounts that had been transferred to a collection agency.
+    I worked under <b>FDCPA</b> compliance and used strong negotiation skills to understand customer hardships, offer settlements, set up repayment plans, and recover overdue balances. My aim was to maintain empathy while meeting recovery targets.<br><br>
+
+    <hr>
+    <b>In Detail:</b><br><br>
+
+    In my last process, I worked on accounts that were severely overdue. Most calls involved negotiation and offering options such as:<br>
+    • Settlement offers (reduced payoff amount)<br>
+    • Installment plans<br>
+    • One-time payments<br>
+    • Temporary hardship arrangements<br><br>
+
+    After each call, I updated the system with:<br>
+    • PTP (Promise to Pay)<br>
+    • Settlement amount<br>
+    • Payment plan details<br>
+    • Refusals or disputes<br>
+    • RPC (Right Party Contact)<br><br>
+
+    <b>My KPIs in this process included:</b><br>
+    • Recovery percentage<br>
+    • PTP conversion<br>
+    • Kept Promises<br>
+    • Call quality and compliance score<br>
+    • AHT (Average Handling Time)<br>
+    • RPC rate<br><br>
+
+    <hr>
+
+    After Genpact, I joined <b>Concentrix</b> as a Senior Advisor and worked there from January 2023 to July 2025 under the H&M (customer support) process.<br><br>
+
+    My responsibilities included assisting customers through phone and chat regarding order status, returns, refunds, payments, and product-related issues. I focused on resolving their queries quickly, maintaining customer satisfaction, and improving the overall experience.<br><br>
+
+    I worked on key metrics like <b>CSAT</b>, <b>DSAT</b>, and <b>AHT</b>, which helped me improve both speed and quality. I also learned how to multitask, stay calm under pressure, and handle customers professionally.<br><br>
+
+    Overall, these experiences helped me develop strong communication, negotiation, problem-solving, and customer-handling skills.<br><br>
+
+    In my family, we are six members. My father runs a construction business, my mother is a homemaker, my elder brother is a software engineer in Saudi Arabia, and my two sisters are married. I am the youngest in the family.
+  `
+}
+
+
+            ,
+
+            {
+    question: "1.1. Why did you leave Genpact and Concentrix?",
+    answer: `I left Genpact because I was looking for better opportunities — specifically, I wanted to diversify my experience beyond collections and develop more direct customer service skills. That’s when I joined Concentrix in January 2023 as a Senior Advisor in the H&M process.<br><br>
+
+    <b>If applying for a customer service role:</b><br>
+    The reason for leaving Concentrix was that I was looking for a role that aligned better with my long-term goals by continuing to grow in customer service, with more responsibilities and a stronger career path. Since this company offers similar responsibilities and customer-facing challenges, I believe I can apply my skills more effectively here and would be a great fit for the role you're hiring for.<br><br>
+
+    <b>If applying for a collections role:</b><br>
+    The reason for leaving Concentrix was that I was looking for a role that aligned better with my long-term goals by returning to collections, where I have strong experience and performance. Since this company has similar job responsibilities, I believe I can perform even better using my past experience in both 1st and 3rd party collections. I’m confident that I would be a great fit for the role you're hiring for.`
+},
+
+
+{
+question: "1.2. Tell me about yourself (BT).",
+answer: `Hello, my name is Sarfraz Alam, and I am from Dhanbad, Jharkhand. I completed my B.Sc. in Mathematics from St. Columba’s College in 2021. I have 4 years of experience in Customer Support, Collections, and upselling.
+
+
+
+I started my career at <b>Genpact (Jan 2022 – Dec 2023)</b> as a <b>Process Associate</b>.<br><br>
+
+At Genpact, I handled <b>1st Party Collections</b> for Lowe’s credit card customers in the USA. The system auto-dialed customers who were 30 days past due. My responsibilities included verifying the customer, understanding the reason for non-payment, and helping them make the payment on the call.<br><br>
+
+If a customer faced financial difficulties, I offered <b>hardship options</b> such as a 10% discount, <b>installment plans</b>, and post-dated payments. I always followed <b>compliance guidelines</b> and read the <b>Mini Miranda statement</b> before starting each call. Throughout the process, I maintained a polite, professional, and empathetic tone.<br><br>
+
+Later, I was moved to the <b>3rd Party Collections</b> process, where I handled more delinquent accounts that had been transferred to a collection agency. I worked under <b>FDCPA compliance</b> and used strong <b>negotiation skills</b> to understand customer hardships, offer <b>settlements</b>, set up <b>repayment plans</b>, and recover overdue balances. My aim was to maintain <b>empathy</b> while meeting <b>recovery targets</b>.<br><br>
+
+After working at Genpact, I joined <b>Concentrix</b> as a <b>Senior Advisor</b>. I worked there from <b>January 2024 to April 2026</b>, handling the <b>H&M customer support process</b>.<br><br>
+
+My main job was helping customers via phone and chat. I helped them with order status, returns, refunds, payment issues, and product questions. I also did a lot of <b>upselling</b>. I didn’t just solve problems; I suggested new items, accessories, or loyalty programs that added value to the customer's shopping experience.<br><br>
+
+I was very proud of my <b>performance metrics</b>. I consistently <b>exceeded my targets</b> every month:<br><br>
+
+• <b>CSAT (Customer Satisfaction):</b> I maintained a consistent <b>92-95%</b>, ensuring every customer left the interaction happy.<br>
+• <b>AHT (Average Handling Time):</b> I kept my AHT at an efficient <b>300-350 seconds</b>, balancing speed with quality.<br>
+• <b>FCR (First Contact Resolution):</b> I achieved an <b>88-90% FCR rate</b>, meaning I solved almost every customer's issue during our very first conversation.<br>
+• <b>Upselling:</b> I was consistently the <b>top performer</b>, usually hitting <b>110-120% of my monthly sales target</b>.<br><br>
+
+Working under these metrics taught me how to work fast, stay calm under pressure, and handle even the most difficult customers with a smile. It really helped me sharpen my <b>communication, negotiation, and problem-solving skills</b>.`
+},
+
+{
+    question: "1.2. What challenges did you face in customer support and collections?",
+    answer: `<b>Challenges in Customer Support:</b><br>
+One of the main challenges in customer support was dealing with frustrated or upset customers — especially when their orders were delayed, refunds were pending, or products were not as expected.<br><br>
+
+In these situations, I focused on staying calm, listening actively, and showing empathy. I made sure to assure the customer that their concern would be resolved, and then I quickly checked the system to provide accurate updates or solutions.<br><br>
+
+Another challenge was multitasking during peak hours — handling calls and chats at the same time while maintaining CSAT and AHT targets. I overcame this by improving my product knowledge, using shortcuts in tools efficiently, and managing time smartly.<br><br>
+
+These experiences helped me become more patient, confident, and solution-oriented in customer service roles.<br><br>
+
+<b>Challenges in Collections:</b><br>
+One of the biggest challenges in collections was handling customers who were either unwilling or unable to pay due to financial hardship. Many were emotionally stressed, and some even got angry when contacted repeatedly.<br><br>
+
+I always followed FDCPA guidelines and used a calm, respectful approach. I asked the right probing questions to understand their situation and offered suitable solutions — like hardship plans, settlements, or post-dated payments.<br><br>
+
+Another challenge was meeting recovery targets while staying compliant and professional. I worked on improving my negotiation skills, tone, and timing of follow-ups. I always documented conversations properly and avoided any pressure tactics.<br><br>
+
+These challenges taught me to be empathetic yet persuasive, and to strike the right balance between customer care and business results.`
+}
+,
+
+{
+    question: "1.3. What do you know about H&M, HM, hm and Lowe’s?",
+    answer: `<b>About H&M:</b><br>
+H&M, short for Hennes & Mauritz, is a well-known global fashion retail company based in Sweden. It is famous for offering the latest fashion trends at affordable prices. H&M sells clothing, accessories, shoes, and home products for men, women, and children.<br><br>
+
+The brand operates both physical stores and online platforms in many countries around the world. H&M follows the fast fashion model or latest trends. The company also focuses on promoting eco-friendly collections and garment recycling programs.<br><br>
+
+As part of the H&M customer support process at Concentrix, I assisted U.S.-based customers through voice/chat, helping them with issues related to orders, returns, refunds, payments, and product information...............<br><br>
+<hr>
+
+<b>About Lowe’s:</b><br>
+Lowe’s is a leading American home improvement retail company and the second-largest in its category in the United States, after Home Depot. It sells a wide range of products including appliances, tools, hardware, paint, garden supplies, and building materials for both DIY customers and professionals.<br><br>
+
+Lowe’s also offers branded credit cards that customers use to finance purchases. At Genpact, I worked in the Lowe’s credit card collections process. My role was to contact customers with overdue payments, understand their financial situations, and help them with payment plans, hardship programs, or settlements — all while staying compliant with FDCPA (Fair Debt Collection Practices Act).<br><br>
+
+Both brands are well-known in their industries — H&M in fashion and Lowe’s in home improvement — and I was proud to represent them while delivering professional and customer-focused service.`
+}
+,
+            {
+                question: "2. Why do you want to work in the BPO/KPO industry?",
+                answer: `BPO stands for Business Process Outsourcing. It means a company gives some of its work (like customer service or data entry) to another company to do. <br><br>
+        Types of BPO: Voice, Non-Voice, KPO, LPO <br>
+        Voice: Talking to customers on phone calls. <br>
+        Non-Voice: Helping customers using chat or email. <br>
+        KPO: Knowledge Process Outsourcing, needs extra skills like research or finance knowledge. <br>
+        LPO: Legal Process Outsourcing, focuses on law-related work. <br><br>
+        Domestic vs International BPO <br>
+        Domestic BPO: You help customers from your own country. <br>
+        International BPO: You support customers from other countries, often in English.<br><br>
+        BPO is a booming industry and it is growing very fast. It offers many jobs in areas like customer support, technical help, data entry, and more. If I join this, I will be able to grow myself and make my future bright. It has lots of opportunities.`
+            },
+
+
+
+
+{
+    question: "3. Why do you want to join BT Group?",
+    answer: `BT Group is a big telecommunications company in the United Kingdom (UK). BT Group was founded in 1846, The CEO of the company is Allison Kirkby. Its main office is in London, England. BT provides services like internet, Wi-Fi, mobile networks, and communication solutions to millions of people.
+    BT is known for its strong customer service and employee-friendly work culture. <br><br>
+
+    I want to join BT because it is an employee-centric company that offers good learning opportunities, career growth, and a stable future. I also have relevant experience in customer service, which will help me contribute effectively from the beginning. <br><br>
+
+    I believe BT will give me a platform to learn new skills, grow professionally, and implement my previous experience while delivering the best possible service to customers.`
+},
+
+            {
+    question: "2.1 Why work from home or okay with less salary?",
+    answer: `Working from home helps me focus better because there is less noise and no daily travel stress. I can give more attention to my work. <br><br>
+
+It also helps me maintain a good work-life balance, so I stay fresh, motivated, and consistent in my performance. <br><br>
+
+By working from home, I save money on travel, food, and daily expenses, so a slightly lower salary is not a problem for me. <br><br>
+
+My main goal is long-term learning and growth than just a high starting salary. I believe if I perform well and grow with the company, salary will increase naturally over time.`
+}
+,
+
+            {
+    question: "2.2. What is Blinkit and why do you want to join Blinkit?",
+    answer: `Blinkit is a company that delivers groceries and daily items very fast — usually within a few minutes. <br><br>
+    Blinkit uses local warehouses and advanced technology to make delivery quick and smooth. It was earlier known as <b>Grofers</b> and now it’s a part of <b>Zomato</b>.<br><br>
+    I really like how Blinkit focuses on <b>customer satisfaction</b> and <b>quick service</b>. It’s a growing company where teamwork and customer service really matter.<br><br>
+    ❤️ <b>Why I want to join Blinkit:</b><br>
+    I want to join Blinkit because it’s an innovative and fast-growing company. I admire how efficiently it works to deliver happiness to customers. I’m hardworking and good at handling people, so I believe I can add value to the team and grow along with the company.`
+}
+,
+
+{
+    question: "2.3 What is customer service and why is it important? Why is brand important?",
+    answer: `Customer service means taking care of customers. <br>
+It is about listening to their problems, helping them when they need support, answering their questions, and making sure they are happy with our service—even after the work is done. <br><br>
+
+Why is customer service important? <br>
+Customer service is important because it keeps customers happy. <br>
+When customers are treated well, they trust us, stay with us longer, and recommend us to others. <br>
+In other words, good customer service builds trust, avoids complaints, and helps the business succeed. <br><br>
+
+Why is brand important? <br>
+A brand is important because people can recognize you easily. <br>
+When people know your brand, they trust you. <br>
+Because of that trust, they choose you instead of others.`
+}
+
+
+,
+
+{
+    question: "2.4 What is customer support and why is it important?",
+    answer: `Customer support means helping customers when they face a problem. <br>
+It is about solving their issues, fixing errors, giving technical help, and making sure their problem is resolved properly. <br><br>
+
+Why is customer support important? <br>
+Customer support is important because it helps customers when something goes wrong. <br>
+If problems are solved quickly and correctly, customers feel relieved and satisfied. <br>
+This builds trust, reduces complaints, and keeps customers loyal to the company.`
+}
+,
+
+{
+    question: "2.5 What is the difference between customer service and customer support?",
+    answer: `Customer service is about taking care of customers in general. <br>
+It focuses on good communication, answering questions, guiding customers, and giving them a positive experience. <br><br>
+
+Customer support is about solving problems. <br>
+It focuses on fixing issues, handling complaints, and providing technical or practical help when something goes wrong. <br><br>
+
+Easy example: <br>
+When a customer calls to ask about a product, that is customer service. <br>
+When the same customer calls because something is not working, that is customer support. <br><br>
+
+In short: <br>
+Customer service is about care and experience. <br>
+Customer support is about problem-solving and solutions.`
+}
+,
+{
+    question: "2.3. Tell me something about Dhanbad.",
+    answer: `🏙️ <b>About Dhanbad (Simple Version for HR Round)</b><br><br>
+    Dhanbad is a city in <b>Jharkhand</b>, also known as the <b>Coal Capital of India</b> because it has many coal mines. <br><br>
+    It’s one of the major <b>industrial cities</b> in eastern India and is famous for <b>coal production</b> and <b>energy industries</b>.<br><br>
+    The <b>Indian Institute of Technology (IIT Dhanbad)</b> is also located here, which makes the city well-known for <b>education</b>.<br><br>
+    People in Dhanbad are <b>hardworking, simple, and cooperative</b>. The city is developing fast with good <b>transport, business, and job opportunities</b>.`
+}
+,
+
+{
+    question: "2.4. What is the difference between E-commerce and Quick Commerce?",
+    answer: `<b>E-commerce</b> and <b>Quick Commerce (Q-commerce)</b> both deal with buying and selling products online, but they are different in terms of <b>speed, delivery time,</b> and <b>product range</b>.<br><br>
+
+    🛒 <b>E-commerce:</b><br>
+    - Means online shopping where customers order products from websites or apps like Amazon or Flipkart.<br>
+    - Delivery usually takes a few days (1–5 days).<br>
+    - Focuses on a wide range of products like electronics, clothes, furniture, etc.<br>
+    - Example: Amazon, Flipkart.<br><br>
+
+    ⚡ <b>Quick Commerce (Q-commerce):</b><br>
+    - Means super-fast delivery, usually within <b>10–30 minutes</b>.<br>
+    - Focuses on <b>daily essentials</b> like groceries, fruits, vegetables, snacks, and medicines.<br>
+    - Uses <b>local warehouses (dark stores)</b> near customer locations for instant delivery.<br>
+    - Example: Blinkit, Zepto, Swiggy Instamart.<br><br>
+
+    ✅ <b>In short:</b>
+    E-commerce is for variety and convenience, while Quick Commerce is for <b>speed and instant needs</b>.`
+}
+,
+            {
+                question: "3. How would you deal with an angry or upset customer? (With Real Example)",
+                answer: `If a customer is angry or upset, I always stay calm and professional. I don’t argue or take it personally. I let the customer speak and listen carefully to understand the real problem.<br><br>
+  Once, a customer was very angry because she didn’t get her refund even after 7 days. She was shouting and saying she would never shop with us again.<br><br>
+  I said politely,<br>
+  <em>“Ma’am, I truly understand how frustrating this must be. Let me quickly check what’s going on.”</em><br><br>
+  I checked the system and found that her refund was delayed because the bank server had a technical issue on our side that day, so the refund was processed late.<br><br>
+  I explained to her:<br>
+  <em>“Ma’am, your refund was approved on time from our side, but due to a temporary issue with the payment gateway, the money took a few extra days to reflect in your account. But don’t worry, your refund is now processed and should reach you by tomorrow.”</em><br><br>
+  Then I also offered to send her a confirmation email for peace of mind.<br><br>
+  By the end of the call, her tone changed. She appreciated my calm behavior and even said,<br>
+  <em>“Thank you for explaining properly. I was really upset, but now I feel better.”</em>`
+            }
+            ,
+            {
+                question: "4. What do you know about our company?",
+                answer: `Teleperformance is a big international company that helps other companies talk to their customers. It provides customer service, technical support, chat, emails, calls, and even handles things like data entry or content moderation for companies around the world.<br><br>
+        In India, Teleperformance has been working since 2001, and has offices in many cities like Mumbai, Indore, Jaipur, Mohali, and more. It has around 90,000 employees in India and is still growing fast.<br>
+        They work for big brands from industries like banking, e-commerce, telecom, travel, etc. So if a customer has any issue, Teleperformance helps solve it by call, chat, or email — but the customer won’t even know it’s Teleperformance behind the scenes.<br><br>
+        They use the latest technology too, like AI (Artificial Intelligence), to help agents do their job faster and better.<br>
+        People like working here because they give training, have a professional environment, and provide growth opportunities.`
+            },
+            {
+    question: "4.1 . What do you know about Concentrix?",
+    answer: `Concentrix is a big global company that helps other companies handle their customer support and business services.<br><br>
+
+They provide services like customer care, technical support, chat support, email handling, and back-office work for many famous international brands.<br><br>
+
+Concentrix works with companies from different industries like banking, healthcare, e-commerce, telecom, and technology.<br><br>
+
+The company is known for giving good training, a professional work environment, and career growth opportunities to employees. They also use modern technology and AI tools to improve customer service and make work easier for employees.<br><br>
+
+I also know that Concentrix focuses a lot on teamwork, employee learning, and customer satisfaction, which is why many people want to build their career there.`
+},
+{
+    question: "4.2 . What do you know about Genpact?",
+    answer: `Genpact is a global professional services company that helps businesses manage their work more efficiently.<br><br>
+
+The company provides services like customer support, finance, accounting, technical support, data management, and business process services for clients around the world.<br><br>
+
+Genpact works with many industries such as banking, healthcare, insurance, manufacturing, and IT.<br><br>
+
+The company is also known for using technology, AI, and digital solutions to improve business performance and customer experience.<br><br>
+
+Many people like working at Genpact because it offers learning opportunities, skill development, professional growth, and a supportive work environment.`
+},
+{
+    question: "5.2. What is the difference between Concentrix and Genpact? Which one is better?",
+    answer: `Both Concentrix and Genpact are very good global companies, but their work focus is a little different.<br><br>
+
+Concentrix mainly focuses on customer support and customer experience services like calls, chats, emails, and technical support for international clients. The work environment is usually fast-paced and communication-focused.<br><br>
+
+Genpact focuses more on business process management, finance, accounting, data handling, operations, and backend support along with customer service. It is more process and operations-oriented.<br><br>
+
+When I worked at Concentrix, I experienced a very energetic environment with strong teamwork, customer interaction, and communication-based work. I learned how to handle customers professionally, improve communication skills, and work under pressure.<br><br>
+
+At Genpact, I experienced a more process-driven environment where accuracy, operations handling, and professional workflow were very important. I learned discipline, process management, and problem-solving skills there.<br><br>
+
+In my opinion, both companies are good in their own way. But personally, I feel more connected with Concentrix because I enjoy customer interaction, teamwork, and the work culture there. That is why I would like to continue my career with Concentrix.`
+},
+{
+    question: "6.1 . Why do you want to join Concentrix again?",
+    answer: `I left Concentrix because I wanted to explore new opportunities and learn new skills in a different work environment.<br><br>
+
+During that time, I gained valuable experience, but I also realized that Concentrix has a very supportive culture, good teamwork, and strong growth opportunities.<br><br>
+
+When I worked at Concentrix earlier, I really enjoyed the professional environment, the support from the team, and the learning opportunities the company provided.<br><br>
+
+That’s why I want to rejoin the company. I believe I can now contribute with better skills, more experience, and a more mature understanding of the work. I’m confident that I can perform even better this time and grow long-term with Concentrix.`
+},
+{
+    question: "7.1. What do you know about the Sky process?",
+    answer: `Sky is a well-known international company from the UK that provides services like television, broadband internet, mobile network, and streaming services to customers.<br><br>
+
+The Sky process in companies like Concentrix mainly handles customer support for Sky customers. The work usually includes helping customers with billing issues, technical problems, internet or TV connection issues, package upgrades, and account-related queries through calls or chat support.<br><br>
+
+The process focuses a lot on good communication skills, customer satisfaction, problem-solving, and providing quick solutions to customers.<br><br>
+
+I also know that in the Sky process, agents need to be patient, professional, and confident while handling customers because the main goal is to give customers a good experience and solve their issues properly.`
+},
+
+            {
+                question: "5. What are your strengths and weaknesses?",
+                answer: `<ul>
+
+
+          <li><strong>Good Listening:</strong> I pay close attention to what the customer is saying without interrupting.</li>
+          <li><strong>Empathy:</strong> I try to understand how the customer feels and show that I care.</li>
+          <li><strong>Problem-Solving Skills:</strong> I can quickly find the best solution to fix the customer’s problem.</li>
+          <li><strong>Positive Attitude:</strong> I stay cheerful and helpful, even during tough situations.</li>
+          <li><strong>Teamwork:</strong> I love to work with coworkers to make sure every customer gets great service.</li>
+          <li><strong>Responsiveness:</strong> I respond quickly to customer questions and help without delays.</li>
+          <li><strong>Patience:</strong> I stay calm and polite, even with upset customers.</li>
+          <li><strong>Clear Communication:</strong> I explain things simply and clearly so the customer understands easily.</li>
+        </ul>
+        <h5>Weaknesses</h5>
+        <ul>
+
+          <li><strong>Overcommitting:</strong> I sometimes take on too much to help customers, even when it’s beyond my role.</li>
+          <li><strong>Taking Things Personally:</strong> I used to feel bad when a customer was upset, even if it wasn’t my fault.</li>
+          <li><strong>Don’t Like Making Mistakes:</strong> I really feel bad when I make a mistake, even a small one.</li>
+        </ul>`
+            },
+            {
+                question: "6. Where do you see yourself in 5 years?",
+                answer: `In five years, I see myself growing with this company. I want to take on more responsibilities — maybe as a Senior Advisor, Team Leader, or Quality Analyst. <br>
+
+I’m not just looking for a job — I’m looking for a long-term career where I can learn, grow, and contribute. I believe that if I stay consistent, deliver strong performance, and keep learning, the company will definitely give me opportunities where I can do something valuable and meaningful for the team and the organization.`
+            },
+            {
+                question: "7. How do you ensure that you provide excellent customer service?",
+                answer: `I make sure to give excellent customer service by first listening carefully to the customer — I let them explain fully, and I don’t interrupt.
+
+Then I speak politely, use simple words, and try to solve their problem as fast as possible. Even if the customer is angry, I stay calm and show that I care about their issue.
+<br>
+
+If I don’t know something, I check with the right team or system instead of guessing. My main focus is that when the call ends, the customer should feel satisfied and say, “Yes, my issue is solved.”
+<br>
+
+I believe good service is not just about solving the problem — it’s also about how you make the customer feel during the call.`
+            },
+            {
+                question: "8. What is the difference between BPO and KPO?",
+                answer: `BPO involves standard business tasks like customer support, while KPO requires specialized knowledge...`
+            },
+            {
+                question: "9. Why should we hire you?",
+                answer: `You should hire me because I have the right skills and experience for this job. I’ve also worked in the same field before, so I understand the work well. If you give me a chance, I’ll use what I’ve learned to do my best and support your team. <br>
+                You should hire me because I bring a combination of strong communication, empathy, and customer service experience that matches well with Bhanzu’s operations role.
+                I understand how important it is to keep parents and students satisfied. Also, I genuinely believe in Bhanzu’s mission of making math easy and enjoyable. That means I won’t just solve problems — I’ll also be a positive face of the brand.
+                So, these are the reasons why you should hire me.
+
+
+
+                `
+            },
+
+            {
+  question: "10. How would you handle a situation where you can't resolve a customer's issue immediately?",
+  answer: `If I can’t resolve a customer’s issue right away, I stay honest and transparent with them. I don’t give false promises.
+
+I politely say,
+“Sir/Ma’am, I understand this is important. I’ll need a little more time or help from my senior/team to fix this properly.”
+
+Then I raise the issue to the right team, and if needed, I arrange a callback or follow-up with a clear timeline. I also make sure to update the customer as soon as I have a solution.
+
+The main thing is to keep the customer informed and assure them that their issue is not ignored — it’s being worked on. Most customers appreciate honesty and regular updates.`
+}
+,
+
+
+            {
+                question: "11. How did you handle an irate customer?",
+                answer: `I still remember when I got an irate customer. She wasn’t listening to me at all. She was being abusive and accusing me. At that point, I made sure to stay calm and not take it personally. I let her talk and listened carefully to her problem. I used polite and positive language. I also apologized and showed her that I understood how she felt. Finally, I tried to find a solution as quickly as possible and explained it clearly. By the end of the call, she became so happy that she even appreciated me.`
+            },
+            {
+                question: "12. Difference between sympathy and empathy?",
+                answer: `Sympathy means when you feel bad for someone, but you're not really connected or don't truly understand how they feel. For example: When you see someone who is sad, upset, or in trouble, you might say:<br>“I feel bad for you” or “That’s not good” or “That’s terrible.”<br><br>In customer service, sympathy means when an agent feels bad for the customer who is facing a problem but doesn't fully understand the customer's frustration. The agent might say:<br>“I’m sorry for the inconvenience.”<br><br>Empathy means when you feel bad for someone and you are also emotionally connected — you truly understand how they feel.<br>For example: When you see someone who is sad, upset, or in trouble, you might say:<br>“That’s terrible, and I understand your sadness.”<br><br>In customer service, empathy means the agent feels bad for the customer and also fully understands the customer’s frustration. The agent might say:<br>“I completely understand how frustrating that must be. If I were in your place, I would feel the same. Let me help fix this right away.”`
+            },
+            {
+                question: "13. What is the most embarrassing moment you have experienced?",
+                answer: `We know that we have many moments in our life, but a few moments are never forgettable. I still remember that moment when I was 20 years old and had a close friend. He and I used to live together, and we spent most of our time with each other. It was the rainy season, and a river near my city was flooded. Many people went to see it, and out of curiosity, we also visited the flooded river. While we were enjoying, my friend’s leg slipped into the river and he drowned. I tried to save him, but I could not. The incident shocked me so much that I fainted and was hospitalized. When I finally recovered, I realized that I could not save my friend. That was the most painful and embarassing moment of my life. I really can't forget that moment. The more I try to forget, the more it comes back to my mind.
+
+
+                One time, I walked into the wrong meeting room and started talking before I realized it wasn't my team. Everyone looked confused, and I felt really embarrassed. I said sorry and quickly left the room. Later, we all laughed about it.`
+            },
+            {
+    question: "14. What is the happiest moment of your life?",
+    answer: `We all have many happy moments in life, but some stay with us forever. The happiest moment of my life was when I completed my graduation. I come from a simple family, and I had to struggle a lot in my studies. On the day of the result, when I saw that I had passed with good marks, I was very happy. I quickly went to tell my parents, and I still remember the tears of joy in their eyes. That moment made me feel proud because my hard work gave me success and also made my parents proud. For me, it was the happiest and most unforgettable moment of my life.`
+}
+
+
+            ,
+            {
+                question: "14. What is the happiest moment of your life?",
+                answer: `One of the happiest moments of my life was when I graduated from college. I felt proud, my family was so happy, and it was a big achievement for me. That day made me feel like all my hard work was worth it.`
+            },
+            {
+                question: "15. What kind of music do you enjoy listening to?",
+                answer: `I like different kinds of music—sometimes pop, sometimes classical, and sometimes just instrumental—depending on how I feel.<br>I love all kinds of music because my mood changes. When I want something fun, I listen to pop songs that make me want to dance. If I need to calm down, I put on classical music. And sometimes I just want peaceful, wordless sounds, so I choose instrumental tracks like piano music. 🔊⏹️`
+            },
+            {
+                question: "16. What kind of music do you like the most and why?",
+                answer: `I love piano music the most because it’s simple but powerful. The sound of just one instrument is very clear, and it can make me feel calm or excited depending on the song. Since there are no words, I can imagine my own story with the music, which makes it feel special to me.`
+            },
+            {
+                question: "17. What kind of movie do you like the most and why?",
+                answer: `I love movies that make me think deeply, like science fiction or mysteries. They are exciting and often have twists that keep me engaged until the end`
+            },
+            {
+                question: "18. Which movie have you watched recently? OR Can you narrate the story of the movie you have watched?",
+                answer: `I recently watched a movie called "The Secret Life of Walter Mitty." It's about a man who lives a boring life but often daydreams of adventure. One day, he actually goes on a real-life journey across the world to find a missing photograph. The movie is inspiring because it shows how stepping out of your comfort zone can lead to wonderful experiences.`
+            },
+            {
+                question: "19. How to respond to the HR if you don't know the answer or if you did not understand the question?",
+                answer: `When you don't know the answer<br><br>"I’m not sure about that at the moment, but I’d be happy to look into it and get back to you."<br><br>When you did not understand the question or hear well<br><br>"I’m sorry, I didn’t get that. Could you please repeat or rephrase the question?"`
+            },
+
+            ,
+            {
+  question: "20. Can you describe your strengths and weaknesses?",
+  answer: `
+  <p>My strengths are a really good match for the job description, and they will empower me to add value to your team.</p>
+
+  <p>I am a fast and responsive worker, which means I tend to complete more work than the average person.</p>
+
+  <p>Another strength of mine is problem-solving — whenever difficult challenges occur in the workplace, I step up and take ownership to achieve a successful outcome.</p>
+
+  <p>And finally, perhaps my greatest strength is being a selfless team player. I quickly adapt to any team environment and collaborate closely with my co-workers to achieve the team’s objectives.</p>
+
+  <p>My biggest weakness is that <strong>I can’t say no to people</strong>. My immediate response when someone asks me for help or assistance is to <strong>say yes</strong>, even if I don’t have the capacity for additional work. This sometimes leads to <strong>taking on too many responsibilities</strong>.</p>
+
+  <p>I also find it <strong>difficult to let go of projects</strong> because I want them to be completed really well. At times, <strong>I don’t ask other people for help</strong> when I should. <strong>Public speaking</strong> is another weakness of mine where I am still building confidence.</p>
+
+  <p>However, I am <strong>working on these areas</strong>. I am trying to be more <strong>mindful</strong>, <strong>assess my workload</strong> before committing, and gradually improve my ability to <strong>delegate</strong> and <strong>speak more confidently</strong>.</p>`
+}
+,
+            {
+                question: "21. What does good customer service mean to you?",
+                answer: `Good customer service means listening to the customer, understanding their problem, and solving it quickly and politely. It’s about making them feel valued and happy with the service.`
+            },
+            {
+                question: "22. How do you handle a difficult customer?",
+                answer: `I stay calm and listen carefully to the customer. I don’t interrupt and try to understand what made them upset. Then I politely explain the solution and make sure their issue is resolved as quickly as possible.`
+            },
+            {
+                question: "23. Can you speak for 30 seconds about your favorite movie or hobby?",
+                answer: `My favorite movie is “3 Idiots” because it teaches us to follow our passion and not just run after marks. It also shows the importance of friendship and thinking differently. I like watching movies that inspire and make me think.`
+            },
+            {
+                question: "24. If you don’t know the answer to a customer’s question, what will you do?",
+                answer: `If I don’t know the answer, I will politely tell the customer that I will check it for them. Then I will ask my senior or refer to the company system to find the correct information and get back to the customer as soon as possible.`
+            },
+            {
+                question: "25. A customer is angry because of a billing issue. How would you respond?",
+                answer: `I would stay calm and listen to the customer carefully. I would apologize for the inconvenience and check the issue. Then, I would explain the solution clearly and do my best to fix it quickly.`
+            },
+             {
+        question: "26. How do you handle high call/chat volumes while maintaining quality?",
+        answer: `When call or chat volume is high, I stay calm and focus on solving one query at a time. I avoid rushing, but I try to answer faster without losing quality. I also use ready templates or saved replies when possible to save time. If I need help, I quickly ask my team lead. I always make sure the customer gets a proper solution, even when I’m busy.`
+    },
+    {
+        question: "27. Have you ever worked with support tools like CRM, ticketing systems, or live chat platforms?",
+        answer: `Yes, I have used different tools in my jobs. In Genpact, we had a collections tool with automatic dialer and notes. In Concentrix, for H&M process, we used Zendesk to chat with customers and check tickets. I also used internal tools to check orders, returns, and refund status. These tools help in giving fast and correct replies.`
+    },
+    {
+        question: "28. How do you calm down an angry or upset customer?",
+        answer: `First, I let them talk and don’t interrupt. Then I say sorry and tell them I understand their problem. I speak slowly and politely, and I show them that I’m really trying to help. Most of the time, when customers feel they are being heard, they become calm. Then I give them a proper solution or tell them the next step.`
+    },
+    {
+        question: "29. Can you give an example of how you turned a frustrated customer into a happy one?",
+        answer: `Yes. Once, a customer was upset because she didn’t get her refund for return. She was angry and said she would never order again. I stayed calm and checked her details. I found the return was stuck due to a barcode issue. I explained it nicely and raised the request again. I also gave her the refund timeline. She felt better and thanked me in the end.`
+    },
+    {
+        question: "30. How do you ensure you're clearly understood over chat or email?",
+        answer: `I always use simple and short sentences in chat or email. I avoid difficult words and explain step by step. I read my message once before sending to avoid spelling mistakes or confusion. If needed, I also send screenshots or links to help the customer better.`
+    },
+    {
+        question: "31. How would you explain a technical issue to a non-technical person (like a parent)?",
+        answer: `I will use easy words and examples they understand. For example, if the website is not loading due to server error, I can say, "It’s like the shop is closed from inside. We are fixing it, and you can try again in some time." I avoid technical words like 'server down' or 'cache'.`
+    },
+    {
+        question: "32. A customer reports an issue that you’ve never encountered before. What do you do?",
+        answer: `First, I listen to the customer and note all the details. Then I check our internal knowledge base or ask my senior/team. I don’t guess the answer. I tell the customer, “Let me check this for you,” and get back with the correct solution.`
+    },
+    {
+        question: "33. You don’t know the answer to a customer’s question. How do you handle that?",
+        answer: `I will not give wrong information. I will politely say, “Let me check this for you to give the right answer.” Then I ask my team lead or refer to the knowledge base. After that, I reply to the customer with the correct info.`
+    },
+    {
+        question: "34. What steps would you take if a customer keeps repeating the same issue?",
+        answer: `I stay patient and don’t interrupt. I listen again carefully to check if I missed anything. I repeat the solution I gave earlier and explain it again in a simple way. If needed, I offer to escalate the issue or send an email confirmation to make them feel assured.`
+    },
+    {
+        question: "35. Describe a situation where your solution prevented escalation.",
+        answer: `A customer didn’t receive the product even after 10 days. He wanted to speak to a manager. I tracked the shipment, found the problem with the delivery partner, and arranged a replacement on the same day. I also gave him a small coupon as a gesture. He was happy and said no need to escalate. It was solved calmly.`
+    },
+    {
+        question: "36. How do you prioritize multiple customer requests or complaints at once?",
+        answer: `I first check which issue is urgent or time-sensitive, like delivery delay or payment failed. I solve that first. If something is simple or quick to answer, I finish that next. I also check if any issue is already in process, and update those customers. I stay organized using notes or system tags.`
+    },
+    {
+        question: "37. What do you do when your shift is about to end, but you're in the middle of solving a case?",
+        answer: `I complete the case if it’s almost done. If it will take more time, I inform the customer that I will send them an update or that my colleague will take it forward. I also leave proper notes or tag the ticket for smooth handover.`
+    },
+    {
+        question: "38. How do you ensure follow-ups are done on time?",
+        answer: `I set reminders in the system or use sticky notes. I always update the ticket with the follow-up date. I check follow-ups first when my shift starts. If something is still pending, I follow up with the team or customer as promised.`
+    },
+    {
+        question: "39. How do you stay updated with new product features or changes?",
+        answer: `I attend team meetings or trainings. I also read emails or updates shared by the company. I ask questions if I don’t understand something. I also test the product myself if possible.`
+    },
+    {
+        question: "40. Have you ever had to educate a customer about the product? How did you approach it?",
+        answer: `Yes. Many times, customers don’t know how to use the website or how returns work. I explain them step by step in simple language. I give examples and guide them with screenshots or links. I make sure they feel confident using the product after the chat or call.`
+    },
+    {
+        question: "41. How do you document issues to ensure smooth handoffs or follow-ups by other team members?",
+        answer: `I always write clear notes in the system — like what the customer said, what I did, and what is pending. I mention the case number or any promise made. This helps the next agent continue smoothly.`
+    },
+    {
+        question: "42. How do you coordinate with other teams (technical, sales, etc.) to resolve a customer issue?",
+        answer: `I raise the ticket to the right team with all details. I follow up if needed. I keep the customer informed during this process. If I get updates from the other team, I share it with the customer quickly.`
+    },
+    {
+        question: "43. What would you do if you see a team member giving incorrect information to a customer?",
+        answer: `I will not correct them in front of the customer. I will speak to them privately and share the correct information. If needed, I also inform the team lead so the mistake is not repeated.`
+    },
+    {
+        question: "44. How do you handle negative feedback from a customer?",
+        answer: `I don’t take it personally. I read or listen to the feedback carefully and try to understand why they are unhappy. I say sorry and try to fix the issue. I also learn from the feedback to improve next time.`
+    },
+    {
+        question: "45. Have you ever made a mistake in a customer interaction? What did you learn from it?",
+        answer: `Yes, once I gave the wrong refund timeline. The customer got confused and called again. I said sorry, gave the correct info, and informed my lead. I learnt to always double-check before giving such details.`
+    },
+    {
+        question: "46. What does excellent customer service mean to you?",
+        answer: `It means solving the customer’s issue quickly and politely, and making them feel happy. Even if there’s a problem, we should handle it with care and not make the customer feel ignored. A happy customer will trust us and come back again.`
+    },
+    {
+        question: "47. A parent is concerned their child is falling behind in math, despite using Bhanzu. What do you say?",
+        answer: `I would say, “I understand your concern, and I’ll help you. Every child learns differently. Let’s check your child’s learning record and speak to the teacher. We can also arrange extra support if needed. Our goal is to make your child feel confident in math.”`
+    },
+    {
+        question: "48. A customer demands a refund, but your policy doesn’t allow it. How do you explain it without conflict?",
+        answer: `I will say, “I understand your request, and I really wish to help. As per the company’s policy, this case doesn’t qualify for a refund. But let me see if there’s another way to assist you — maybe an exchange or credit. I’ll do my best within the policy.”`
+    },
+    {
+        question: "49. You notice the same complaint from multiple users. What action do you take?",
+        answer: `I will report it to my team lead or quality team immediately. I will share examples of tickets or chats. This helps fix the root issue and avoid more complaints.`
+    },
+    {
+        question: "50. A student missed their scheduled session and wants to reschedule. What’s your process?",
+        answer: `I will first check if rescheduling is allowed in the system. If yes, I will check the available time slots and book a new one as per the student’s convenience. I will also confirm the rescheduled time with the student over call or email.`
+    },
+
+
+    {
+
+      question: "51. What is Bhanzu, and what are the roles and requirements for this position?",
+      answer: `
+        ✅ <strong>About Bhanzu:</strong><br>
+        Bhanzu is a fast-growing education company that makes math fun and easy for kids. It aims to remove fear of math and build strong basics so students can grow in fields like coding, AI, and analytics.
+        <br><br>
+        ✅ <strong>Your Role:</strong><br>
+
+            Here, I will be working as Learning Experience Manager .The primary responsibility of this role is to handle customer inquiries, process refunds, and implement retention strategies to ensure customer satisfaction. < /br>
+        - Help customers with live queries (via call, chat, email)<br>
+        - Solve problems or connect with the right team<br>
+        - Follow up with customers and keep them happy<br>
+        - Know the product well and build strong relations
+        <br><br>
+        ✅ <strong>Requirements:</strong><br>
+        - Good communication skills<br>
+        - Experience in customer service or CRM tools<br>
+        - Patience, multitasking & problem-solving ability<br>
+        - Graduate in management/communication is a plus
+      `
+    },
+
+    {
+
+      question: "52. A parent says the class was missed and is angry. How will you respond?",
+      answer: `
+        I would first listen patiently and allow them to express their concern fully. Then I’d apologize sincerely for the inconvenience and check the class logs. If it was missed from our side, I’d offer a rescheduled class. If it was a tech issue from their end, I’d explain calmly and offer guidance for future sessions. Either way, my goal would be to reassure them and ensure their child’s learning doesn’t suffer.
+      `
+    },
+
+    {
+    question: "53. What is the difference between 1st Party and 3rd Party collections?",
+    answer: `In 1st Party collections, the calls are made by the original company itself, like a bank or credit card company, to remind customers to pay. But in 3rd Party collections, the work is given to another company (an agency) to collect overdue payments. In short, 1st Party = same company, 3rd Party = outside agency. <br><br>
+
+
+  In 1st Party Collections, the tone is softer because we are directly representing the brand and want to maintain a good customer relationship.
+
+Wheareas in 3rd Party Collections, the account is already old and more difficult to collect. The approach is firmer, but still professional, because the main goal is to recover the balance.  <br><br
+
+
+when an account is 0 to 90 days delinquent, it is generally considered First Party Collections. After that, it moves to agencies (Third Party)
+
+
+    `
+},
+
+{
+    question: "54. Can you explain what FDCPA (Fair Debt Collection Practices Act) is?",
+    answer: `FDCPA is a law in the USA that protects customers from unfair or rude collection practices. It says collectors should not harass, threaten, or call at odd hours. We must be polite, professional, and follow legal scripts like Mini Miranda.`
+},
+
+
+
+
+
+{
+  question: "55. How do you start and complete a collection call with a customer? call flow or script or opening and closing script (with Mini Miranda)",
+  answer: `
+  ✅ **First-Party Collection Call Flow**
+  1. Greeting: "Good Morning/Good Afternoon, may I speak with Mr./Ms. [Customer Name]?"
+  2. Verification: Confirm the customer’s identity (DOB, address, or last 4 digits of SSN as per policy).
+  3. Introduction: "This is [Your Name] calling from [Original Creditor/Bank Name] regarding your account ending with XXXX."
+  4. Purpose: "Our records show that your payment of $___ is past due. I’m here to help you bring your account back on track."
+  5. Negotiation: Understand customer’s financial situation → Offer payment options, due date extensions, or repayment plan.
+  6. Closing: Confirm payment details/date, thank customer for cooperation, and provide a confirmation number if applicable.
+  7. End: "Thank you for your time today. We appreciate you being our valued customer."
+
+  ✅ **Third-Party Collection Call Flow (with Mini Miranda)**
+  1. Greeting: "Good Morning/Good Afternoon, may I speak with Mr./Ms. [Customer Name]?"
+  2. Verification: Confirm the customer’s identity (DOB, address, or last 4 digits of SSN as per compliance).
+  3. **Mini Miranda (Mandatory):** "This is [Your Name] from [Agency Name]. This is an attempt to collect a debt, and any information obtained will be used for that purpose."
+  4. Purpose: "I’m calling regarding your account with [Original Creditor], with an outstanding balance of $___."
+  5. Negotiation: Listen to the customer, show empathy, discuss repayment ability, and offer settlement or payment plan.
+  6. Commitment: Confirm agreed payment arrangement (date, mode, and amount).
+  7. Compliance Closing: "To confirm, you’ve agreed to pay $___ on [Date]. Thank you for your cooperation."
+  8. End: "We appreciate your time today. Have a good day."
+  `
+},
+
+{
+    question: "56. How do you handle a customer who refuses to pay?",
+    answer: `If a customer refuses, I stay calm and try to understand their reason. I use soft skills and negotiation. For example, if they have financial issues, I suggest a settlement or installment plan. If they still refuse, I end the call politely without arguments.`
+},
+
+{
+    question: "57. How do you handle abusive or angry customers while staying compliant?",
+    answer: `I never react emotionally. I listen carefully, stay polite, and let the customer vent. If they use abusive language, I warn them politely: "Sir/Ma’am, I am here to help you. If the language continues, I may have to end the call." This way I stay professional and follow compliance.`
+},
+
+{
+    question: "58. Can you give an example of a settlement offer you provided to a customer?",
+    answer: `Yes. Once a customer had a balance of $1000 and could not pay in full. I offered a settlement of 70% where they paid $700, and the rest was waived off. The customer agreed, and the account was closed successfully.`
+},
+
+{
+    question: "59. How do you negotiate with a customer who says they don’t have money to pay?",
+    answer: `I show empathy and ask about their financial situation. Then I give small options like part payments or flexible dates. Example: "I understand you are facing issues. Can we start with $50 today and set the rest in small monthly payments?" This makes it easier for them to agree.`
+},
+
+{
+    question: "60. What are post-dated payments, and how do you set them up?",
+    answer: `A post-dated payment means scheduling a payment for a future date agreed by the customer. For example, if today is the 10th and the customer says they can pay on the 25th, I set a payment of that date in the system with their approval.`
+},
+
+{
+    question: "61. How do you ensure compliance while collecting payments from US customers?",
+    answer: `I always follow FDCPA guidelines, use Mini Miranda at the start of every call, never share wrong information, and never pressure or threaten the customer. I also keep the tone polite and professional throughout the call.`
+},
+
+{
+    question: "62. What steps do you take if a customer complains about harassment or unfair practices?",
+    answer: `I listen carefully, stay calm, and apologize for their experience. Then I assure them that all calls follow FDCPA rules. If needed, I report the complaint to my supervisor so the issue can be resolved quickly.`
+},
+
+
+
+{
+  "question": "63. Collection KRA & KPI",
+  "answer": `
+    <p><b>KRA</b> means <b>Key Responsibility Areas</b> — the main duties or core responsibilities of my job.<br>
+    <b>KPI</b> means <b>Key Performance Indicators</b> — the numbers or targets that measure how well I am performing.</p>
+
+    <hr>
+    <p><b>✔️ In other words:</b><br>
+    <b style="color:#1a73e8;">KRA tells WHAT I do</b> → My responsibilities in 1st Party & 3rd Party Collections<br>
+    <b style="color:#0f9d58;">KPI tells HOW WELL I do it</b> → The numbers/targets that measure my performance</p>
+    <hr>
+
+    <h3 style="color:#1a73e8;">✔️ KRA Examples (1st Party & 3rd Party Collections)</h3>
+
+    <b style="color:#1a73e8;">1st Party Collections – KRA (What my job was)</b>
+    <ul style="color:#1a73e8;">
+      <li>Calling customers who missed Lowe’s credit card payment for 30 days</li>
+      <li>Verifying customer identity</li>
+      <li>Understanding the reason for non-payment</li>
+      <li>Helping them make payment on the call</li>
+      <li>Offering hardship plans (10% discount, installment plan, PTP)</li>
+      <li>Following Mini Miranda & compliance guidelines</li>
+      <li>Updating dispositions (PTP, Appointment, Refusal, Not Reachable)</li>
+      <li>Maintaining empathy, professionalism & call quality</li>
+    </ul>
+
+    <b style="color:#1a73e8;">3rd Party Collections – KRA</b>
+    <ul style="color:#1a73e8;">
+      <li>Calling customers with long overdue accounts managed by a collections agency</li>
+      <li>Following strict FDCPA guidelines & Mini Miranda</li>
+      <li>Understanding customer’s financial hardship</li>
+      <li>Offering settlements, payment plans, or single payments</li>
+      <li>Negotiating firmly but professionally</li>
+      <li>Ensuring 100% compliance</li>
+      <li>Updating system with PTP, RPC, Settlement, Dispute, Refusal</li>
+      <li>Recovering the maximum amount while maintaining customer dignity</li>
+    </ul>
+
+    <hr>
+    <h3 style="color:#0f9d58;">✔️ KPI Examples (With Formulas)</h3>
+
+    <b style="color:#0f9d58;">1st Party Collections – KPI (How my performance was measured)</b>
+    <ol style="color:#0f9d58;">
+      <li><b>Recovery Rate</b><br>
+          Formula: (Total Amount Collected ÷ Total Amount Assigned) × 100</li>
+      <li><b>PTP Conversion</b><br>
+          Formula: (PTP Kept ÷ Total PTP Given) × 100</li>
+      <li><b>AHT (Average Handling Time)</b><br>
+          Formula: (Talk Time + Hold Time + ACW Time) ÷ Total Calls Handled</li>
+      <li><b>Call Quality Score</b><br>
+          Based on audits (Soft skills + Compliance)</li>
+      <li><b>Compliance Score</b><br>
+          Formula: (Compliant Calls ÷ Total Calls Audited) × 100</li>
+      <li><b>RPC (Right Party Contact Rate)</b><br>
+          Formula: (RPC ÷ Total Calls Dialed) × 100</li>
+      <li><b>Attendance & Shift Adherence</b><br>
+          Formula: (Actual Login Time ÷ Scheduled Login Time) × 100</li>
+      <li><b>CSAT (Customer Satisfaction)</b><br>
+          Formula: (Positive Ratings ÷ Total Surveys) × 100</li>
+    </ol>
+
+    <hr>
+
+    <b style="color:#0f9d58;">3rd Party Collections – KPI</b>
+    <ol style="color:#0f9d58;">
+      <li><b>Monthly Recovery Target</b><br>
+          Formula: (Collected Amount ÷ Target Amount) × 100</li>
+      <li><b>Settlement Conversion</b><br>
+          Formula: (Settlements Closed ÷ Settlement Offers) × 100</li>
+      <li><b>PTP Kept %</b><br>
+          Formula: (PTP Kept ÷ Total PTP Given) × 100</li>
+      <li><b>RPC Rate</b><br>
+          Formula: (Right-Party Contacts ÷ Total Calls Made) × 100</li>
+      <li><b>Compliance Score</b><br>
+          Formula: (Compliant Calls ÷ Audited Calls) × 100</li>
+      <li><b>Call Quality Audits</b> – Based on professionalism, tone & legal compliance</li>
+      <li><b>AHT</b> – Same formula as above</li>
+      <li><b>Dispute Resolution Accuracy</b><br>
+          Formula: (Correctly Resolved Disputes ÷ Disputes Handled) × 100</li>
+      <li><b>Attendance / Login Hours / Adherence</b> – Same formula as above</li>
+    </ol>
+  `
+}
+
+,
+
+{
+    question: "64. How do you build trust with customers while recovering overdue balances?",
+    answer: `I build trust by being polite, listening to their problems, and offering realistic solutions. I never push too hard. I explain the benefits of clearing their debt, like improving their credit score, and always keep the conversation respectful.`
+},
+{
+    question: "65. Do you have any question?",
+    answer: `Yes, I would like to know what the key performance metrics (KPI) are for this role, and also about the growth opportunities within the company.`
+  },
+
+  {
+    question: "66. Why do we use the Mini Miranda statement in collections?",
+    answer: `The Mini Miranda statement is required under the FDCPA (Fair Debt Collection Practices Act).<br><br>
+    It ensures the customer is informed that they are speaking to a debt collector and that the conversation may be used to collect a debt.<br><br>
+    Using this statement protects both the customer and the collection agent legally, and it builds transparency and compliance during the call.`
+},
+{
+  question: "67. Why did you leave your last organization?",
+  answer: "“I left my previous job because I had to move to my hometown to take care of my mother, who had some temporary health issues. We are only two brothers, and my brother was in Dubai at that time, so I needed to support my family. Now my mother is doing much better, and my brother is helping as well. I am fully ready to restart my career with energy and focus. I see this role as a great opportunity to grow and contribute to the team.”"
+}
+,
+{
+  question: "68. What is your salary expectation?",
+  answer: "I’ve researched the salary range for this role and industry, and I believe a fair range is between ₹30,000 and ₹35,000. Based on my skills and experience, I’d be comfortable with ₹35,000, with the possibility of an annual review. However, I do understand that salary negotiation is a two-way process, and I’m open to discussing a package that works for both of us."
+},
+
+
+{
+  question: "70. Can you explain the Collection Pyramid?",
+  answer: `The Collection Pyramid is a model that shows how debt gets collected over time — from early stages (soft collections) to late stages (hard collections/legal action).
+
+At the top of the pyramid, when the account is new (0–30 days past due), the calls are soft and friendly — just simple reminders.
+
+As the account gets older (30–90 days past due), the tone becomes a little stronger. We may offer installment plans or settlements to help the customer pay.
+
+If the account is still unpaid after 90–120+ days, it usually moves to third-party collections. At this stage, the approach is firmer, because recovery chances are lower.
+
+At the very bottom of the pyramid, only a small percentage of accounts go into legal action or recovery stage.
+
+In simple words: The Collection Pyramid begins with many customers at the top who usually pay after soft reminders. As time passes, fewer customers remain unpaid, so the collection steps become tougher at the bottom.`
+},
+
+{
+  question: "71. Chat Flow and Chat Etiquette?",
+  answer: `💬 <strong>Chat Flow means the Steps / Process of Handling a Chat
+  or the way to chat step by step or Chat flow is real-time, quick, short messages</em><br><br></strong><br><br>
+
+  <u>Example Chat Flow:</u><br>
+  • <strong>Opening / Greeting</strong> → “Hi, welcome to ABC Services! How can I help you today?”<br>
+  • <strong>Sympathy / Empathy / Acknowledge</strong> → “I understand your concern about the delayed order and I’m sorry for the inconvenience caused.”<br>
+  • <strong>Verification</strong> → “Can I please confirm your order number to check the status?”<br>
+  • <strong>Tracking</strong> → “I’ve checked your order and here is the current status...”<br>
+  • <strong>Probing</strong> → “Can you please tell me if you received any notification from our delivery team?”<br>
+  • <strong>Resolution / Info</strong> → “Based on the tracking, your package will be delivered tomorrow.”<br>
+  • <strong>Further Assistance</strong> → “Is there anything else I can help you with today?”<br>
+  • <strong>Confirmation</strong> → “Does this solution work for you?”<br>
+  • <strong>Closing</strong> → “Thank you for chatting with us today. Have a great day!”<br><br>
+
+  🤝 <strong>Chat Etiquette means the Manners / style of Chatting or its a way to handle the customers politely and professionally.</em></strong><br><br>
+
+  <u>Example Chat Etiquette:</u><br>
+  • Be polite and professional → “I apologize for the delay” ✅ (not “your order late 😒”) ❌<br>
+  • Write short, clear sentences → Avoid long paragraphs<br>
+  • We should not use slang/shortcuts → Use “you” not “u”<br>
+  • Keep the customer updated if chat takes time like putting on hold<br>
+  • End on a positive note → “I’m glad I could assist you today.”<br><br>
+  `
+}
+,
+
+{
+  question: "72. Email Flow and Email Etiquette?",
+  answer: `📧 <strong>Email Flow means the Steps / Process of Handling a Customer Email.
+  It is more formal, structured, and detailed compared to chat.</strong><br><br>
+
+  <u>Example Email Flow:</u><br>
+  • <strong>Subject Line</strong> → “Update on Your Order #12345”<br>
+  • <strong>Greeting</strong> → “Dear Mr. Sharma,”<br>
+  • <strong>Acknowledgement</strong> → “We apologize for the delay in your order.”<br>
+  • <strong>Resolution</strong> → “Your package has been rescheduled and will reach you tomorrow evening.”<br>
+  • <strong>Offer Help</strong> → “If there’s anything else, feel free to reply to this email.”<br>
+  • <strong>Closing</strong> → “Warm regards, Riya – Customer Support Team”<br><br>
+  👉 Email Flow = <em>Formal, structured, and detailed.</em><br><br>
+
+  🤝 <strong>Email Etiquette means the Manners / Style of Writing Emails.
+  It’s about professionalism, clarity, and politeness.</strong><br><br>
+
+  <u>Example Email Etiquette:</u><br>
+  • ✅ Use a professional tone (Dear, Regards)<br>
+  • ✅ Write in clear paragraphs (not one long block)<br>
+  • ✅ Use proper grammar, no typos<br>
+  • ✅ Always personalize (customer name, order ID)<br>
+  • ❌ Don’t use emojis or casual slang (“Hey! ur order late 😒”)<br><br>`
+},
+
+{
+  question: "73. Chat Flow and Email Flow for (Normal Request like Return/Order Status)?",
+  answer: `💬 <strong>Chat Flow (Formal) – Quick, Step-by-step live conversation</strong><br><br>
+
+  <u>Example Chat Flow (Order Status):</u><br>
+  • <strong>Greeting / Opening</strong> → “Hello, welcome to ABC Support! How may I assist you today?”<br>
+  • <strong>Empathy / Acknowledgement</strong> → “I understand your concern regarding your return and I’m here to help.”<br>
+  • <strong>Verification</strong> → “Can you please confirm your order number so I can check the status?”<br>
+  • <strong>Tracking / Probing</strong> → “I’ve checked the system, and it shows that your return pickup is scheduled for tomorrow. Did you receive any notification regarding pickup?”<br>
+  • <strong>Resolution / Info</strong> → “Your return request has been approved and the pickup is confirmed for tomorrow.”<br>
+  • <strong>Further Assistance</strong> → “Is there anything else I can assist you with regarding this order?”<br>
+  • <strong>Closing</strong> → “Thank you for contacting ABC Support. Have a great day!”<br><br>
+
+  📧 <strong>Email Flow (Normal Request) – Structured, Detailed, and Formal</strong><br><br>
+
+  <u>Example Email Flow (Return/Order Status):</u><br>
+  • <strong>Subject</strong> → “Return Status for Order #4567”<br>
+  • <strong>Greeting / Opening</strong> → “Dear Mr. Sharma,”<br>
+  • <strong>Empathy / Acknowledgement</strong> → “We understand your concern regarding your return and appreciate your patience.”<br>
+  • <strong>Verification</strong> → “For reference, your order number is #4567.”<br>
+  • <strong>Tracking / Resolution</strong> → “We are pleased to inform you that your return request has been approved, and pickup is scheduled for tomorrow.”<br>
+  • <strong>Further Assistance / Offer Help</strong> → “If you have any additional questions or need further assistance, please feel free to reply to this email.”<br>
+  • <strong>Closing</strong> → “Warm regards, ABC Support Team”<br><br>
+
+  ✅ <strong>Key Difference:</strong><br>
+  • Chat = Real-time, short & interactive messages.<br>
+  • Email = Formal, structured & detailed response.`
+}
+,
+
+{
+  question: "74. Chat Flow and Email Flow for Complaint and offering Voucher/Refund?",
+  answer: `💬 <strong>Chat Flow – Complaint Resolution in Real-Time</strong><br><br>
+
+  <u>Example Chat Flow (Complaint + Refund/Voucher):</u><br>
+  • <strong>Greeting / Opening</strong> → “Hello, welcome to XYZ Support! I’m here to assist you today.”<br>
+  • <strong>Empathy / Acknowledgement</strong> → “I’m really sorry to hear that you received a damaged product. Let me help you get this resolved.”<br>
+  • <strong>Verification</strong> → “Could you please confirm your order number so I can check the details?”<br>
+  • <strong>Tracking / Probing</strong> → “I’ve checked the system, and I see your order #1234. Did you notice any damage to the packaging as well?”<br>
+  • <strong>Resolution / Options</strong> → “We can offer you a full refund of ₹1,200 or a ₹500 voucher for your next purchase. Which option would you prefer?”<br>
+  • <strong>Action Update / Confirmation</strong> → “Refund has been initiated and will reflect in your account within 5–7 working days.”<br>
+  • <strong>Further Assistance</strong> → “Is there anything else I can help you with today?”<br>
+  • <strong>Closing</strong> → “Thank you for your patience and understanding. Have a great day!”<br><br>
+
+  📧 <strong>Email Flow – Complaint Resolution in a Formal Manner</strong><br><br>
+
+  <u>Example Email Flow (Complaint + Refund/Voucher):</u><br>
+  • <strong>Subject</strong> → “Resolution for Your Complaint – Order #1234”<br>
+  • <strong>Greeting / Opening</strong> → “Dear Ms. Kapoor,”<br>
+  • <strong>Empathy / Acknowledgement</strong> → “We sincerely apologize for the inconvenience caused due to receiving a damaged product in your recent order.”<br>
+  • <strong>Verification</strong> → “For reference, your order number is #1234.”<br>
+  • <strong>Tracking / Resolution</strong> → “After reviewing your case, we are offering you two options:
+    1. A full refund of ₹1,200 (will be processed within 5–7 business days), or
+    2. A ₹500 voucher for your next purchase with us.”<br>
+  • <strong>Further Assistance / Next Step</strong> → “Please reply to this email with your preferred option so we can proceed accordingly. If you need any additional help, feel free to contact us.”<br>
+  • <strong>Closing</strong> → “Once again, we regret the inconvenience and thank you for giving us the chance to make this right.<br><br>Warm regards, XYZ Support Team”<br><br>
+
+  ✅ <strong>Key Difference:</strong><br>
+  • Chat Flow = Instant, interactive, customer chooses in real-time.<br>
+  • Email Flow = Detailed, documented, customer confirms via reply before action.`
+}
+,
+
+{
+  question: "75. What is CSAT in Non-Voice (Chat & Email)?",
+  answer: `📌 <strong>CSAT in Non-Voice</strong><br><br>
+
+  👉 CSAT measures how satisfied a customer is with the service they received.
+  In non-voice, it’s usually collected after resolving a chat or email interaction.<br><br>
+
+  💬 <strong>CSAT in Chat Support</strong><br><br>
+  At the end of the chat, a survey pops up or is sent:<br>
+  • “How satisfied are you with the support you received today?”<br>
+  • Customer selects rating (e.g., ⭐⭐⭐⭐⭐).<br>
+  • Sometimes a follow-up question is added: “What could we do better?”<br><br>
+
+  <u>Example Flow:</u><br>
+  • Customer ends chat.<br>
+  • System sends CSAT question.<br>
+  • Customer rates.<br>
+  • Rating is logged in the system for QA and reporting.<br><br>
+
+  📧 <strong>CSAT in Email Support</strong><br><br>
+  After the ticket/email is closed, the system automatically sends a survey email.
+  Email contains rating options or a survey link.<br><br>
+
+  <u>Example Email:</u><br>
+  • <strong>Subject</strong> → “How did we do with your request?”<br>
+  • <strong>Body</strong>:<br>
+  Hello [Name],<br>
+  Your case [#12345] has been resolved.<br>
+  Please rate your satisfaction:<br>
+  👍 Satisfied | 😐 Neutral | 👎 Dissatisfied<br><br>
+  Your feedback helps us improve.<br><br>
+
+  ✅ <strong>Summary:</strong><br>
+  • Chat CSAT = Instant survey at the end of chat.<br>
+  • Email CSAT = Survey link/rating sent after ticket closure.`
+}
+,
+{
+  question: "76. challenges in non voice and overcome",
+  answer: `📌 <strong>Challenges in Non-Voice (Chat & Email)</strong><br><br>
+
+  💬 <strong>1. High Chat Volume / Multitasking</strong><br>
+  • Often handled 2–3 customers simultaneously.<br>
+  • Challenge → Maintaining speed + accuracy + personalization.<br>
+  ✅ <u>How I Overcame:</u> Practiced time management, used templates & shortcuts for faster replies.<br><br>
+
+  💬 <strong>2. Tone & Clarity in Written Communication</strong><br>
+  • In chat/email, customers can’t hear your tone.<br>
+  • Challenge → Avoid sounding robotic, rude, or unclear.<br>
+  ✅ <u>How I Overcame:</u> Always double-checked grammar, used polite & empathetic language.<br><br>
+
+  💬 <strong>3. Delayed Responses in Email</strong><br>
+  • Some cases (refunds, vouchers, delivery) required coordination with other teams.<br>
+  • Challenge → Customers expected instant resolution.<br>
+  ✅ <u>How I Overcame:</u> Set clear expectations by communicating timelines (e.g., “Refund will reflect within 5–7 business days”).<br><br>
+
+  💬 <strong>4. Following Brand Guidelines (H&M Style)</strong><br>
+  • H&M has a friendly, stylish, supportive brand voice.<br>
+  • Challenge → Matching tone even when customers were frustrated.<br>
+  ✅ <u>How I Overcame:</u> Adapted responses to H&M’s tone, maintained positivity & brand etiquette.<br><br>
+
+  💬 <strong>5. Handling Complaints & Escalations</strong><br>
+  • Issues like delays, wrong sizes, refunds caused customer frustration.<br>
+  • Challenge → Staying calm and solution-focused.<br>
+  ✅ <u>How I Overcame:</u> Used empathy, solution-oriented replies, and where possible, offered vouchers/compensation to regain trust.<br><br>
+
+  ⭐ <strong>Overall Learning:</strong><br>
+  • Balanced speed with quality through multitasking tools.<br>
+  • Maintained empathy and clarity in written tone.<br>
+  • Set correct expectations in email support.<br>
+  • Ensured replies reflected the H&M brand voice.<br>
+  • Turned complaints into satisfaction using empathy + solutions.`
+},
+
+{
+    question: "77. About Verizon process.",
+    answer: `In this role, I’ll be assisting Verizon customers through chat. <br><br>
+
+       Customers here use **Consumer Billing (Postpaid services)**. That means they use telecom services first (calls, data, SMS, internet, etc.) and then receive a **monthly bill** for the usage. <br><br>
+
+
+    Verizon is a US-based telecom service provider, and my responsibility will be to help customers with their plan-related queries and provide them with quick resolutions. <br><br>
+
+    The process is non-voice (chat-based), which means I will interact with customers through chat rather than phone calls. My main focus will be on understanding their concerns, guiding them clearly, and ensuring customer satisfaction.`
+}
+,
+{
+    question: "78. What are KRA's and KPI's in BPO?",
+    answer: `KRA means **Key Responsibility Areas**. These are the main duties or responsibilities of an employee.
+For example – In a BPO, my KRA is to handle customer queries, solve problems, and give good service.
+
+KPI means **Key Performance Indicators**. These are the numbers or targets used to check how well I am doing my work.
+
+Important KPI's in BPO are: <br><br>
+• **CSAT score** – Customer satisfaction rating. Shows if the customer is happy with my support. <br>
+• **DSAT score** – Dissatisfaction rating. Shows if the customer is unhappy. <br>
+• **AHT (Average Handling Time)** – The average time I take to handle a chat or call. <br>
+• **FCR (First Call Resolution)** – Solving customer issue in the first attempt without follow-up. <br>
+• **ACWT (After Call Work Time)** – The time I take to complete notes or work after a chat ends. <br>
+• **Shift Adherence** – How well I follow my given shift timings. <br>
+• **Login Hours** – Total time I stay logged in to take calls/chats. <br>
+• **Repeat Ratio** – How many times a customer has to contact again for the same issue (lower is better). <br>
+• **Call Quality** – How polite, clear, and correct I am while talking/chatting with customers. <br>
+• **Attendance** – How regular I am in reporting to work. <br><br>
+
+So, KRA tells me *what my job is*, and KPI tells me *how well I am doing it*.`
+}
+,
+
+{
+  question: "79. 3rd-party script collections",
+  answer: `
+<span style="font-size:16px; line-height:1.6;">
+
+<b style="color:#0047AB;">**Agent (FDCPA Opening):**</b><br>
+"Hello, my name is <b>Sarfraz</b>, calling from <b>[Agency Name]</b> on a recorded line.<br>
+This is an attempt to collect a debt, and any information obtained will be used for that purpose.<br>
+May I speak with <b>James Smith</b>?"<br><br>
+
+<b style="color:#D35400;">**Customer:**</b><br>
+"Yes, this is Robert."<br><br>
+
+<b style="color:#0047AB;">**Agent:**</b><br>
+"Thank you, Mr. Smith. Before discussing the account, could you verify your address or date of birth?"<br><br>
+
+(Customer verifies)<br><br>
+
+<hr>
+
+<!-- ----------------------------- -->
+<!-- 1ST STAGE -->
+<!-- ----------------------------- -->
+
+<b style="color:#148F77; font-size:18px;">✔️ 1st Stage – Customer Says NO the First Time</b><br><br>
+
+<b style="color:#0047AB;">Agent:</b><br>
+"Thank you. I’m calling regarding your <b>XYZ Bank</b> account ending <b>4521</b>.<br>
+Your past-due balance of <b style="color:#C0392B;">$780</b> has been placed with our agency for resolution.<br>
+Could you please let me know the reason for the delay in your payment?"<br><br>
+
+
+<b style="color:#D35400;">Customer:</b><br>
+"I lost my job. I can't pay."<br><br>
+
+<b style="color:#0047AB;">Agent (Empathy + Soft Push):</b><br>
+"I’m really sorry to hear that, sir. I completely understand how difficult it must be without a job.<br>
+Could you please share how you are managing your finances?<br>
+I’d like to see if there’s any way we can help, such as a discount or a flexible payment option."<br><br>
+
+(typing sound)<br><br>
+
+"I understand, sir. That’s good to hear that you have support. If it helps, you can consider discussing a small payment with a family member or someone you trust to help cover the amount temporarily. We can also work together to create a plan that fits your situation." <br><br>
+
+<b style="color:#27AE60;">Good news — today you're eligible for a settlement of <b>$500</b>, which will close the account completely.</b><br><br>
+
+<hr>
+
+<!-- ----------------------------- -->
+<!-- 2ND STAGE -->
+<!-- ----------------------------- -->
+
+<b style="color:#148F77; font-size:18px;">✔️ 2nd Stage – Customer Refuses Again</b><br><br>
+
+<b style="color:#D35400;">Customer:</b><br>
+"I can't pay $500."<br><br>
+
+<b style="color:#0047AB;">Agent (Flexibility):</b><br>
+"No problem, sir. We don’t need the whole amount today.<br>
+Even <b style="color:#C0392B;">$100–$150</b> can lock the settlement and freeze the balance."<br><br>
+
+<hr>
+
+<!-- ----------------------------- -->
+<!-- 3RD STAGE -->
+<!-- ----------------------------- -->
+
+<b style="color:#148F77; font-size:18px;">✔️ 3rd Stage – Customer Says NO Again</b><br><br>
+
+<b style="color:#D35400;">Customer:</b><br>
+"I don't want to pay anything today."<br><br>
+
+<b style="color:#0047AB;">Agent:</b><br>
+"I understand, Mr. Smith what you say.However, Before we end the call, I would like to tell you benefits of paying and consequences of not paying:<br><br>
+
+<b style="color:#C0392B;">✔ Consequences of not paying:</b><br>
+• Balance may increase<br>
+• Account stays in active collections<br>
+• More calls/letters may continue<br>
+• Possible escalation to another stage<br><br>
+
+<b style="color:#27AE60;">✔ Benefits if you resolve the account:</b><br>
+• Stops balance from increasing<br>
+• Ends collection calls<br>
+• Protects credit score<br>
+• You qualify for discounts<br>
+• Peace of mind<br>
+• Written confirmation provided<br>
+• Helps future loan eligibility<br><br>
+
+"My goal is to make this easy for you."<br><br>
+
+<hr>
+
+<!-- ----------------------------- -->
+<!-- 4TH STAGE -->
+<!-- ----------------------------- -->
+
+<b style="color:#148F77; font-size:18px;">✔️ 4th Stage – Customer Partially Agrees</b><br><br>
+
+<b style="color:#D35400;">Customer:</b><br>
+"The most I can pay is $200."<br><br>
+
+<b style="color:#0047AB;">Agent (Closing the Deal):</b><br>
+"That works perfectly, sir.<br>
+We can take <b>$200 today</b> and split the remaining <b>$300</b> into two small monthly payments.<br>
+This locks your settlement and stops further collection activity."<br><br>
+
+<hr>
+
+<!-- ----------------------------- -->
+<!-- ADDED: CUSTOMER AGREES -->
+<!-- ----------------------------- -->
+
+<b style="color:#2E86C1; font-size:18px;">✔️ Customer Agrees to Make Payment</b><br><br>
+
+<b style="color:#D35400;">Customer:</b><br>
+"Yes, I can make the payment today."<br><br>
+
+<b style="color:#0047AB;">Agent:</b><br>
+"Thank you, sir. I appreciate your cooperation.<br>
+How would you like to proceed with the payment today — debit card, credit card, or bank account?"<br><br>
+
+(Payment is processed)<br><br>
+
+<b style="color:#0047AB;">Agent:</b><br>
+"Your payment has been successfully posted.<br>
+You will receive your written confirmation shortly.<br>
+Thank you for taking care of this today. Have a wonderful day."<br><br>
+
+<hr>
+
+<!-- ----------------------------- -->
+<!-- ADDED: CUSTOMER STILL SAYS NO -->
+<!-- ----------------------------- -->
+
+<b style="color:#C0392B; font-size:18px;">✔️ 5th Stage – Customer Still Says NO After All Attempts</b><br><br>
+
+<b style="color:#D35400;">Customer:</b><br>
+"I can't pay anything. Not even $50."<br><br>
+
+<b style="color:#0047AB;">Agent (Final Attempt):</b><br>
+"I understand, sir, and I truly appreciate your honesty.
+Before I close the account status for today, let me share the final option available to you so you don’t miss it:<br><br>
+
+Even a small good-faith payment like <b>$50–$75</b> can secure your discount, stop the balance from increasing, reduce the number of calls and letters and prevent the account from moving to the next stage and give you extra time to pay the remaining amout and your account will be reported as paid in full."<br><br>
+
+<b style="color:#D35400;">Customer:</b><br>
+"No, I still can’t pay."<br><br>
+
+<b style="color:#0047AB;">Agent (FDCPA Safe Closure):</b><br>
+"I respect that, sir. and thank you for letting me know:<br>
+and I appreciate your desicion, I would like to inform you that if your situation improves or you receive support from family or friends, please feel free to reach out. We’ll be here to help you close the account on the best possible terms.<br><br>
+
+Is there a date when things might be better for you so I can note your file accordingly?.<br><br>
+
+
+<b style="color:#D35400;">Customer:</b> "Maybe next month."<br><br>
+
+<b style="color:#0047AB;">Agent:</b><br>
+"Thank you, sir. I’ve updated your file. We’ll reconnect closer to that date and help you with the best option available for your account. Have a good day."<br><br>
+<b style="color:#D35400;">Customer:</b> "If customer does not give any date"<br><br>
+
+"I appreciate your time today. If your situation changes, please feel free to contact us anytime.
+Thank you, have a good day.
+
+</span>
+`
+}
+
+
+,
+
+{
+    question: "78. Billing terms ",
+    answer: `Here are some easy explanations of billing terms: <br><br>
+
+• **Pro-Rata Charges** – When a customer changes their plan mid-month, they pay only for the days they used it. <br>
+• **Recurring Charges** – Fixed monthly charges like plan rent that repeat every month. <br>
+• **Billing Cycle** – The start and end dates of the monthly bill period. <br>
+• **Bill Due Date** – The last date to pay the bill. <br>
+• **Overdue Charges** – Extra fees added if the bill is not paid on time. <br>
+• **One-Time Charge** – A single payment, like activation or installation fees. <br>
+• **Surcharge** – Additional fees like late fees or government taxes. <br>
+• **Service Charge** – Small fees for specific services (example: requesting a paper bill). <br>
+• **Autopay** – A facility where the bill gets automatically deducted from the bank account or card every month. <br><br>
+
+These terms are simple and easy for HR to understand.`
+}
+
+
+
+
+
+
+
+        ];
+
+        const accordion = document.getElementById("interviewAccordion");
+
+        questions.forEach((item, index) => {
+            accordion.insertAdjacentHTML("beforeend", `
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q${index + 1}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#a${index + 1}" aria-expanded="false" aria-controls="a${index + 1}" style="color:red">
+              ${item.question}
+            </button>
+          </h2>
+          <div id="a${index + 1}" class="accordion-collapse collapse" aria-labelledby="q${index + 1}"
+            data-bs-parent="#interviewAccordion">
+            <div class="accordion-body">${item.answer}</div>
+          </div>
+        </div>
+      `);
+        });
+
+        function liveSearchAccordion() {
+    const input = document.getElementById("accordionSearch").value.trim().toLowerCase();
+    const items = document.querySelectorAll("#interviewAccordion .accordion-item");
+
+    items.forEach(item => {
+        const questionEl = item.querySelector(".accordion-button");
+        const answerEl = item.querySelector(".accordion-body");
+
+        const originalQuestion = questionEl.textContent;
+        const originalAnswer = answerEl.textContent;
+
+        const questionLower = originalQuestion.toLowerCase();
+        const answerLower = originalAnswer.toLowerCase();
+
+        const matchFound = questionLower.includes(input) || answerLower.includes(input);
+
+        if (matchFound && input !== "") {
+            // Highlight in question
+            const highlightedQuestion = originalQuestion.replace(new RegExp(`(${input})`, "gi"), `<mark>$1</mark>`);
+            const highlightedAnswer = originalAnswer.replace(new RegExp(`(${input})`, "gi"), `<mark>$1</mark>`);
+
+            questionEl.innerHTML = highlightedQuestion;
+            answerEl.innerHTML = highlightedAnswer;
+        } else {
+            // Remove highlighting by resetting textContent
+            questionEl.innerHTML = originalQuestion;
+            answerEl.innerHTML = originalAnswer;
+        }
+
+        item.style.display = matchFound || input === "" ? "" : "none";
+    });
+}
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
