@@ -1,0 +1,346 @@
+{
+  "day1": {
+    "topic": "Self Introduction",
+    "questions": [
+      "आपका नाम क्या है? | Aapka naam kya hai? | What is your name? | Who is your name? | Where is your name? | Which is your name?",
+      "मेरा नाम सरफराज है। | Mera naam Sarfraz hai. | My name is Sarfraz. | I name is Sarfraz. | Me name is Sarfraz. | My names Sarfraz.",
+      "आप किस क्लास में पढ़ते हैं? | Aap kis class mein padhte hain? | Which class do you study in? | What class do you study? | Where class do you study? | How class do you study?",
+      "मैं 10वीं कक्षा में पढ़ता हूँ। | Main 10th kaksha mein padhta hoon. | I study in 10th class. | I am study in 10th. | I studied in 10th class. | I am studying in 10th.",
+      "आप कहाँ रहते हैं? | Aap kahan rehte hain? | Where do you live? | What do you live? | Where are you live? | Where you live?",
+      "मैं दिल्ली में रहता हूँ। | Main Delhi mein rehta hoon. | I live in Delhi. | I am live in Delhi. | I lived in Delhi. | I am living in Delhi.",
+      "आपके पिता क्या करते हैं? | Aapke pita kya karte hain? | What does your father do? | What do your father do? | What is your father do? | What your father doing?",
+      "मेरे पिता डॉक्टर हैं। | Mere pita doctor hain. | My father is a doctor. | My father are doctor. | My father doctor is. | My father be doctor.",
+      "आपकी माता क्या करती हैं? | Aapki mata kya karti hain? | What does your mother do? | What do your mother do? | What is your mother do? | What your mother doing?",
+      "मेरी माता एक हाउसवाइफ हैं। | Meri mata ek housewife hain. | My mother is a housewife. | My mother are housewife. | My mother is housewife. | My mother be housewife."
+    ]
+  },
+  "day2": {
+    "topic": "Tell me about your family",
+    "questions": [
+      "आपके परिवार में कितने सदस्य हैं? | Aapke parivar mein kitne sadasya hain? | There are 5 members in my family. | There be 5 members in family. | There has 5 members in my family. | There is 5 members in my family.",
+      "आपके पिता क्या करते हैं? | Aapke pita kya karte hain? | My father is a teacher. | My father be a teacher. | My father are teacher. | My father is teacher.",
+      "आपकी माता क्या करती हैं? | Aapki mata kya karti hain? | My mother is a homemaker. | My mother be a homemaker. | My mother are homemaker. | My mother is homemaker.",
+      "आपके बड़े भाई क्या काम करते हैं? | Aapke bade bhai kya kaam karte hain? | My elder brother is working as a software engineer. | My elder brother working software engineer. | My elder brother is work as software engineer. | My elder brother be working as software engineer.",
+      "आपकी कितनी बहनें हैं? | Aapki kitni behnein hain? | I have two sisters. | I has two sisters. | I am two sisters. | I have two sister.",
+      "आपकी बड़ी बहन के बारे में क्या जानते हैं? | Aapki badi behan ke baare mein kya jaante hain? | My elder sister is married. | My elder sister be married. | My elder sister married. | My elder sister has married.",
+      "आपकी छोटी बहन क्या कर रही हैं? | Aapki choti behan kya kar rahi hain? | My younger sister is pursuing her graduation. | My younger sister pursuing her graduation. | My younger sister is pursue her graduation. | My younger sister be pursuing her graduation.",
+      "आप साथ में क्या करते हैं? | Aap saath mein kya karte hain? | We love spending time together. | We loves spending time together. | We is spending time together. | We love spend time together.",
+      "आप सब क्या खेल खेलते हैं? | Aap sab kya khel khelte hain? | We play games. | We plays games. | We is play games. | We playing games.",
+      "आप अपने परिवार के बारे में कैसा महसूस करते हैं? | Aap apne parivar ke baare mein kaisa mehsoos karte hain? | I love my family very much. | I loves my family very much. | I am love my family very much. | I love my family very many."
+    ]
+  },
+  "day3": {
+    "topic": "Daily Life Routine",
+    "questions": [
+      "आप सुबह कब उठते हैं? | Aap subah kab uthte hain? | When do you wake up in the morning? | When you wake up morning? | When do you waking up? | What time you wake up morning?",
+      "क्या आप सुबह जल्दी उठते हैं? | Kya aap subah jaldi uthte hain? | Do you wake up early in the morning? | Do you waking up early? | Are you wake up early? | Does you wake up early?",
+      "उठने ke baad aap kya saaf karte hain? | Uthne ke baad aap kya saaf karte hain? | What do you clean after waking up? | What you clean after wake up? | What do you cleaning after wake up? | What does you clean after wake up?",
+      "क्या आप रोज़ ब्रश करते हैं? | Kya aap roz brush karte hain? | Do you brush your teeth everyday? | Do you brushing your teeth? | Does you brush your teeth? | Are you brush your teeth?",
+      "आप ब्रश करने के बाद क्या करते हैं? | Aap brush karne ke baad kya karte hain? | What do you do after brushing your teeth? | What you do after brush teeth? | What does you do after brush? | What are you doing after brush?",
+      "क्या आप रोज़ नहाते हैं? | Kya aap roz nahate hain? | Do you take a bath everyday? | Do you taking bath? | Are you take bath? | Does you take bath?",
+      "नहाने ke baad aap kahan jaane ke liye taiyar hote hain? | Nahane ke baad aap kahan jaane ke liye taiyar hote hain? | Where do you get dressed to go after taking a bath? | Where you get dress go bath? | Where do you getting dress after bath? | Where does you get dressed after bath?",
+      "क्या आप स्कूल के लिए तैयार होते हैं? | Kya aap school ke liye taiyar hote hain? | Do you get dressed for school? | Do you getting dress school? | Are you get dressed school? | Does you get dressed school?",
+      "आप सुबह का नाश्ता कब करते हैं? | Aap subah ka nashta kab karte hain? | When do you eat your breakfast? | When you eating breakfast? | When does you eat breakfast? | When are you eat breakfast?",
+      "क्या आप नाश्ते में फल खाते हैं? | Kya aap nashte mein fal khate hain? | Do you eat fruits in breakfast? | Do you eating fruit breakfast? | Are you eat fruit breakfast? | Does you eat fruit breakfast?",
+      "आप स्कूल किसके साथ जाते हैं? | Aap school kiske saath jaate hain? | With whom do you go to school? | With who you go school? | With whom you going school? | With who you going school?",
+      "क्या आप अपने दोस्तों के साथ स्कूल जाते हैं? | Kya aap apne doston ke saath school jaate hain? | Do you go to school with your friends? | Do you going school friend? | Are you go school friend? | Does you go school friend?",
+      "आप कक्षा में क्या करते हैं? | Aap kaksha mein kya karte hain? | What do you do in class? | What you do in class? | What does you do in class? | What are you doing in class?",
+      "क्या आप कक्षा में ध्यान से पढ़ाई करते हैं? | Kya aap kaksha mein dhyan se padhai karte hain? | Do you study carefully in class? | Do you studying carefully class? | Are you study carefully class? | Does you study carefully class?",
+      "आप दोपहर का भोजन कब करते हैं? | Aap dopahar ka bhojan kab karte hain? | When do you have your lunch? | When you having lunch? | When does you have lunch? | When are you have lunch?",
+      "आप शाम को कहाँ खेलते हैं? | Aap shaam ko kahan khelte hain? | Where do you play in the evening? | Where you play evening? | Where does you play evening? | Where are you playing evening?",
+      "क्या आप शाम को दोस्तों के साथ खेलते हैं? | Kya aap shaam ko doston ke saath khelte hain? | Do you play with friends in the evening? | Do you playing friend evening? | Are you play friend evening? | Does you play friend evening?",
+      "खेलने ke baad aap kaun sa karya karte hain? | Khelne ke baad aap kaun sa karya karte hain? | Which work do you do after playing? | What work you do after play? | What work does you do after play? | Which work are you doing after play?",
+      "आप रात का खाना किसके साथ खाते हैं? | Aap raat ka khana kiske saath khate hain? | With whom do you eat dinner? | With who you eat dinner? | With whom you eating dinner? | With who you eating dinner?",
+      "क्या आप रात को जल्दी सो जाते हैं? | Kya aap raat ko jaldi so jaate hain? | Do you go to bed early at night? | Do you going bed early? | Are you go bed early? | Does you go bed early?"
+    ]
+  },
+  "day4": {
+    "topic": "Daily Routine professional",
+    "questions": [
+      "आप सुबह कितने बजे उठते हैं? | Aap subah kitne baje uthte hain? | What time do you wake up in the morning? | What time you waking up? | What time does you wake up? | What time are you wake up?",
+      "क्या आप सुबह सात बजे उठते हैं? | Kya aap subah saat baje uthte hain? | Do you wake up at seven o'clock in the morning? | Do you wake up on seven o'clock? | Are you wake up at seven o'clock? | Does you wake up at seven o'clock?",
+      "उठने ke baad aap kahan jaate hain? | Uthne ke baad aap kahan jaate hain? | Where do you go after waking up? | Where you go after wake up? | Where does you go after wake up? | Where are you go after wake up?",
+      "क्या आप सुबह कसरत करते हैं? | Kya aap subah kasrat karte hain? | Do you do exercise in the morning? | Do you doing exercise morning? | Are you do exercise morning? | Does you do exercise morning?",
+      "कसरत karne ke baad aap kya khaate hain? | Kasrat karne ke baad aap kya khaate hain? | What do you eat after doing exercise? | What you eat after do exercise? | What does you eat after do exercise? | What are you eating after exercise?",
+      "क्या आप सुबह की हवा का आनंद लेने बाहर जाते हैं? | Kya aap subah ki hawa ka anand lene bahar jaate hain? | Do you go outside to enjoy the morning air? | Do you go outside enjoy morning air? | Are you go outside enjoy morning air? | Does you go outside enjoy morning air?",
+      "आप पार्क में किससे मिलते हैं? | Aap park mein kisse milte hain? | Whom do you meet in the park? | Who you meet in park? | Whom does you meet in park? | Whom are you meet in park?",
+      "क्या आप अपने दोस्तों से मिलते हैं? | Kya aap apne doston se milte hain? | Do you meet with your friends? | Do you meet your friends? | Are you meet your friends? | Does you meet your friends?",
+      "दोस्तों से मिलने ke baad aap kiske liye taiyar hote hain? | Doston se milne ke baad aap kiske liye taiyar hote hain? | For what do you get ready after meeting friends? | What you get ready after meet friend? | What do you get ready after meet? | What does you get ready after meeting?",
+      "आप अपनी ऑफिस कैब का इंतज़ार कहाँ करते हैं? | Aap apni office cab ka intezaar kahan karte hain? | Where do you wait for your office cab? | Where you wait for office cab? | Where does you wait for office cab? | Where are you waiting for office cab?"
+    ]
+  },
+  "day5": {
+    "topic": "Simple Present Tense",
+    "questions": [
+      "सिंपल प्रेजेंट टेंस का मुख्य उपयोग क्या है? | Simple Present tense ka mukhya upyog kya hai? | Habits, daily routines, or facts. | Only for future plans. | Only for past actions. | To describe actions happening right now.",
+      "सिंपल प्रेजेंट टेंस की पहचान क्या है? | Simple Present tense ki pehchan kya hai? | ...ता है / ती है / ते हैं. | ...रहा है / रही है / रहे हैं. | ...चुका है / चुकी है. | ...से रहा है.",
+      "सिंपल प्रेजेंट टेंस का बेसिक इंग्लिश रूल क्या है? | Simple Present tense ka basic English rule kya hai? | Subject + Verb. | Subject + is + Verb. | Subject + was + Verb. | Subject + has + Verb.",
+      "सिंगुलर सब्जेक्ट (He/She/It) के साथ वर्ब में क्या जोड़ा जाता है? | Singular subject (He/She/It) ke saath verb mein kya joda jaata hai? | Add s/es. | Add ed. | Add ing. | Nothing is added.",
+      "वह स्कूल जाता है - इसका सही इंग्लिश अनुवाद क्या है? | Vah school jaata hai - iska sahi English anuvaad kya hai? | He goes to school. | He go to school. | He going to school. | He gone to school.",
+      "हम क्रिकेट खेलते हैं - इसका सही इंग्लिश अनुवाद क्या है? | Hum cricket khelte hain - iska sahi English anuvaad kya hai? | We play cricket. | We plays cricket. | We playing cricket. | We played cricket.",
+      "'He goes to school' में वर्ब के साथ 'es' क्यों लगा है? | 'He goes to school' mein verb ke saath 'es' kyon laga hai? | Because the subject 'He' is singular. | Because it is a past action. | Because it is a question. | Because it is plural.",
+      "दिए गए इमेज में 'Simple Present Tense' को किस नाम से पुकारा गया है? | Diye gaye image mein 'Simple Present Tense' ko kis naam se pukara gaya hai? | The Routine Floor. | The Live Camera Floor. | The Clock Tense. | The Past Floor.",
+      "वह स्कूल जाता है - इसका रोमन हिंदी क्या है? | Vah school jaata hai - iska Roman Hindi kya hai? | Vah school jata hai. | He school go. | Vah school going. | Vah school ja raha hai.",
+      "हम क्रिकेट खेलते हैं - इसका रोमन हिंदी क्या है? | Hum cricket khelte hain - iska Roman Hindi kya hai? | Hum cricket khelte hain. | We cricket play. | Hum cricket khel raha hai. | Hum cricket khela."
+    ]
+  },
+  "day6": {
+    "topic": "Present Continuous Tense (The Live Camera Floor)",
+    "questions": [
+      "प्रेजेंट कंटीन्यूअस टेंस का मुख्य कार्य क्या है? | Present Continuous tense ka mukhya karya kya hai? | Actions happening right now, at this exact second. | Actions that happened in the past. | Actions that will happen in the future. | General habits.",
+      "प्रेजेंट कंटीन्यूअस टेंस की पहचान क्या है? | Present Continuous tense ki pehchan kya hai? | ...रहा है / रही है / रहे हैं. | ...ता है / ती है / ते हैं. | ...चुका है / चुकी है. | ...से रहा है.",
+      "प्रेजेंट कंटीन्यूअस टेंस का इंग्लिश रूल क्या है? | Present Continuous tense ka English rule kya hai? | Subject + is/am/are + Verb-ing. | Subject + Verb. | Subject + has/have + V3. | Subject + will + Verb.",
+      "वह स्कूल जा रहा है - इसका इंग्लिश रूटीन क्या है? | Vah school ja raha hai - iska English routine kya hai? | He is going to school. | He goes to school. | He gone to school. | He go to school.",
+      "हम क्रिकेट खेल रहे हैं - इसका सही इंग्लिश अनुवाद क्या है? | Hum cricket khel rahe hain - iska sahi English anuvaad kya hai? | We are playing cricket. | We play cricket. | We played cricket. | We will play cricket.",
+      "उसने इनाम जीता है - इसका इंग्लिश रूटीन क्या है? | Usne inaam jeeta hai - iska English routine kya hai? | He has won the prize. | He is winning the prize. | He wins the prize. | He won the prize.",
+      "दिए गए इमेज में प्रेजेंट कंटीन्यूअस टेंस को किस फ्लोर के नाम से जाना गया है? | Diye gaye image mein Present Continuous tense ko kis floor ke naam se jaana gaya hai? | The Live Camera Floor. | The Routine Floor. | The Clock Tense. | The Past Floor.",
+      "इस टेंस में 'is/am/are' के साथ वर्ब में क्या जोड़ा जाता है? | Is tense mein 'is/am/are' ke saath verb mein kya joda jaata hai? | -ing. | -ed. | -s/es. | Nothing.",
+      "वह स्कूल जा रहा है - इसका रोमन हिंदी क्या है? | Vah school ja raha hai - iska Roman Hindi kya hai? | Vah school ja raha hai. | Vah school jata hai. | Vah school gaya. | Vah school jayega.",
+      "उसने इनाम जीता है - इसमें कौन सा इंग्लिश रूल इस्तेमाल हुआ है? | Usne inaam jeeta hai - isme kaun sa English rule istemaal hua hai? | Subject + has/have + Past Participle. | Subject + is/am/are + Verb-ing. | Subject + Verb. | Subject + will + Verb."
+    ]
+  },
+  "day7": {
+    "topic": "Present Perfect Continuous Tense (The Clock Tense)",
+    "questions": [
+      "प्रेजेंट परफेक्ट कंटीन्यूअस टेंस का मुख्य कार्य क्या है? | Present Perfect Continuous tense ka mukhya karya kya hai? | Started in the past, still running now. | Actions happening right now. | Actions in the future. | Actions that finished.",
+      "इस टेंस की पहचान क्या है? | Is tense ki pehchan kya hai? | [Time] से ...रहा है / रही है / रहे हैं. | ...ता है / ती है. | ...चुका है / चुकी है. | ...रहा है (no time).",
+      "इसका इंग्लिश रूल क्या है? | Iska English rule kya hai? | Subject + has been / have been + Verb-ing + since / for. | Subject + is + Verb-ing. | Subject + has + V3. | Subject + Verb.",
+      "वह सुबह से स्कूल जा रहा है - इसका इंग्लिश रूटीन क्या है? | Vah subah se school ja raha hai - iska English routine kya hai? | He has been going to school since morning. | He is going to school. | He goes to school. | He has gone to school.",
+      "वह सुबह से स्कूल जा रहा है - इसका रोमन हिंदी क्या है? | Vah subah se school ja raha hai - iska Roman Hindi kya hai? | Vah subah se school ja raha hai. | Vah school jata hai. | Vah school ja raha hai. | Vah school jayega.",
+      "हम दो घंटे से क्रिकेट खेल रहे हैं - इसका इंग्लिश रूटीन क्या है? | Hum do ghante se cricket khel rahe hain - iska English routine kya hai? | We have been playing cricket for two hours. | We are playing cricket. | We play cricket. | We have played cricket.",
+      "हम दो घंटे से क्रिकेट खेल रहे हैं - इसका रोमन हिंदी क्या है? | Hum do ghante se cricket khel rahe hain - iska Roman Hindi kya hai? | Hum do ghante se cricket khel rahe hain. | Hum cricket khel rahe hain. | Hum cricket khelte hain. | Hum cricket khelenge.",
+      "क्या इस टेंस में 'since' या 'for' का उपयोग होता है? | Kya is tense mein 'since' ya 'for' ka upyog hota hai? | Haan, samay batane ke liye. | Nahi, kabhi nahi. | Sirf Past tense mein. | Sirf Future tense mein.",
+      "यदि हिंदी वाक्य 'रहा है' पर समाप्त होता है, तो इंग्लिश स्ट्रक्चर क्या होगा? | Yadi hindi vakya 'raha hai' par samapt hota hai, to English structure kya hoga? | is / am / are + Verb-ing. | has been + Verb-ing. | Verb + s/es. | had + V3.",
+      "यदि हिंदी वाक्य 'चुका है' पर समाप्त होता है, तो इंग्लिश स्ट्रक्चर क्या होगा? | Yadi hindi vakya 'chuka hai' par samapt hota hai, to English structure kya hoga? | has / have + V3. | is + Verb-ing. | has been + Verb-ing. | Verb."
+    ]
+  },
+  "day8": {
+    "topic": "Third-Person Singular & Plural Number",
+    "questions": [
+      "थर्ड-पर्सन सिंगुलर (He/She/It/Ram) के पॉजिटिव सेंटेंस का स्ट्रक्चर क्या है? | Third-Person Singular (He/She/It/Ram) ke positive sentence ka structure kya hai? | Subject + plays + football. | Subject + play + football. | Subject + is + play. | Subject + does + play.",
+      "थर्ड-पर्सन सिंगुलर नेगेटिव सेंटेंस का स्ट्रक्चर क्या है? | Third-person singular negative sentence ka structure kya hai? | Subject + does + not + play + football. | Subject + do + not + play. | Subject + is + not + play. | Subject + play.",
+      "थर्ड-पर्सन सिंगुलर इंटरोगेटिव (सवाल) का क्या स्ट्रक्चर है? | Third-person singular interrogative (sawaal) ka kya structure hai? | Does + subject + play + football?. | Do + subject + play + football?. | Is + subject + playing?. | Did + subject + play?.",
+      "प्लुरल नंबर (I/We/They/You) के लिए पॉजिटिव सेंटेंस क्या है? | Plural number (I/We/They/You) ke liye positive sentence kya hai? | Subject + play + football. | Subject + plays + football. | Subject + is + play. | Subject + playing.",
+      "प्लुरल नेगेटिव सेंटेंस का स्ट्रक्चर क्या है? | Plural negative sentence ka structure kya hai? | Subject + do + not + play + football. | Subject + does + not + play. | Subject + not + play. | Subject + is + play.",
+      "थर्ड-पर्सन सिंगुलर में नेगेटिव सेंटेंस के लिए किसका प्रयोग होता है? | Third-person singular mein negative sentence ke liye kiska prayog hota hai? | does not. | do not. | is not. | am not.",
+      "प्लुरल इंटरोगेटिव का क्या स्ट्रक्चर है? | Plural interrogative ka kya structure hai? | Do + subject + play + football?. | Does + subject + play + football?. | Is + subject + playing?. | Did + subject + play?.",
+      "सिंगुलर में एम्फैटिक (Emphatic) सेंटेंस का स्ट्रक्चर क्या है? | Singular mein Emphatic sentence ka structure kya hai? | Subject + does + play + football. | Subject + play + football. | Subject + is + play. | Subject + playing.",
+      "प्लुरल WH-क्वेश्चन सेंटेंस का स्ट्रक्चर क्या है? | Plural WH-question sentence ka structure kya hai? | WH word + do + subject + play + football?. | WH word + does + subject + play + football?. | WH word + is + subject + playing?. | WH word + did + play?.",
+      "क्या 'Ram' थर्ड-पर्सन सिंगुलर है? | Kya 'Ram' third-person singular hai? | Haan. | Nahi. | Plural hai. | Sirf I/We/They hain."
+    ]
+  },
+  "day9": {
+    "topic": "Interview Questions About Hobbies",
+    "questions": [
+      "आपके शौक क्या हैं? - इंग्लिश में कैसे पूछेंगे? | Aapke shauk kya hain? - English mein kaise poochhenge? | What are your hobbies?. | How are your hobbies?. | Where are your hobbies?. | Who are your hobbies?.",
+      "यह आपका शौक क्यों है? - इंग्लिश में कैसे पूछेंगे? | Yeh aapka shauk kyon hai? - English mein kaise poochhenge? | Why is it your hobby?. | What is your hobby?. | How is your hobby?. | Where is your hobby?.",
+      "आपने यह शौक कैसे शुरू किया? - इंग्लिश में कैसे पूछेंगे? | Aapne yeh shauk kaise shuru kiya? - English mein kaise poochhenge? | How did you develop this hobby?. | What did you develop?. | Why did you develop?. | Where did you develop?.",
+      "आप अपने शौक के लिए कितना समय निकालते हैं? - इंग्लिश में कैसे पूछेंगे? | Aap apne shauk ke liye kitna samay nikalte hain? - English mein kaise poochhenge? | How much time do you spend on your hobby?. | What time do you spend?. | Why time do you spend?. | Where time do you spend?.",
+      "काम के अलावा आपके और क्या शौक हैं? - इंग्लिश में कैसे पूछेंगे? | Kaam ke alawa aapke aur kya shauk hain? - English mein kaise poochhenge? | What hobbies do you have besides work/study?. | What work do you have?. | Why hobbies do you have?. | Where hobbies do you have?.",
+      "शौक के बारे में जवाब देते समय क्या टिप दी गई है? | Shauk ke baare mein jawab dete samay kya tip di gayi hai? | Be honest and natural. | Keep it long. | Lie if needed. | No need to explain.",
+      "क्या इंटरव्यू में शौक के बारे में पूछना जरूरी है? | Kya interview mein shauk ke baare mein poochhna zaroori hai? | Haan, yeh shakhsiyat aur kaam-jeevan santulan dikhata hai. | Nahi, yeh bekaar hai. | Sirf bade jobs ke liye. | Sirf school ke liye.",
+      "उपयोगी वाक्यांश (Useful Phrases) में कौन सा है? | Upyogi vakyaansh (Useful Phrases) mein kaun sa hai? | I am passionate about.... | I hate it.... | It is bad.... | It gives nothing....",
+      "क्या आप अपने शौक के उदाहरण दे सकते हैं? | Kya aap apne shauk ke udaharan de sakte hain? | Yes (Reading, Traveling, Music, Sports). | No. | I don't know. | Only dancing.",
+      "आप क्या शौक विकसित करना चाहते हैं? - इंग्लिश में कैसे पूछेंगे? | Aap kya shauk viksit karna chahte hain? - English mein kaise poochhenge? | What new hobby would you like to try in the future?. | What hobby you have?. | Why hobby you want?. | How hobby you try?."
+    ]
+  },
+  "day10": {
+    "topic": "Tell Me About Yourself",
+    "questions": [
+      "अपना परिचय दें - इंग्लिश में कैसे कहेंगे? | Apna parichay dein - English mein kaise kahenge? | Introduce yourself. | Walk me through your profile. | Both (Introduce yourself / Walk me through your profile). | None.",
+      "अगर आप अकेले बच्चे हैं, तो कैसे कहेंगे? | Agar aap akele bachche hain, to kaise kahenge? | I am the only child. | I have siblings. | I have no family. | I am a twin.",
+      "आपके पिता क्या करते हैं? - इस सवाल का जवाब देने का तरीका क्या है? | Aapke pita kya karte hain? - Is sawaal ka jawab dene ka tareeka kya hai? | My father runs a business / is a government employee. | My father is a student. | My father is not working. | I don't know.",
+      "आपकी माता कहाँ काम करती हैं? - सही जवाब कैसे देंगे? | Aapki mata kahan kaam karti hain? - Sahi jawab kaise denge? | My mother works in the private sector. | My mother is a doctor. | My mother is a student. | My mother is not working.",
+      "क्या 'dancing' एक शौक हो सकता है? | Kya 'dancing' ek shauk ho sakta hai? | Haan. | Nahi. | Sirf singing hota hai. | Sirf playing hota hai.",
+      "अगर आपको स्पेलिंग पूछनी हो, तो कैसे पूछेंगे? | Agar aapko spelling poochhni ho, to kaise poochhenge? | Could you please spell 'recite' out?. | Say 'recite'. | 'Recite' spelling?. | Tell me 'recite'.",
+      "अगर आप समझ गए तो कैसे कहेंगे? | Agar aap samajh gaye to kaise kahenge? | I understand / I got it. | Yes. | Good. | Okay.",
+      "इंटरव्यू में 'detail-oriented' का क्या अर्थ है? | Interview mein 'detail-oriented' ka kya arth hai? | Dhyan se kaam karne wala. | Jo kaam na kare. | Jo jaldi bhool jaye. | Lazy.",
+      "क्या 'corporate sector' में भी पिता काम कर सकते हैं? | Kya 'corporate sector' mein bhi pita kaam kar sakte hain? | Haan. | Nahi. | Sirf government mein. | Sirf private mein.",
+      "क्या परिचय देते समय व्यक्तिगत जानकारी देनी चाहिए? | Kya parichay dete samay vyaktigat jaankari deni chahiye? | Haan, agar zaroori ho. | Nahi, bilkul nahi. | Sirf naam. | Sirf age."
+    ]
+  },
+  "day11": {
+    "topic": "Basic English Grammar - Complete Guide",
+    "questions": [
+      "सब्जेक्ट (कर्ता) की परिभाषा क्या है? | Subject (karta) ki paribhasha kya hai? | Sentence mein jo insaan, jaanwar ya cheez koi kaam karta hai, use Subject kehte hain. | Sentence mein jo kaam ho raha hai. | Helping verb ko subject kehte hain. | Main verb ko subject kehte hain.",
+      "हेल्पिंग वर्ब का क्या कार्य है? | Helping verb ka kya karya hai? | Ye batate hain ki kaam kab ho raha hai. | Ye sirf naam batate hain. | Ye action batate hain. | Ye sirf question puchne ke liye hai.",
+      "मेन वर्ब किसे कहते हैं? | Main verb kise kehte hain? | Sentence mein jo asli action ho raha hota hai. | Jo helping verb hota hai. | Jo subject hota hai. | Jo object hota hai.",
+      "नेगेटिव सेंटेंस में 'NOT' कहाँ लगता है? | Negative sentence mein 'NOT' kahan lagta hai? | Teesre (3rd) number par. | Pehle number par. | Dusre number par. | Aakhri mein.",
+      "पॉजिटिव सेंटेंस का सही फ़ॉर्मूला क्या है? | Positive sentence ka sahi formula kya hai? | Sub + H.V. + Verb. | Sub + Verb + H.V. | Verb + Sub + H.V. | H.V. + Sub + Verb.",
+      "प्रेजेंट टेंस की हेल्पिंग वर्ब्स कौन सी हैं? | Present tense ki helping verbs kaun si hain? | Is, Am, Are, Do, Does, Has, Have. | Was, Were, Did, Had. | Will, Shall. | Can, Could, May.",
+      "पास्ट टेंस पहचानने के लिए किन शब्दों का उपयोग होता है? | Past tense pehchanne ke liye kin shabdon ka upyog hota hai? | Was, Were, Did, Had. | Is, Am, Are. | Will, Shall. | Has, Have.",
+      "फ्यूचर टेंस के लिए कौन से शब्द हैं? | Future tense ke liye kaun se shabd hain? | Will, Shall. | Was, Were. | Is, Am, Are. | Do, Does.",
+      "क्या हेल्पिंग वर्ब से टेंस का पता चलता है? | Kya helping verb se tense ka pata chalta hai? | Haan, tense, mood, aur ability ka pata chalta hai. | Nahi, sirf naam ka pata chalta hai. | Nahi, sirf action ka. | Sirf question ke liye.",
+      "I can go का हिंदी अनुवाद क्या है? | I can go ka hindi anuvaad kya hai? | Main ja sakta hoon. | Main ja raha hoon. | Main gaya. | Main jaunga."
+    ]
+  },
+  "day12": {
+    "topic": "Tenses Overview Chart",
+    "questions": [
+      "सिंपल प्रेजेंट टेंस का स्ट्रक्चर क्या है? | Simple Present tense ka structure kya hai? | Sub + V1 + Obj. | Sub + V2 + Obj. | Sub + will + V1 + Obj. | Sub + is + V-ing + Obj.",
+      "प्रेजेंट कंटीन्यूअस टेंस में क्या हेल्पिंग वर्ब लगती है? | Present Continuous tense mein kya helping verb lagti hai? | am/is/are. | has/have. | was/were. | will be.",
+      "पास्ट परफेक्ट टेंस का स्ट्रक्चर क्या है? | Past Perfect tense ka structure kya hai? | Sub + had + V3 + Obj. | Sub + have + V3. | Sub + has + V3. | Sub + will have + V3.",
+      "फ्यूचर परफेक्ट टेंस का स्ट्रक्चर क्या है? | Future Perfect tense ka structure kya hai? | Sub + will have + V3 + Obj. | Sub + had + V3. | Sub + has + V3. | Sub + have + V3.",
+      "सिंपल पास्ट की पहचान (Pehchan) क्या है? | Simple Past ki pehchan kya hai? | Kaam poora ho gaya. | Action chal raha hai. | Habit. | Future plan.",
+      "प्रेजेंट परफेक्ट कंटीन्यूअस का स्ट्रक्चर क्या है? | Present Perfect Continuous ka structure kya hai? | Sub + has/have been + V-ing + Obj. | Sub + is + V-ing. | Sub + had + V3. | Sub + will + V-ing.",
+      "पास्ट कंटीन्यूअस टेंस का स्ट्रक्चर क्या है? | Past Continuous tense ka structure kya hai? | Sub + was/were + V-ing + Obj. | Sub + is + V-ing. | Sub + has + V-ing. | Sub + will + V-ing.",
+      "सिंपल फ्यूचर का स्ट्रक्चर क्या है? | Simple Future ka structure kya hai? | Sub + will + V1 + Obj. | Sub + V1. | Sub + V2. | Sub + will + V-ing.",
+      "फ्यूचर कंटीन्यूअस टेंस का स्ट्रक्चर क्या है? | Future Continuous tense ka structure kya hai? | Sub + will be + V-ing + Obj. | Sub + will + V-ing. | Sub + will have + V3. | Sub + is + V-ing.",
+      "नेगेटिव सेंटेंस, पास्ट टेंस के लिए स्ट्रक्चर क्या है? | Negative sentence, Past tense ke liye structure kya hai? | Sub + did not + V1 + Obj. | Sub + do not + V1. | Sub + is not + V1. | Sub + will not + V1."
+    ]
+  },
+  "day13": {
+    "topic": "Imperative and Exclamatory Sentences",
+    "questions": [
+      "इंपरेटिव सेंटेंस का स्ट्रक्चर क्या है? | Imperative sentence ka structure kya hai? | V1 + Object. | Sub + V1. | V1 + Sub. | Object + V1.",
+      "कमांड के लिए क्या एग्जांपल है? | Command ke liye kya example hai? | Eat a mango. | Please eat. | Study hard. | Open door.",
+      "रिक्वेस्ट के लिए 'Please' का उपयोग कहाँ होता है? | Request ke liye 'Please' ka upyog kahan hota hai? | Please eat a mango. | Eat please. | Mango eat please. | Please mango eat.",
+      "एडवाइस के लिए क्या एग्जांपल दिया गया है? | Advice ke liye kya example diya gaya hai? | Study hard. | Eat mango. | Open door. | Come here.",
+      "एक्सक्लेमेटरी सेंटेंस का क्या कार्य है? | Exclamatory sentence ka kya karya hai? | Strong Feeling (tivra bhavna). | Request. | Advice. | Command.",
+      "एक्सक्लेमेटरी सेंटेंस का स्ट्रक्चर क्या है? | Exclamatory sentence ka structure kya hai? | What/How + Expression + !. | V1 + Object. | Sub + V1. | Object + V1.",
+      "आश्चर्य (Surprise) के लिए क्या एग्जांपल है? | Surprise ke liye kya example hai? | What a sweet mango!. | How beautiful!. | What a player!. | How fast!.",
+      "प्रशंसा (Admiration) के लिए क्या एग्जांपल है? | Admiration ke liye kya example hai? | How beautiful this flower is!. | What a mango!. | What a player!. | How fast!.",
+      "तारीफ (Praise) के लिए क्या एग्जांपल है? | Praise ke liye kya example hai? | What a great player!. | What a mango!. | How beautiful!. | How fast!.",
+      "एक्सक्लेमेटरी सेंटेंस की पहचान क्या है? | Exclamatory sentence ki pehchan kya hai? | End mein ! (exclamation mark) lagta hai. | End mein . lagta hai. | End mein ? lagta hai. | End mein , lagta hai."
+    ]
+  },
+  "day14": {
+    "topic": "Grammar Rules: Verbs and Prepositions",
+    "questions": [
+      "वर्ब के अंत में 's-ch-x' या 'z-o-sh' हो तो क्या जोड़ते हैं? | Verb ke end mein 's-ch-x' ya 'z-o-sh' ho to kya jodte hain? | 'es' jodte hain. | 's' jodte hain. | 'ing' jodte hain. | 'ed' jodte hain.",
+      "सब्जेक्ट 'He' के साथ गो (go) का क्या रूप होगा? | Subject 'He' ke saath go ka kya roop hoga? | goes. | go. | going. | gone.",
+      "'In' का उपयोग किस संदर्भ में होता है? | 'In' ka upyog kis sandarbh mein hota hai? | Inside (pehle se andar). | Movement. | Future. | Past.",
+      "'Into' का उपयोग किस संदर्भ में होता है? | 'Into' ka upyog kis sandarbh mein hota hai? | Andar jaana (movement). | Inside (pehle se andar). | Future. | Past.",
+      "Adjective + Noun होने पर 'What' का उपयोग कैसे करते हैं? | Adjective + Noun hone par 'What' ka upyog kaise karte hain? | What + a/an + Adjective + Noun!. | How + Adjective + Noun!. | What + Noun!. | How + Adjective!.",
+      "अगर सिर्फ Adjective हो तो 'How' का प्रयोग कैसे करते हैं? | Agar sirf Adjective ho to 'How' ka prayog kaise karte hain? | How + Adjective + Subject + Verb!. | What + Adjective + Subject + Verb!. | How + Noun!. | What + Noun!.",
+      "वॉच (watch) में 'es' क्यों जोड़ा गया है? | Watch mein 'es' kyon joda gaya hai? | Kyunki 'ch' par end ho raha hai. | Kyunki vowel hai. | Kyunki 's' hai. | Kyunki 'x' hai.",
+      "प्रीपोजिशन 'in' का एग्जांपल क्या है? | Preposition 'in' ka example kya hai? | I am in my room. | I walked in the room. | I go in room. | Room in me.",
+      "क्या 'into' गति (movement) को दर्शाता है? | Kya 'into' gati (movement) ko darshata hai? | Haan, jaise 'walked into the room'. | Nahi. | Sirf in hota hai. | Sirf andar.",
+      "हाउ (How) का प्रयोग करने का क्या नियम है? | How ka prayog karne ka kya niyam hai? | Adjective par zor ho aur Noun na ho. | Noun par zor ho. | Verb par zor ho. | Adverb par zor ho."
+    ]
+  },
+  "day15": {
+    "topic": "How did you spend yesterday",
+    "questions": [
+      "सुबह जल्दी उठने को इंग्लिश में क्या कहेंगे? | Subah jaldi uthne ko English mein kya kahenge? | I woke up early in the morning. | I sleep early. | I take bath. | I go to school.",
+      "दांत साफ करने का इंग्लिश वाक्य क्या है? | Daant saaf karne ka English vakya kya hai? | I brushed my teeth. | I take bath. | I eat breakfast. | I play.",
+      "स्नान करने को इंग्लिश में कैसे लिखेंगे? | Snan karne ko English mein kaise likhenge? | I took a bath. | I brushed teeth. | I studied. | I ate dinner.",
+      "स्कूल के लिए तैयार होने का इंग्लिश अनुवाद क्या है? | School ke liye taiyar hone ka English anuvaad kya hai? | I got dressed for school. | I went to school. | I ate breakfast. | I played.",
+      "नाश्ता करने को इंग्लिश में क्या कहेंगे? | Nashta karne ko English mein kya kahenge? | I ate breakfast. | I had lunch. | I ate dinner. | I brushed teeth.",
+      "स्कूल जाने को इंग्लिश में क्या कहेंगे? | School jaane ko English mein kya kahenge? | I went to school with my friends. | I studied in class. | I did homework. | I woke up.",
+      "कक्षा में पढ़ाई करने का इंग्लिश वाक्य क्या है? | Kaksha mein padhai karne ka English vakya kya hai? | I studied in class. | I went to school. | I had lunch. | I played.",
+      "दोपहर का भोजन करने को इंग्लिश में क्या कहेंगे? | Dopahar ka bhojan karne ko English mein kya kahenge? | I had lunch. | I ate breakfast. | I ate dinner. | I took a bath.",
+      "शाम को खेलने को इंग्लिश में क्या कहेंगे? | Shaam ko khelne ko English mein kya kahenge? | I played in the evening. | I did homework. | I went to school. | I studied.",
+      "होमवर्क करने का इंग्लिश अनुवाद क्या है? | Homework karne ka English anuvaad kya hai? | I did my homework. | I ate dinner. | I went to bed. | I brushed teeth."
+    ]
+  },
+  "day16": {
+    "topic": "Modals and Phrasals: Obligation and Habit",
+    "questions": [
+      "'Have to' का प्रयोग किसके लिए होता है? | 'Have to' ka prayog kiske liye hota hai? | Present Obligation. | Past Habit. | Strong Advice. | Preference.",
+      "'Used to' का प्रयोग किसके लिए होता है? | 'Used to' ka prayog kiske liye hota hai? | Past Habit. | Present Obligation. | Expectation. | Advice.",
+      "'Had to' का प्रयोग किसके लिए होता है? | 'Had to' ka prayog kiske liye hota hai? | Past Obligation. | Present Obligation. | Past Habit. | Preference.",
+      "He has to study for exams का हिंदी मतलब क्या है? | He has to study for exams ka Hindi matlab kya hai? | Mujhe pariksha ke liye padhna hai. | Mujhe khelna hai. | Mujhe sona hai. | Mujhe khana hai.",
+      "'Ought to' का क्या मतलब है? | 'Ought to' ka kya matlab hai? | Moral Obligation. | Past Habit. | Expectation. | Preference.",
+      "'Had better' का क्या मतलब है? | 'Had better' ka kya matlab hai? | Strong Advice. | Past Obligation. | Present Obligation. | Past Habit.",
+      "'Would rather' का क्या मतलब है? | 'Would rather' ka kya matlab hai? | Preference. | Strong Advice. | Expectation. | Past Habit.",
+      "'Supposed to' का क्या मतलब है? | 'Supposed to' ka kya matlab hai? | Expectation. | Strong Advice. | Past Obligation. | Preference.",
+      "'Be to' का प्रयोग किस लिए होता है? | 'Be to' ka prayog kis liye hota hai? | Scheduled Arrangement. | Past Habit. | Present Obligation. | Moral Obligation.",
+      "I used to ride a bicycle - इसका हिंदी अनुवाद क्या है? | I used to ride a bicycle - iska Hindi anuvaad kya hai? | Main cycle chalaya karta tha. | Mujhe cycle chalani hai. | Main cycle chala raha hoon. | Main cycle chalaunga."
+    ]
+  },
+  "day17": {
+    "topic": "Important Sentences: Perfect Tense",
+    "questions": [
+      "I have eaten का स्ट्रक्चर क्या है? | I have eaten ka structure kya hai? | Subject + have/has + V3. | Subject + V1. | Subject + V2. | Subject + will + V1.",
+      "I have not eaten का मतलब क्या है? | I have not eaten ka matlab kya hai? | Maine nahi khaya hai. | Maine khaya hai. | Main kha raha hoon. | Main khaunga.",
+      "Have I eaten? का स्ट्रक्चर क्या है? | Have I eaten? ka structure kya hai? | Have/Has + Subject + V3?. | Subject + have + V3. | Have + V3 + Subject. | V3 + Subject + Have.",
+      "I have to eat का स्ट्रक्चर क्या है? | I have to eat ka structure kya hai? | Subject + have/has to + V1. | Subject + V3. | Subject + V1. | Subject + V2.",
+      "V3 का पूरा नाम क्या है? | V3 ka poora naam kya hai? | Past Participle. | Present Participle. | Base Form. | Verb One.",
+      "When it rains, I will take a bath - इसमें कौन सा स्ट्रक्चर है? | When it rains, I will take a bath - isme kaun sa structure hai? | When + Present Simple, Subject + will + V1. | When + Past, Subject + V2. | When + V1, Subject + V2. | When + Future, Subject + Present.",
+      "Maine khaya hai - इसे इंग्लिश में क्या कहेंगे? | Maine khaya hai - ise English mein kya kahenge? | I have eaten. | I ate. | I eat. | I will eat.",
+      "क्या 'have to' के साथ V1 का प्रयोग होता है? | Kya 'have to' ke saath V1 ka prayog hota hai? | Haan. | Nahi. | Sirf V2. | Sirf V3.",
+      "I have certainly eaten - इसमें क्या जोड़ा गया है? | I have certainly eaten - isme kya joda gaya hai? | certainly. | not. | will. | had.",
+      "Why have I eaten? - किस प्रकार का वाक्य है? | Why have I eaten? - kis prakar ka vakya hai? | Question (WH-Question). | Positive. | Negative. | Command."
+    ]
+  },
+  "day18": {
+    "topic": "Question Tags",
+    "questions": [
+      "क्वेश्चन टैग का क्या उपयोग है? | Question tag ka kya upyog hai? | To confirm something or to invite agreement. | To ask long questions. | To give commands. | To describe feelings.",
+      "यदि सेंटेंस पॉजिटिव है, तो टैग क्या होगा? | Yadi sentence positive hai, to tag kya hoga? | The tag is negative. | The tag is positive. | No tag is used. | The tag is neutral.",
+      "यदि सेंटेंस नेगेटिव है, तो टैग क्या होगा? | Yadi sentence negative hai, to tag kya hoga? | The tag is positive. | The tag is negative. | No tag is used. | The tag is neutral.",
+      "I am your friend का क्वेश्चन टैग क्या होगा? | I am your friend ka question tag kya hoga? | aren't I?. | am not I?. | am I?. | isn't I?.",
+      "She is a student का क्वेश्चन टैग क्या होगा? | She is a student ka question tag kya hoga? | isn't she?. | is she?. | aren't she?. | was she?.",
+      "You like ice cream का क्वेश्चन टैग क्या होगा? | You like ice cream ka question tag kya hoga? | don't you?. | do you?. | doesn't you?. | won't you?.",
+      "They went home का क्वेश्चन टैग क्या होगा? | They went home ka question tag kya hoga? | didn't they?. | did they?. | do they?. | won't they?.",
+      "क्वेश्चन टैग के लिए क्या टिप दी गई है? | Question tag ke liye kya tip di gayi hai? | Use a comma before the question tag. | Use a full stop. | Use a semicolon. | No punctuation needed.",
+      "You are coming with us का क्वेश्चन टैग क्या होगा? | You are coming with us ka question tag kya hoga? | aren't you?. | are you?. | isn't you?. | don't you?.",
+      "टैग लगाते समय क्या ध्यान रखना चाहिए? | Tag lagate samay kya dhyan rakhna chahiye? | Keep the same tense as in the sentence. | Change the tense. | Use any tense. | Ignore the tense."
+    ]
+  },
+
+  "day19": {
+    "topic": "English Grammar Lesson: Modal Verbs (Updated)",
+    "questions": [
+      "CAN का अर्थ क्या है? | CAN ka arth kya hai? | Ability (Present). | Ability (Past). | Permission. | Advice.",
+      "COULD का अर्थ क्या है? | COULD ka arth kya hai? | Ability (Past). | Ability (Present). | Permission. | Advice.",
+      "MAY का अर्थ क्या है? | MAY ka arth kya hai? | Permission. | Future. | Ability. | Past Habit.",
+      "MIGHT का अर्थ क्या है? | MIGHT ka arth kya hai? | Weak Possibility. | Advice. | Compulsion. | Requirement.",
+      "SHOULD का अर्थ क्या है? | SHOULD ka arth kya hai? | Future. | Permission. | Past Habit. | Compulsion.",
+      "WILL का अर्थ क्या है? | WILL ka arth kya hai? | Past Habit. | Future. | Advice. | Weak Possibility.",
+      "HAVE TO का अर्थ क्या है? | HAVE TO ka arth kya hai? | Discontinued Past Habit. | Compulsion. | Future. | Permission.",
+      "MUST का अर्थ क्या है? | MUST ka arth kya hai? | Compulsion. | Requirement. | Future. | Permission.",
+      "NEED का अर्थ क्या है? | NEED ka arth kya hai? | Requirement. | Advice. | Future. | Ability.",
+      "NEED NOT का अर्थ क्या है? | NEED NOT ka arth kya hai? | Lack of Obligation (Optional). | Compulsion. | Future. | Ability."
+    ]
+  },
+    "day20": {
+    "topic": "Article Rules: The Complete Guide",
+    "questions": [
+      "Indefinite Articles कौन से हैं? | Indefinite Articles kaun se hain? | A, An. | The. | Is, Am, Are. | Has, Have.",
+      "Definite Article कौन सा है? | Definite Article kaun sa hai? | The. | A. | An. | In.",
+      "A का प्रयोग किसके साथ होता है? | A ka prayog kiske saath hota hai? | Before a consonant sound. | Before a vowel sound. | After a vowel. | At the end of a word.",
+      "An का प्रयोग किसके साथ होता है? | An ka prayog kiske saath hota hai? | Before a vowel sound. | Before a consonant sound. | After a consonant. | At the end of a word.",
+      "पहली बार ज़िक्र होने पर क्या लगाते हैं? | Pehli baar zikr hone par kya lagate hain? | A, An. | The. | In. | Into.",
+      "दोबारा ज़िक्र होने पर क्या लगाते हैं? | Dobara zikr hone par kya lagate hain? | The. | A. | An. | Into.",
+      "The + Consonant का उच्चारण क्या है? | The + Consonant ka uchcharan kya hai? | da. | dee. | du. | de.",
+      "The + Vowel का उच्चारण क्या है? | The + Vowel ka uchcharan kya hai? | dee. | da. | du. | de.",
+      "An SBI क्यों सही है? | An SBI kyon sahi hai? | Because it follows vowel sounds. | Because it follows consonant rules. | Because it's a noun. | Because it's a verb.",
+      "A University क्यों सही है? | A University kyon sahi hai? | Because it follows consonant rules. | Because it follows vowel sounds. | Because it's a verb. | Because it's a noun."
+    ]
+  },
+
+    "day21": {
+    "topic": "English Grammar Lesson: Modal Verbs",
+    "questions": [
+      "Modal Verbs का स्ट्रक्चर क्या है? | Modal Verbs ka structure kya hai? | S + [Modal] + V1 + O. | S + V1 + [Modal] + O. | S + O + [Modal] + V1. | O + [Modal] + S + V1.",
+      "CAN का उपयोग किस लिए होता है? | CAN ka upyog kis liye hota hai? | Ability (Present). | Permission. | Advice. | Future.",
+      "COULD का उपयोग किस लिए होता है? | COULD ka upyog kis liye hota hai? | Ability (Past). | Weak Possibility. | Future. | Compulsion.",
+      "MAY का उपयोग किस लिए होता है? | MAY ka upyog kis liye hota hai? | Permission. | Advice. | Future. | Ability.",
+      "MIGHT का उपयोग किस लिए होता है? | MIGHT ka upyog kis liye hota hai? | Weak Possibility. | Past Habit. | Future. | Requirement.",
+      "SHOULD का उपयोग किस लिए होता है? | SHOULD ka upyog kis liye hota hai? | Advice. | Permission. | Compulsion. | Obligation.",
+      "WILL का उपयोग किस लिए होता है? | WILL ka upyog kis liye hota hai? | Future. | Past Habit. | Ability. | Permission.",
+      "WOULD का उपयोग किस लिए होता है? | WOULD ka upyog kis liye hota hai? | Past Habit. | Future. | Advice. | Requirement.",
+      "MUST का उपयोग किस लिए होता है? | MUST ka upyog kis liye hota hai? | Compulsion. | Weak Possibility. | Permission. | Future.",
+      "NEED का उपयोग किस लिए होता है? | NEED ka upyog kis liye hota hai? | Requirement. | Advice. | Future. | Ability."
+    ]
+  },
+  "day22": {
+    "topic": "Tell me about your birthday",
+    "questions": [
+      "सुबह उठकर आपने क्या देखा? | Subah uthkar aapne kya dekha? | I woke up with gifts by my bed. | I woke up with my friends. | I woke up with my family. | I woke up with a cake.",
+      "आपने जन्मदिन पर कैसे कपड़े पहने? | Aapne janamdin par kaise kapde pehne? | I got dressed in my new clothes. | I got dressed in old clothes. | I got dressed in school uniform. | I got dressed in my party dress.",
+      "आपने जन्मदिन पर घर के लिए क्या किया? | Aapne janamdin par ghar ke liye kya kiya? | We decorated the whole house. | We painted the house. | We cleaned the house. | We left the house.",
+      "दोस्त पार्टी के लिए क्या किए? | Dost party ke liye kya kiye? | My friends arrived for the party. | My friends left the party. | My friends slept at the party. | My friends ate at the party.",
+      "मोमबत्तियां बुझाने के लिए इंग्लिश में क्या कहेंगे? | Mombattiyan bujhane ke liye English mein kya kahenge? | I blew out the candles. | I lit the candles. | I ate the candles. | I broke the candles.",
+      "आपने केक के बारे में क्या कहा? | Aapne cake ke baare mein kya kaha? | I ate a piece of my birthday cake. | I baked the cake. | I sold the cake. | I threw the cake.",
+      "आपने पार्टी में कौन सा खेल खेला? | Aapne party mein kaun sa khel khela? | We played musical chair and other games. | We played football. | We played cricket. | We played tennis.",
+      "महमानों को धन्यवाद देने के लिए क्या कहा? | Mehmanon ko dhanyavaad dene ke liye kya kaha? | I said thank you to all my guests. | I said goodbye to all my guests. | I said hello to all my guests. | I said nothing to my guests.",
+      "रिटर्न गिफ्ट्स के बारे में क्या किया? | Return gifts ke baare mein kya kiya? | I picked out some of my favorite return gifts. | I sold return gifts. | I bought return gifts. | I hid return gifts.",
+      "सोने जाने से पहले परिवार ने क्या किया? | Sone jaane se pehle parivar ne kya kiya? | My family gave me a special hug. | My family scolded me. | My family ignored me. | My family left me."
+    ]
+  }
+
+
+}
