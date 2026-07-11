@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY ENGLISH WITH SARFRAZ TEST-2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.3/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.3/vfs_fonts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: -4px 7px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 0 2px;
+            border-radius: 5px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .question {
+            margin: 30px 0;
+        }
+
+        section div:nth-child(1) {
+            flex: 2;
+            min-width: 250px;
+        }
+
+        section div:nth-child(2) {
+            flex: 1;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px;
+        }
+
+        input {
+            height: 40px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .question p,
+        .accordion-content li {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        @media screen and (max-width:600px) {
+            label,
+            .timer {
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+
+        div:where(.swal2-container).swal2-center>.swal2-popup {
+            width: min(300px, 90vw);
+        }
+
+        .instruction-accordion {
+            margin: 20px 0;
+        }
+
+        .accordion-btn {
+            width: 100% !important;
+            display: block;
+            background: #ffc107 !important;
+            color: #000 !important;
+            padding: 14px !important;
+            border: none;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+
+        .accordion-btn:hover {
+            background: #e0a800 !important;
+        }
+
+        .accordion-content {
+            display: none;
+            background: #fff8db;
+            border: 2px solid #ffc107;
+            border-top: none;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .accordion-content ul {
+            padding-left: 20px;
+        }
+
+        .accordion-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Test Navigation Links */
+        .test-nav {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+
+        .test-nav a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            border: 2px solid transparent;
+        }
+
+        .test-nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+            border-color: #fff;
+        }
+
+        .test-nav a:active {
+            transform: translateY(0);
+        }
+
+        .test-nav a.active {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        /* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        #studentName {
+            height: 40px;
+            margin-top: 8px;
+            margin-left: 0;
+        }
+
+        textarea {
+            min-height: 120px;
+            font-size: 16px;
+        }
+
+        .question p {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .timer {
+            white-space: nowrap;
+        }
+
+        @media (max-width:768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+                line-height: 1.3;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            section {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            section div {
+                width: 100%;
+            }
+
+            section div:nth-child(2) {
+                text-align: left;
+            }
+
+            .accordion-btn {
+                font-size: 16px !important;
+                padding: 12px !important;
+            }
+
+            .accordion-content {
+                padding: 12px;
+            }
+
+            .accordion-content li {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 12px;
+            }
+
+            .test-nav {
+                gap: 8px;
+                margin: 15px 0;
+            }
+
+            .test-nav a {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width:480px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 14px;
+            }
+
+            .question p {
+                font-size: 15px;
+            }
+
+            textarea {
+                font-size: 15px;
+                min-height: 100px;
+            }
+
+            label,
+            .timer {
+                font-size: 14px;
+            }
+
+            .accordion-btn {
+                font-size: 15px !important;
+            }
+
+            .test-nav {
+                gap: 6px;
+                margin: 12px 0;
+            }
+
+            .test-nav a {
+                padding: 7px 12px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width:360px) {
+            .test-nav a {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>MNC JOB WEEK 5</h1>
+
+        <!-- Stylish Test Navigation -->
+        <div class="test-nav">
+            <a href="AudioTest.html">TEST 2</a>
+            <a href="objectiveTest.html" class="active">TEST 3</a>
+            <a href="translationTest.html">TEST 4</a>
+        </div>
+
+        <h3>Please answer all the questions.</h3>
+
+        <div class="instruction-accordion">
+
+            <button class="accordion-btn" onclick="toggleInstructions()">
+                📌 Exam Instructions ▼
+            </button>
+
+            <div class="accordion-content" id="instructionContent">
+
+                <ul>
+                    <li>Students must write answers only using the keyboard.</li>
+
+                    <li>Copy, paste, cut, right-click, and text selection are strictly prohibited.</li>
+                    <li>1st violation: Warning | 2nd: Final Warning | 3rd: Clear current answer only.</li>
+
+                    <ul>
+                        <li>Switches browser tabs</li>
+                        <li>Opens Google or ChatGPT</li>
+                        <li>Minimizes the browser</li>
+                        <li>Changes application/window</li>
+                        <li>Exits fullscreen mode</li>
+                        <li>Uses ALT + TAB</li>
+                    </ul>
+
+                    <li>If cheating activity is detected:</li>
+
+                    <ul>
+                        <li>All answers will be cleared</li>
+                        <li>The timer will reset</li>
+                        <li>The student must start the test again</li>
+                    </ul>
+
+                    <li>Please do not refresh or leave the page during the exam.</li>
+
+                    <li>Camera monitoring may be enabled during the test.</li>
+
+                    <li>Any suspicious activity can lead to automatic submission or restart of the test.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <section>
+            <div>
+                <label for="studentName">Student Name: </label>
+                <input type="text" id="studentName" placeholder="Enter your name" required>
+            </div>
+            <div class="timer" id="timer">Time Left: <span id="time" style="color: red;">00:00</span></div>
+        </section>
+
+        <div id="questionsContainer"></div>
+        <button id="submit">Submit</button>
+    </div>
+
+    <script>
+        const examples = [
+            {
+                question: "Introduce Yourself.",
+                correctAnswer: "Hi, everyone. Thank you very much for giving me this opportunity. I am going to speak about myself. My name is ____________. My father's name is ____________. My mother's name is ____________. I live in ____________. I study in 10th class. My father is a doctor and my mother is a housewife. I want to become a doctor in the future. My hobbies are singing songs and listening to music. I practice English daily and I like reading books and watching videos. There are 5 siblings in my family. I have 2 brothers and 3 sisters. Thank you everyone.",
+                keywords: [
+                    "introduce myself",
+                    "my name is",
+                    "father's name",
+                    "mother's name",
+                    "I live in",
+                    "study in 10th class",
+                    "doctor",
+                    "housewife",
+                    "future goal",
+                    "hobbies",
+                    "practice English",
+                    "reading books",
+                    "watching videos",
+                    "brothers and sisters",
+                    "thank you everyone"
+                ],
+                userAnswer: "Hi, everyone. Thank you very much for giving me this opportunity. I am going to speak about myself. My name is ____________. My father's name is ____________. My mother's name is ____________. I live in ____________. I study in 10th class. My father is a doctor and my mother is a housewife. I want to become a doctor in the future. My hobbies are singing songs and listening to music. I practice English daily and I like reading books and watching videos. There are 5 siblings in my family. I have 2 brothers and 3 sisters. Thank you everyone."
+            },
+            {
+                question: "Tell me about your daily life routine as a student.",
+                correctAnswer: "I wake up early in the morning. I brush my teeth and take a bath. I get dressed for school and eat breakfast. I go to school with my friends and study in class. I have lunch and play in the evening. Then I do my homework, eat dinner with my family, and go to bed early. Thank you and have a great day.",
+                keywords: [
+                    "wake up early",
+                    "brush my teeth",
+                    "take a bath",
+                    "get dressed",
+                    "eat breakfast",
+                    "go to school",
+                    "study in class",
+                    "have lunch",
+                    "play in the evening",
+                    "do homework",
+                    "eat dinner",
+                    "go to bed early"
+                ],
+                userAnswer: ""
+            },
+
+            {
+                question: "What is a WH-Question Sentence? Write its structure and five examples for singular and plural subjects.",
+                correctAnswer: "WH-Question sentences begin with words like What, Why, When, Where, and How. Singular Structure: WH Word + Does + Subject + Verb + Object? Plural Structure: WH Word + Do + Subject + Verb + Object? Examples: Why does he play football? When does she play football? What does he play? Why do they play football? Where do they play football?",
+                keywords: [
+                    "wh question",
+                    "what",
+                    "why",
+                    "when",
+                    "where",
+                    "how",
+                    "does",
+                    "do",
+                    "why does he play football",
+                    "why do they play football"
+                ],
+                userAnswer: ""
+            },
+
+
+            {
+                question: "How can you recognize the four types of Present Tense?",
+                correctAnswer: "Present Indefinite Tense is identified by sentences ending with ta, te, ti. Present Continuous Tense is identified by sentences ending with raha, rahi, rahe. Present Perfect Tense is identified by sentences ending with chuka, chuki, chuke. Present Perfect Continuous Tense is identified by sentences ending with raha, rahi, rahe along with a duration of time such as since or for.",
+                keywords: [
+                    "ta te ti",
+
+                    "raha rahi rahe",
+                    "chuka chuki chuke",
+                    "since",
+                    "for",
+                    "duration of time",
+                    "present indefinite",
+                    "present continuous",
+                    "present perfect",
+                    "present perfect continuous"
+                ],
+                userAnswer: ""
+            },
+            {
+                question: "Write the 8 sentence forms of 'Ram aam khata hai (राम आम खाता है).' ",
+                correctAnswer: "The 8 sentence forms are: 1. Affirmative: Ram eats a mango. 2. Negative: Ram does not eat a mango. 3. Interrogative: Does Ram eat a mango? 4. Negative Interrogative: Does Ram not eat a mango? 5. Emphatic: Ram does eat a mango. 6. WH-Question: What does Ram eat? 7. Passive Voice: A mango is eaten by Ram. 8. Tag Question: Ram eats a mango, doesn't he?",
+                keywords: [
+                    "ram eats a mango",
+                    "ram does not eat a mango",
+                    "does ram eat a mango",
+                    "does ram not eat a mango",
+                    "ram does eat a mango",
+                    "what does ram eat",
+                    "a mango is eaten by ram",
+                    "doesn't he",
+                    "affirmative",
+                    "negative",
+                    "interrogative",
+                    "negative interrogative",
+                    "emphatic",
+                    "wh-question",
+                    "passive voice",
+                    "tag question"
+                ],
+                userAnswer: ""
+            }
+
+
+        ]
+
+        const questionsContainer = document.getElementById('questionsContainer');
+        examples.forEach((example, index) => {
+            const questionBlock = document.createElement('div');
+            questionBlock.classList.add('question');
+            questionBlock.innerHTML = `
+                <p>${index + 1}. ${example.question}</p>
+                <textarea placeholder="Your answer here..." rows="4" class="no-copy-paste" data-index="${index}"></textarea>
+            `;
+            questionsContainer.appendChild(questionBlock);
+        });
+
+        function getSimilarityPercentage(a, b) {
+            let aWords = a.split(" ");
+            let bWords = b.split(" ");
+            let matches = 0;
+            aWords.forEach(word => {
+                if (bWords.includes(word)) matches++;
+            });
+            return Math.round((matches / bWords.length) * 100);
+        }
+
+        function evaluateAnswer(userAnswer, correctAnswer, keywords) {
+            userAnswer = userAnswer.trim();
+            correctAnswer = correctAnswer.trim();
+            const normalizedUser = userAnswer.toLowerCase().replace(/\s+/g, ' ');
+            const normalizedCorrect = correctAnswer.toLowerCase().replace(/\s+/g, ' ');
+
+            if (!userAnswer) return { score: 0 };
+            if (normalizedUser === normalizedCorrect) return { score: 100 };
+
+            const similarityPercentage = getSimilarityPercentage(normalizedUser, normalizedCorrect);
+
+            if (similarityPercentage >= 90) return { score: 90 };
+            if (similarityPercentage >= 80) return { score: 80 };
+            if (similarityPercentage >= 70) return { score: 70 };
+            if (similarityPercentage >= 60) return { score: 60 };
+            if (similarityPercentage >= 50) return { score: 50 };
+            if (similarityPercentage >= 40) return { score: 40 };
+            if (similarityPercentage >= 30) return { score: 30 };
+            if (similarityPercentage >= 20) return { score: 20 };
+            if (similarityPercentage >= 10) return { score: 10 };
+
+            const matchedKeywords = keywords.filter(word =>
+                normalizedUser.includes(word.toLowerCase())
+            );
+            const keywordMatchPercentage = matchedKeywords.length / keywords.length;
+            const keywordScore = Math.round(keywordMatchPercentage * 100);
+
+            return { score: keywordScore > 0 ? keywordScore : 0 };
+        }
+
+        function calculateAverageScore(scores) {
+            const total = scores.reduce((sum, val) => sum + val, 0);
+            return Math.round(total / scores.length);
+        }
+
+        document.getElementById('submit').addEventListener('click', () => {
+            const studentName = document.getElementById('studentName').value.trim();
+            if (!studentName) {
+                Swal.fire('Please enter your name before submitting!');
+                return;
+            }
+
+            Swal.fire({
+                title: 'Submit?',
+                text: "Are you sure you want to submit your answers?",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Submit',
+                cancelButtonText: 'Cancel'
+            }).then(result => {
+                if (result.isConfirmed) {
+                    const textAreas = document.querySelectorAll('.no-copy-paste');
+                    let scores = [];
+                    let answersFormatted = [];
+
+                    textAreas.forEach((textarea, index) => {
+                        const userText = textarea.value.trim();
+                        const result = evaluateAnswer(userText, examples[index].correctAnswer, examples[index].keywords);
+                        scores.push(result.score);
+
+                        answersFormatted.push(
+                            { text: `Q${index + 1}: ${examples[index].question}\n`, fontSize: 13, bold: true },
+                            { text: `Your Answer (Score: ${result.score}%):\n`, fontSize: 12 },
+                            { text: userText + '\n', fontSize: 12, color: 'red' },
+                            { text: `Correct Answer:\n`, fontSize: 12, bold: true },
+                            { text: examples[index].correctAnswer + '\n\n', fontSize: 12, color: 'green' }
+                        );
+                    });
+
+                    const avgScore = calculateAverageScore(scores);
+                    const docDefinition = {
+                        content: [
+                            { text: `Name Of The Candidate: ${studentName}\n\n`, fontSize: 14, bold: true },
+                            {
+                                columns: [
+                                    {
+                                        text: avgScore >= 40 ? 'Final Result: PASS' : 'Final Result: FAIL',
+                                        bold: true,
+                                        fontSize: 14,
+                                        color: avgScore >= 40 ? 'green' : 'red'
+                                    },
+                                    {
+                                        text: `Average Score: ${avgScore}%`,
+                                        fontSize: 14,
+                                        color: 'blue',
+                                        alignment: 'right'
+                                    }
+                                ],
+                                margin: [0, 0, 0, 20]
+                            },
+                            ...answersFormatted
+                        ]
+                    };
+
+                    pdfMake.createPdf(docDefinition).download(`${studentName}_AnswerSheet.pdf`);
+                    Swal.fire('Submitted!', 'Your answers and result have been saved.', 'success');
+                }
+            });
+        });
+
+        // Timer
+        let timeLeft = 4800;
+        const timerElement = document.getElementById('time');
+        function startTimer() {
+            const timer = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    alert("Time's up!");
+                    document.getElementById('submit').click();
+                } else {
+                    const mins = Math.floor(timeLeft / 60);
+                    const secs = timeLeft % 60;
+                    timerElement.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+                    timeLeft--;
+                }
+            }, 1000);
+        }
+        window.onload = startTimer;
+    </script>
+    <script>
+
+        // =========================
+        // UPDATED VIOLATION TRACKING
+        // =========================
+        let violationCount = 0;
+
+        function handleViolation(reason) {
+            violationCount++;
+
+            if (violationCount === 1) {
+                Swal.fire('Warning', 'Violation: ' + reason + '. 1st Warning.', 'warning');
+            } else if (violationCount === 2) {
+                Swal.fire('Final Warning', 'Violation: ' + reason + '. Agli baar sirf current answer delete hoga.', 'error');
+            } else {
+                // 3rd violation logic: Sirf active textarea delete hoga
+                const activeElement = document.activeElement;
+
+                if (activeElement && activeElement.tagName === "TEXTAREA") {
+                    activeElement.value = ""; // Sirf isi question ka answer delete hoga
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Violation!',
+                        text: '3rd Violation: Current question answer cleared.',
+                        confirmButtonText: 'OK'
+                    });
+                } else {
+                    // Agar cursor kahin aur hai, to koi bhi random ya sabhi delete na ho
+                    Swal.fire('Violation', 'Violation detected, but no active answer box found.', 'info');
+                }
+
+                // Count reset takaki student aage ka test de sake
+                violationCount = 0;
+            }
+        }
+        // =========================
+        // DETECTION LISTENERS
+        // =========================
+
+        // 1. Tab Switch
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) handleViolation("Tab switching detected.");
+        });
+
+        // 2. Window Blur
+        window.addEventListener("blur", () => {
+            handleViolation("You moved away from the exam window.");
+        });
+
+        // 3. Fullscreen Exit
+        document.addEventListener("fullscreenchange", () => {
+            if (!document.fullscreenElement) handleViolation("Fullscreen mode exited.");
+        });
+
+        // 4. Keyboard Shortcuts (Ctrl+C, V, X, A, etc.)
+        document.addEventListener("keydown", function (e) {
+            // Block Alt+Tab
+            if (e.altKey && e.key === "Tab") {
+                e.preventDefault();
+                handleViolation("ALT + TAB detected.");
+            }
+            // Block Copy/Paste/Cut/SelectAll
+            if ((e.ctrlKey || e.metaKey) && ['c', 'v', 'x', 'a', 's'].includes(e.key.toLowerCase())) {
+                e.preventDefault();
+                handleViolation("Clipboard command (" + e.key.toUpperCase() + ") detected.");
+            }
+        });
+
+        // 5. Block Right-Click
+        document.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            handleViolation("Right-click blocked.");
+        });
+    </script>
+    <script>
+
+        function toggleInstructions() {
+
+            const content = document.getElementById("instructionContent");
+
+            if (content.style.display === "block") {
+
+                content.style.display = "none";
+
+            } else {
+
+                content.style.display = "block";
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
