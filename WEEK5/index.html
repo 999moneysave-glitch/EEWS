@@ -92,6 +92,7 @@
         }
 
         @media screen and (max-width:600px) {
+
             label,
             .timer {
                 font-size: 15px;
@@ -336,9 +337,8 @@
 
         <!-- Stylish Test Navigation -->
         <div class="test-nav">
-            <a href="AudioTest.html">TEST 2</a>
-            <a href="objectiveTest.html" class="active">TEST 3</a>
-            <a href="translationTest.html">TEST 4</a>
+            <a href="objectiveTest.html" class="active">Objective</a>
+            <a href="translationTest.html">Translation</a>
         </div>
 
         <h3>Please answer all the questions.</h3>
@@ -401,47 +401,27 @@
     <script>
         const examples = [
             {
-                question: "Introduce Yourself.",
-                correctAnswer: "Hi, everyone. Thank you very much for giving me this opportunity. I am going to speak about myself. My name is ____________. My father's name is ____________. My mother's name is ____________. I live in ____________. I study in 10th class. My father is a doctor and my mother is a housewife. I want to become a doctor in the future. My hobbies are singing songs and listening to music. I practice English daily and I like reading books and watching videos. There are 5 siblings in my family. I have 2 brothers and 3 sisters. Thank you everyone.",
+                question: "Tell me about your family.",
+                correctAnswer: "I have a wonderful family. There are 5 members in my family. My father is a teacher and he is very kind. My mother is a homemaker and she takes care of all of us. My elder brother is working as a software engineer in Delhi. I have two sisters. My elder sister is married and my younger sister is pursuing her graduation. We love spending time together. We eat together, go for outings, play games, and watch movies. I love my family very much because they support me in everything. Thank you everyone.",
                 keywords: [
-                    "introduce myself",
-                    "my name is",
-                    "father's name",
-                    "mother's name",
-                    "I live in",
-                    "study in 10th class",
-                    "doctor",
-                    "housewife",
-                    "future goal",
-                    "hobbies",
-                    "practice English",
-                    "reading books",
-                    "watching videos",
-                    "brothers and sisters",
-                    "thank you everyone"
-                ],
-                userAnswer: "Hi, everyone. Thank you very much for giving me this opportunity. I am going to speak about myself. My name is ____________. My father's name is ____________. My mother's name is ____________. I live in ____________. I study in 10th class. My father is a doctor and my mother is a housewife. I want to become a doctor in the future. My hobbies are singing songs and listening to music. I practice English daily and I like reading books and watching videos. There are 5 siblings in my family. I have 2 brothers and 3 sisters. Thank you everyone."
-            },
-            {
-                question: "Tell me about your daily life routine as a student.",
-                correctAnswer: "I wake up early in the morning. I brush my teeth and take a bath. I get dressed for school and eat breakfast. I go to school with my friends and study in class. I have lunch and play in the evening. Then I do my homework, eat dinner with my family, and go to bed early. Thank you and have a great day.",
-                keywords: [
-                    "wake up early",
-                    "brush my teeth",
-                    "take a bath",
-                    "get dressed",
-                    "eat breakfast",
-                    "go to school",
-                    "study in class",
-                    "have lunch",
-                    "play in the evening",
-                    "do homework",
-                    "eat dinner",
-                    "go to bed early"
+                    "wonderful family",
+                    "5 members",
+                    "father is a teacher",
+                    "mother is a homemaker",
+                    "elder brother",
+                    "software engineer",
+                    "two sisters",
+                    "elder sister married",
+                    "younger sister graduation",
+                    "family time",
+                    "eat together",
+                    "outings",
+                    "play games",
+                    "watch movies",
+                    "family supports me"
                 ],
                 userAnswer: ""
             },
-
             {
                 question: "What is a WH-Question Sentence? Write its structure and five examples for singular and plural subjects.",
                 correctAnswer: "WH-Question sentences begin with words like What, Why, When, Where, and How. Singular Structure: WH Word + Does + Subject + Verb + Object? Plural Structure: WH Word + Do + Subject + Verb + Object? Examples: Why does he play football? When does she play football? What does he play? Why do they play football? Where do they play football?",
@@ -459,50 +439,30 @@
                 ],
                 userAnswer: ""
             },
-
-
-            {
-                question: "How can you recognize the four types of Present Tense?",
-                correctAnswer: "Present Indefinite Tense is identified by sentences ending with ta, te, ti. Present Continuous Tense is identified by sentences ending with raha, rahi, rahe. Present Perfect Tense is identified by sentences ending with chuka, chuki, chuke. Present Perfect Continuous Tense is identified by sentences ending with raha, rahi, rahe along with a duration of time such as since or for.",
+             {
+                question: "What are the structures of all Present, Past, and Future Tense forms shown in the tense chart?",
+                correctAnswer: "Present Simple: Subject + V1 + Object. Present Continuous: Subject + am/is/are + V-ing + Object. Present Perfect: Subject + has/have + V3 + Object. Present Perfect Continuous: Subject + has/have been + V-ing + Object. Past Simple: Subject + V2 + Object. Past Continuous: Subject + was/were + V-ing + Object. Past Perfect: Subject + had + V3 + Object. Past Perfect Continuous: Subject + had been + V-ing + Object. Future Simple: Subject + will + V1 + Object. Future Continuous: Subject + will be + V-ing + Object. Future Perfect: Subject + will have + V3 + Object. Future Perfect Continuous: Subject + will have been + V-ing + Object.",
                 keywords: [
-                    "ta te ti",
-
-                    "raha rahi rahe",
-                    "chuka chuki chuke",
-                    "since",
-                    "for",
-                    "duration of time",
-                    "present indefinite",
+                    "present simple",
                     "present continuous",
                     "present perfect",
-                    "present perfect continuous"
-                ],
-                userAnswer: ""
-            },
-            {
-                question: "Write the 8 sentence forms of 'Ram aam khata hai (राम आम खाता है).' ",
-                correctAnswer: "The 8 sentence forms are: 1. Affirmative: Ram eats a mango. 2. Negative: Ram does not eat a mango. 3. Interrogative: Does Ram eat a mango? 4. Negative Interrogative: Does Ram not eat a mango? 5. Emphatic: Ram does eat a mango. 6. WH-Question: What does Ram eat? 7. Passive Voice: A mango is eaten by Ram. 8. Tag Question: Ram eats a mango, doesn't he?",
-                keywords: [
-                    "ram eats a mango",
-                    "ram does not eat a mango",
-                    "does ram eat a mango",
-                    "does ram not eat a mango",
-                    "ram does eat a mango",
-                    "what does ram eat",
-                    "a mango is eaten by ram",
-                    "doesn't he",
-                    "affirmative",
-                    "negative",
-                    "interrogative",
-                    "negative interrogative",
-                    "emphatic",
-                    "wh-question",
-                    "passive voice",
-                    "tag question"
+                    "present perfect continuous",
+                    "past simple",
+                    "past continuous",
+                    "past perfect",
+                    "past perfect continuous",
+                    "future simple",
+                    "future continuous",
+                    "future perfect",
+                    "future perfect continuous",
+                    "v1",
+                    "v2",
+                    "v3",
+                    "will",
+                    "been"
                 ],
                 userAnswer: ""
             }
-
 
         ]
 
