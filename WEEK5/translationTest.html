@@ -216,103 +216,175 @@
 
     <script>
         const examples = [
-            {
-                question: "मैंने खा लिया है। / Maine kha liya hai.",
-                correctAnswer: "I have eaten.",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मैंने नहीं खाया है। / Maine nahin khaya hai.",
-                correctAnswer: "I have not eaten.",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "क्या मैंने खाया है? / Kya maine khaya hai?",
-                correctAnswer: "Have I eaten?",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "क्या मैंने नहीं खाया है? / Kya maine nahin khaya hai?",
-                correctAnswer: "Have I not eaten?",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मैंने निश्चित रूप से खाया है। / Maine nishchit roop se khaya hai.",
-                correctAnswer: "I have certainly eaten. / I have eaten for sure.",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मैंने क्यों खाया है? / Maine kyon khaya hai?",
-                correctAnswer: "Why have I eaten?",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मैंने कैसे खाया है? / Maine kaise khaya hai?",
-                correctAnswer: "How have I eaten?",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मैंने क्या खाया है? / Maine kya khaya hai?",
-                correctAnswer: "What have I eaten?",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मैंने किसका खाया है? / Maine kiska khaya hai?",
-                correctAnswer: "Whose have I eaten?",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मैंने किसे खाया है? / Maine kise khaya hai?",
-                correctAnswer: "Whom have I eaten?",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मुझे खाना है। / Mujhe khana hai.",
-                correctAnswer: "I have to eat.",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "मुझे खाना पड़ेगा। / Mujhe khana padega.",
-                correctAnswer: "I have to eat.",
-                userAnswer: "",
-                score: 0
-            },
-            {
-                question: "जब बारिश होगी, तब मैं स्नान करूँगा। / Jab barish hogi, tab main snan karunga.",
-                correctAnswer: "When it rains, I will take a bath.",
-                userAnswer: "",
-                score: 0
-            },
+            // {
+            //     question: "मैंने खा लिया है। / Maine kha liya hai.",
+            //     correctAnswer: "I have eaten.",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मैंने नहीं खाया है। / Maine nahin khaya hai.",
+            //     correctAnswer: "I have not eaten.",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "क्या मैंने खाया है? / Kya maine khaya hai?",
+            //     correctAnswer: "Have I eaten?",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "क्या मैंने नहीं खाया है? / Kya maine nahin khaya hai?",
+            //     correctAnswer: "Have I not eaten?",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मैंने निश्चित रूप से खाया है। / Maine nishchit roop se khaya hai.",
+            //     correctAnswer: "I have certainly eaten. / I have eaten for sure.",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मैंने क्यों खाया है? / Maine kyon khaya hai?",
+            //     correctAnswer: "Why have I eaten?",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मैंने कैसे खाया है? / Maine kaise khaya hai?",
+            //     correctAnswer: "How have I eaten?",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मैंने क्या खाया है? / Maine kya khaya hai?",
+            //     correctAnswer: "What have I eaten?",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मैंने किसका खाया है? / Maine kiska khaya hai?",
+            //     correctAnswer: "Whose have I eaten?",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मैंने किसे खाया है? / Maine kise khaya hai?",
+            //     correctAnswer: "Whom have I eaten?",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मुझे खाना है। / Mujhe khana hai.",
+            //     correctAnswer: "I have to eat.",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "मुझे खाना पड़ेगा। / Mujhe khana padega.",
+            //     correctAnswer: "I have to eat.",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "जब बारिश होगी, तब मैं स्नान करूँगा। / Jab barish hogi, tab main snan karunga.",
+            //     correctAnswer: "When it rains, I will take a bath.",
+            //     userAnswer: "",
+            //     score: 0
+            // },
 
+            // {
+            //     question: "तुम कल आओगे ना? / Tum kal aaoge na?",
+            //     correctAnswer: "You will come tomorrow, won't you?",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "एक जंगल में एक राजा था। / Ek jangal mein ek raja tha.",
+            //     correctAnswer: "There was a king in a forest.",
+            //     userAnswer: "",
+            //     score: 0
+            // },
+            // {
+            //     question: "एक जंगल में एक शेर रहता था। / Ek jangal mein ek sher rehta tha.",
+            //     correctAnswer: "There lived a lion in a forest.",
+            //     userAnswer: "",
+            //     score: 0
+            // },
             {
-                question: "तुम कल आओगे ना? / Tum kal aaoge na?",
-                correctAnswer: "You will come tomorrow, won't you?",
+                question: "राधा आम खाती है। / Radha aam khati hai.",
+                correctAnswer: "Radha eats a mango. / Radha eats mangoes.",
                 userAnswer: "",
                 score: 0
             },
             {
-                question: "एक जंगल में एक राजा था। / Ek jangal mein ek raja tha.",
-                correctAnswer: "There was a king in a forest.",
+                question: "राधा आम नहीं खाती है। / Radha aam nahin khati hai.",
+                correctAnswer: "Radha does not eat a mango. / Radha doesn't eat a mango.",
                 userAnswer: "",
                 score: 0
             },
             {
-                question: "एक जंगल में एक शेर रहता था। / Ek jangal mein ek sher rehta tha.",
-                correctAnswer: "There lived a lion in a forest.",
+                question: "क्या राधा आम खाती है? / Kya Radha aam khati hai?",
+                correctAnswer: "Does Radha eat a mango?",
                 userAnswer: "",
                 score: 0
             },
+            {
+                question: "क्या राधा आम नहीं खाती है? / Kya Radha aam nahin khati hai?",
+                correctAnswer: "Does Radha not eat a mango? / Doesn't Radha eat a mango?",
+                userAnswer: "",
+                score: 0
+            },
+            {
+                question: "राधा निश्चित रूप से आम खाती है। / Radha nishchit roop se aam khati hai.",
+                correctAnswer: "Radha certainly eats a mango. / Radha does eat a mango.",
+                userAnswer: "",
+                score: 0
+            },
+            {
+                question: "राधा आम क्यों खाती है? / Radha aam kyon khati hai?",
+                correctAnswer: "Why does Radha eat a mango?",
+                userAnswer: "",
+                score: 0
+            },
+            {
+                question: "राधा आम कैसे खाती है? / Radha aam kaise khati hai?",
+                correctAnswer: "How does Radha eat a mango?",
+                userAnswer: "",
+                score: 0
+            },
+            {
+                question: "राधा क्या खाती है? / Radha kya khati hai?",
+                correctAnswer: "What does Radha eat?",
+                userAnswer: "",
+                score: 0
+            },
+            {
+                question: "राधा किसका आम खाती है? / Radha kiska aam khati hai?",
+                correctAnswer: "Whose mango does Radha eat?",
+                userAnswer: "",
+                score: 0
+            },
+            {
+                question: "राधा आम किसे (किसको) देती है? / Radha aam kise (kisko) deti hai?",
+                correctAnswer: "Whom does Radha give the mango?",
+                userAnswer: "",
+                score: 0
+            },
+            {
+                question: "राधा ko आम खाना है। / Radha ko aam khana hai.",
+                correctAnswer: "Radha has to eat a mango.",
+                userAnswer: "",
+                score: 0
+            },
+            {
+                question: "राधा ko आम खाना पड़ेगा। / Radha ko aam khana padega.",
+                correctAnswer: "Radha will have to eat a mango.",
+                userAnswer: "",
+                score: 0
+            }
         ];
 
         let currentIdx = 0, timer;
